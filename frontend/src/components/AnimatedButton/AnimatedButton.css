@@ -1,0 +1,32 @@
+.animated-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(100deg, #1D1D1B, #0c68a6, #1D1D1B);
+    background-size: 200% 100%;
+    transition: background-position 2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover {
+    background-position: right center;
+  }
+  
+  .animated-button .text {
+    display: block;
+    font-size: 1.5rem;
+  }
+  
+  .animated-button .subtext {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+  }
+  
