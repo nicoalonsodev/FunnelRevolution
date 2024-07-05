@@ -7,10 +7,12 @@ import email from "../../assets/email.svg";
 import person from "../../assets/person.svg";
 import phone from "../../assets/phone.svg";
 import countries from "./countries";
+import { useHistory } from "react-router-dom";
 import "./Registro.css";
 
 const Registro = ({ actualizarEstado }) => {
   const formRef = useRef(null);
+  const history = useHistory();
   const [registro, setRegistro] = useState({
     FNAME: "",
     EMAIL: "",
@@ -116,8 +118,7 @@ const Registro = ({ actualizarEstado }) => {
       Country: "",
       DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
     });
-
-    actualizarEstado(true);
+    history.push("/vsl");
   };
 
   const handleClick = (click) => {
@@ -139,27 +140,13 @@ const Registro = ({ actualizarEstado }) => {
         >
           X
         </button>
-        <div className="flex justify-center mb-2">
+        {/* <div className="flex justify-center mb-2">
           <img src={logo} alt="Logo" className="w-30 h-20 p-0" />
-        </div>
-        <h1 className="text-lg md:text-2xl font-montserrat-600 font-semibold text-center text-gray-900 mt-4 mb-2">
-          INGRESA TUS DATOS PARA RECIBIR ACCESO + MATERIAL EXTRA PERSONALIZADO.
+        </div> */}
+        <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2">
+          INGRESA TUS DATOS.
         </h1>
-        <h3
-          className="text-sm font-bold text-red-500 mb-2 mt-0 mx-2 md:my-0 text-left"
-          style={{ marginBottom: "1rem" }}
-        >
-          *Utilizaremos estos datos para ponernos en contacto y regalarte
-          material de entrenamiento extra en base tus necesidades específicas de
-          trading.
-        </h3>
-        <h3
-          className="text-sm  font-bold text-red-500 mb-2 mt-0 mx-2 md:my-0 text-left"
-          style={{ marginBottom: "1rem" }}
-        >
-          *SÓLO regístrate si tienes más de $100 dólares para depositar en tu
-          cuenta personal de trading y estás dispuesto a crecer.
-        </h3>
+       
 
         <form className="max-w-[400px] sm:max-w-[700px] mx-auto">
           <div className="mb-2">
@@ -316,18 +303,18 @@ const Registro = ({ actualizarEstado }) => {
               />
             ) : (
               <button
-                type="submit"
-                onClick={handleSubmit}
-                className="w-full font-montserrat-600 sm:w-32 bg-gradient-to-r from-[#ff6634] to-[#ff4000] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#fa9406] hover:scale-110 duration-300 mb-2"
-              >
-                Registro
-              </button>
+              type="submit"
+              onClick={handleSubmit}
+              className="w-full poppins-regular sm:w-32 bg-gradient-to-r from-[#108CE0] to-[#0077B6] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
+            >
+              Registro
+            </button>
             )}
           </div>
         </form>
         <div className="text-center"></div>
         <p className="text-xs text-gray-600 text-center mt-8">
-          &copy; 2024 Inverza
+          &copy; 2024 Revolution Oficial
         </p>
       </div>
     </div>
