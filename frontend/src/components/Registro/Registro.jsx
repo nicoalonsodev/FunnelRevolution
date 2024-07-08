@@ -118,7 +118,7 @@ const Registro = ({ actualizarEstado }) => {
       Country: "",
       DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
     });
-    history.push("/vsl");
+    history.push("/vsl?registered=true");
   };
 
   const handleClick = (click) => {

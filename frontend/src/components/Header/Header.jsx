@@ -4,9 +4,8 @@ const Header = () => {
 
   const backgroundStyle = {
     backgroundImage:
-      "linear-gradient(55deg, rgb(0,9,16) 0%, rgba(167, 179, 214, 0.15) 100%), linear-gradient(145deg, rgb(3,38,65), rgb(11,91,143))",
-  };
-
+    "linear-gradient(90deg, rgba(29,29,27,1) 32%, rgba(83,59,20,1) 64%, rgba(167,107,10,1) 100%, rgba(245,152,0,1) 100%)",
+    };
   return (
     <div  style={backgroundStyle} className='w-screen h-32 border-b-[2px] border-gray-600 flex justify-center items-center'>
       <img className='w-28' src={logo} alt="logo" />
@@ -15,3 +14,8 @@ const Header = () => {
 }
 
 export default Header
+
+
+// backgroundImage:
+// "linear-gradient(90deg, rgba(29,29,27,1) 32%, rgba(83,59,20,1) 64%, rgba(167,107,10,1) 91%, rgba(245,152,0,1) 100%)",
+// };

@@ -27,7 +27,7 @@ const VideoPreview = () => {
 
   return (
     <div className="flex flex-wrap   justify-center">
-      <div className=" w-1/2 flex justify-center px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px]">
+      <div className=" w-full lg:w-1/2 flex justify-center px-2 lg:px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px]">
         {" "}
         <video
           ref={videoRef}
@@ -46,12 +46,9 @@ const VideoPreview = () => {
         <a
          onClick={handleClick}
           rel="noopener noreferrer"
-          className="animated-button"
+          className="animated-button cursor-pointer"
         >
-          <span className="text">Escríbeme “Revolution” por WhatsApp</span>
-          <span className="subtext">
-            Y comienza a construir tu propia Agencia de Infoproductos
-          </span>
+          <span className="lato-black text-gray-100">VER MÉTODO</span>
         </a>
       </div>
 

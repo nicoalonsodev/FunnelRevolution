@@ -3,10 +3,16 @@ import "./AnimatedButton.css";
 
 const AnimatedButton = () => {
   return (
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="animated-button">
-      <span className="text">Escríbeme “Revolution” por WhatsApp
+    <a
+      href="https://www.instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="animated-button text-xl"
+    >
+      <span className="text">AGENDÁ TU LLAMADA</span>
+      <span className="subtext text-sm lg:text-lg">
+        Y comienza a implementar este nuevo modelo de negocio ahora
       </span>
-      <span className="subtext">Y comienza a construir tu propia Agencia de Infoproductos</span>
     </a>
   );
 };
