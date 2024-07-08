@@ -5,7 +5,7 @@ const TitleAndVideo = ({ video }) => {
   return (
     <div className="flex flex-wrap justify-center items-start text-center space-y-4">
 
-        <p className="poppins-medium text-yellow-500 text-md lg:text-xl">
+        <p className="poppins-medium text-yellow-500 text-md lg:text-xl px-2">
           Infoproductor y trader argentino millonario revela en un video de 10
           minutos...
         </p>
