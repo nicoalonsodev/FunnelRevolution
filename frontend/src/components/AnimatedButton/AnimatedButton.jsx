@@ -7,7 +7,7 @@ const AnimatedButton = () => {
       href="https://www.instagram.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="animated-button text-xl"
+      className="w-full lg:w-2/4 animated-button text-xl"
     >
       <span className="text">AGENDÁ TU LLAMADA</span>
       <span className="subtext text-sm lg:text-lg">

@@ -46,7 +46,7 @@ const VideoPreview = () => {
         <a
           onClick={handleClick}
           rel="noopener noreferrer"
-          className="animated-button cursor-pointer"
+          className="w-full lg:w-2/4 animated-button cursor-pointer"
         >
           <span className="anton text-gray-100 tracking-wider">VER MÉTODO</span>
         </a>

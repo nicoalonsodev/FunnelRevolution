@@ -15,12 +15,14 @@ const LandingPage = () => {
     <div >
       <div
         style={background3Style}
-        className="flex flex-wrap justify-center px-3 lg:px-14 xl:px-[9rem] py-4"
+        className="flex flex-wrap justify-center  py-4"
       >
-        <div className="w-screen h-14 lg:h-32  flex justify-center items-center">
+        <div className="w-screen h-14 lg:h-32  flex justify-center items-center border-b-[1px] border-yellow-600">
           <img className="w-14 lg:w-28" src={logo} alt="logo" />
         </div>
+        <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
         <TitleAndVideo />
+        </div>
       </div>
     </div>
   );
