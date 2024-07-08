@@ -12,7 +12,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div>
+    <div >
       <div
         style={background3Style}
         className="flex flex-wrap justify-center px-3 lg:px-14 xl:px-[9rem] py-4"

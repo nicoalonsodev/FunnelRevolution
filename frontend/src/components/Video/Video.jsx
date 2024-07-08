@@ -5,7 +5,7 @@ import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 
-const Video = () => {
+const Video = () => { 
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
