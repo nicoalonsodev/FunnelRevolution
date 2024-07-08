@@ -305,9 +305,10 @@ const Registro = ({ actualizarEstado }) => {
               <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full poppins-regular sm:w-32 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
+              className="w-full anton tracking-wider sm:w-32 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
             >
-              Registro
+              VER EL MÉTODO AHORA
+
             </button>
             )}
           </div>

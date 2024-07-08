@@ -48,7 +48,7 @@ const VideoPreview = () => {
           rel="noopener noreferrer"
           className="animated-button cursor-pointer"
         >
-          <span className="lato-black text-gray-100">VER MÉTODO</span>
+          <span className="anton text-gray-100 tracking-wider">VER MÉTODO</span>
         </a>
       </div>
 
