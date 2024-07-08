@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import video from "../../assets/masterclassBealit.mp4";
+import video from "../../assets/video.mp4";
 import Registro from "../Registro/Registro";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import gif from "../../assets/gifSound.gif";

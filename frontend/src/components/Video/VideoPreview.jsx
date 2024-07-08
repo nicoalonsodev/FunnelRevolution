@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
-import video from "../../assets/masterclassBealit.mp4";
+import video from "../../assets/gif.mp4";
 import Registro from "../Registro/Registro";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
+
 const VideoPreview = () => {
   const [showForm, setShowform] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -26,16 +27,15 @@ const VideoPreview = () => {
   };
 
   return (
-    <div className="flex flex-wrap   justify-center">
-      <div className=" w-full lg:w-1/2 flex justify-center px-2 lg:px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px]">
-        {" "}
+    <div className="flex flex-wrap justify-center">
+      <div className="cursor-pointer w-full lg:w-1/2 flex justify-center px-2 lg:px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px]">
         <video
           ref={videoRef}
-          className=" h-auto "
-          controls
+          className="h-auto"
           playsInline
           autoPlay
           muted
+          loop // Agrega esta línea para mantener el video en loop
           onClick={handleClick}
         >
           <source src={video} type="video/mp4" />
@@ -44,7 +44,7 @@ const VideoPreview = () => {
       </div>
       <div className="w-full">
         <a
-         onClick={handleClick}
+          onClick={handleClick}
           rel="noopener noreferrer"
           className="animated-button cursor-pointer"
         >
@@ -56,7 +56,7 @@ const VideoPreview = () => {
         <>
           <div
             className="fixed inset-0 bg-gray-800 opacity-50 z-40"
-            onClick={() => handleClick(false)}
+            onClick={() => setShowform(false)} // Ajusta esta línea para manejar el cierre del formulario
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
