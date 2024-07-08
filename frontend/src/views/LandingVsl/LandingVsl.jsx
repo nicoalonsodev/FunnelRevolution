@@ -36,10 +36,13 @@ const LandingVsl = () => {
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
       <div style={background2Style} className="px-3 lg:px-14 xl:px-[9rem] py-4">
-      <div className="w-screen h-14 lg:h-32  flex justify-center items-center">
+        <div className="w-screen h-14 lg:h-32  flex justify-center items-center">
           <img className="w-14 lg:w-28" src={logo} alt="logo" />
         </div>
+        <div className="px-3 lg:px-0">
         <TitleAndVideo video={"True"} />
+        </div>
+       
       </div>
       <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
         <History />
