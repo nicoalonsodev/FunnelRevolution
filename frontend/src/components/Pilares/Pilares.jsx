@@ -123,6 +123,70 @@ const Pilares = () => {
             </div>
           </div>
         </div>
+
+                {/* Tercer Pilar */}
+                <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+          <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
+            <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+              <img
+                className="w-full object-cover object-center"
+                src={
+                  "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+                }
+                alt=""
+              />
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-[#F59800]">
+                N° 1 | El vehículo adecuado
+              </p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-semibold text-4xl text-gray-100">
+                Academia de Trading
+              </p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-gray-200">
+                Necesitas concentrar todos tus esfuerzos en algo que puedas
+                aprovechar y que genere buenos resultados a tus clientes para
+                que estén satisfechos.
+              </p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-gray-200">
+                Así es como empezó Cristian Diaz, aprendiendo la habilidad del
+                trading en (x año) y luego de muchos altibajos comenzó a ser
+                rentable y vivir del trading.
+              </p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-gray-200">
+                Luego en (x año) fundó Revolution que empezó como una academia
+                de Trading con la misión de ayudar a otras personas a ser
+                rentable en el trading.
+              </p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-gray-200">
+                Es por esto que hoy, después de (x años) somos la mejor academia
+                de trading de todo latinoamérica con más de (x alumnos) y
+                cientos de casos de éxito, lo que da muchísimo valor a la
+                organización.
+              </p>
+            </div>
+          </div>
+          <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
+            <img
+              className="w-full object-cover object-center"
+              src={
+                "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+              }
+              alt=""
+            />
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -8,6 +8,11 @@ import logo from "../../assets/logo/logo_blanco-re.png";
 import History from "../../components/History/History";
 import Actually from "../../components/Actually/Actually";
 import Pilares from "../../components/Pilares/Pilares";
+import MissionAndResult from "../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../components/Gifts/Gifts";
+import OfferSection from "../../components/OfferSection/OfferSection";
+
 const LandingVsl = () => {
   const backgroundStyle = {
     backgroundImage: `url(${background})`,
@@ -46,11 +51,15 @@ const LandingVsl = () => {
       <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
         <History />
       </div>
-      <div style={background2Style} className="px-3 lg:px-14 xl:px-[9rem] py-4">
-        <Actually />
-      </div>
-      <div style={background5Style} className="px-3 lg:px-14 xl:px-[9rem] py-4">
-        <Pilares />
+      <div style={background2Style}>
+        <div className="px-3 lg:px-14 xl:px-[9rem] py-4">
+          <Actually />
+          <Pilares />
+          <MissionAndResult />
+        </div>
+        <PresentProgram />
+        <Gifts />
+        <OfferSection />
       </div>
     </div>
   );
