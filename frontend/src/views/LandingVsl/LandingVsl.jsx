@@ -52,14 +52,14 @@ const LandingVsl = () => {
         <History />
       </div>
       <div style={background2Style}>
-        <div className="px-3 lg:px-14 xl:px-[9rem] py-4">
+        <div className="px-2 lg:px-14 xl:px-[9rem] py-4">
           <Actually />
           <Pilares />
           <MissionAndResult />
         </div>
         <PresentProgram />
-        <Gifts />
-        <OfferSection />
+          <Gifts />
+          <OfferSection />
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ const MissionAndResult = () => {
           <img
             src="https://www.agenciadeinfoproductos.com/hosted/images/2f/4f25837d8d4eb89d772390a0b6a999/Captura-de-pantalla-2024-05-08-154432.png"
             alt="Resultados"
-            className="w-full max-w-md"
+            className="w-2/3 lg:w-full max-w-md"
           />
         </div>
         <p className="mb-6">
@@ -70,7 +70,7 @@ const MissionAndResult = () => {
           <img
             src="https://www.agenciadeinfoproductos.com/hosted/images/da/3fa41f56f74646ab1263f0a3e9172e/Captura-de-pantalla-2024-05-08-154848.png"
             alt="Resultados"
-            className="w-full max-w-md"
+            className="w-2/3 lg:w-full max-w-md"
           />
         </div>
         <p className="mb-6">

@@ -3,7 +3,7 @@ import logo from "../../assets/logo/logo_blanco-re.png";
 
 const PresentProgram = () => {
   return (
-    <div className="text-gray-100 bg-black py-10 px-4 md:px-64 poppins-regular">
+    <div className="text-gray-100 bg-black py-10 px-3 md:px-64 poppins-regular">
       <div className="relative">
         <img
           src={logo}
@@ -11,7 +11,7 @@ const PresentProgram = () => {
           className="absolute top-[-80px] left-1/2 transform -translate-x-1/2"
           style={{ width: "120px", height: "auto" }}
         />
-        <div className="bg-black pt-20 pb-10 px-6 rounded-lg shadow-lg">
+        <div className="bg-black pt-20 pb-10 px-0 lg:px-6 rounded-lg shadow-lg">
           <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
             Te presento el programa AMG <br />
             (Agencia MiniGrowing)
@@ -79,7 +79,7 @@ const PresentProgram = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col h-[14rem] md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-black rounded-lg p-4 shadow-lg"
+              className="flex flex-col h-auto lg:h-[14rem] md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-black rounded-lg py-4 lg:py-0 p-0 lg:p-4 shadow-lg"
             >
               <div className="w-full h-full md:w-1/2 flex items-center justify-start md:justify-start">
                 <div className="flex flex-col justify-center items-center h-full">
@@ -127,7 +127,7 @@ const PresentProgram = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-black rounded-lg p-4 shadow-lg"
+              className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-black rounded-lg py-4 lg:py-0 p-0 lg:p-4 shadow-lg"
             >
               <div className="w-full md:w-2/3 flex flex-col justify-center items-center h-full">
                 <h2 className="text-2xl font-bold w-full text-left text-[#F59800]">{item.title}</h2>

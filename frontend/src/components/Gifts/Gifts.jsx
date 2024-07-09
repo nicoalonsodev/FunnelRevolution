@@ -4,21 +4,21 @@ import CallToAction from "../CallToAction/CallToAction";
 
 const Gifts = () => {
   return (
-    <div className="mt-10 text-gray-100">
+    <div className="mt-10 text-gray-100 px-3 lg:px-0">
       <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
         Además de los siguientes regalos:
       </h1>
       <p className="text-center mb-6">
         Para las primeras 100 personas que accedan al programa
       </p>
-      <div className="flex flex-wrap justify-center px-32">
+      <div className="flex flex-wrap justify-center px-0 lg:px-32">
         <div className="flex flex-wrap justify-center items-center  space-y-16 py-10">
           {/* Primer Regalo */}
           <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
             <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
-              <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+              <div className="w-full flex justify-center lg:hidden items-center overflow-hidden rounded-lg  mb-2">
                 <img
-                  className="w-full object-cover object-center"
+                  className="w-1/2 object-cover object-center "
                   src={
                     "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
                   }
@@ -62,7 +62,7 @@ const Gifts = () => {
                 alt="Vehículo AMG"
               />
             </div>
-            <div className="w-[45%]">
+            <div className="w-full lg:w-[45%]">
               <div className="w-full mt-4">
                 <p className="poppins-regular text-3xl">
                   <span className="text-[#F59800] font-bold">Regalo #2:</span>{" "}
@@ -81,9 +81,9 @@ const Gifts = () => {
           {/* Tercer Regalo */}
           <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
             <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
-              <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+              <div className="w-full flex justify-center lg:hidden items-center overflow-hidden rounded-lg  mb-2">
                 <img
-                  className="w-full object-cover object-center"
+                  className="w-1/2 object-cover object-center"
                   src={
                     "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
                   }
