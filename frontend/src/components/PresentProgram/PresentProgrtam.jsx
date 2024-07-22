@@ -24,7 +24,7 @@ const PresentProgram = () => {
           Esto es lo que recibirás al unirte HOY:
 
           </h2>
-          <p className="text-center">
+          <p className="text-center mb-4">
           Programa completo Revolution, en donde te guiamos paso a paso en tu habilidad para ser rentable en trading y/o montar tu negocio online y llevarlo a más de $10k/mes.
 
           </p>
@@ -41,7 +41,7 @@ const PresentProgram = () => {
           {[
             {
               title: "Curso grabado completo y sesiones en vivo todos los días.",
-              price: "$1.200 anual.",
+              price: "$1.200 USD anual.",
               module: "Carrera de Trading:",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
@@ -49,7 +49,7 @@ const PresentProgram = () => {
             {
               title: "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
               module: "Carrera de Afiliado:",
-              price: "$600 anual.",
+              price: "$600 USD anual.",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
             },
@@ -57,7 +57,7 @@ const PresentProgram = () => {
               title:
                 "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
               module: "Servicio de marketing profesional:",
-              price: "$12.000 anual.",
+              price: "$12.000 USD anual.",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
             },

@@ -13,6 +13,7 @@ import PresentProgram from "../../components/PresentProgram/PresentProgrtam";
 import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
+import ModalButton from "../../components/ModalButton/ModalButton";
 
 const LandingVsl = () => {
   const backgroundStyle = {
@@ -68,6 +69,7 @@ const LandingVsl = () => {
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600 ">
         <Footer />
       </div>
+      <ModalButton />
     </div>
   );
 };

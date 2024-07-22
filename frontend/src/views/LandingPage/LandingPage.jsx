@@ -14,8 +14,8 @@ const LandingPage = () => {
   return (
     <div >
       <div
-        style={background3Style}
-        className="flex flex-wrap justify-center  py-4"
+        // style={background3Style}
+        className="flex flex-wrap justify-center  py-4 bg-gray-900 "
       >
         <div className="w-screen h-14 lg:h-20  flex justify-center items-center border-b-[1px] border-yellow-600">
           <img className="w-14 lg:w-20" src={logo} alt="logo" />
