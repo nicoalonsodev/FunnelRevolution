@@ -51,7 +51,7 @@ const Video = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center pb-4 lg:pb-32 relative px-2">
+    <div className="flex flex-wrap justify-center pb-4  relative px-2">
       <div className="w-full lg:w-1/2 flex justify-center px-3 lg:px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px] relative">
         <video
           ref={videoRef}

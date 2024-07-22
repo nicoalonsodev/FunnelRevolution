@@ -6,7 +6,7 @@ const History = () => {
       <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 space-y-16 py-10">
         <div className="w-full flex flex-wrap justify-center items-center  space-y-6">
           <h1 className="text-3xl lg:text-5xl lato-bold text-[#1D1D1B] text-center">
-            Mi Historia
+          HISTORIA DE ÉXITO EN REVOLUTION
           </h1>
           <div className="w-full flex justify-center ">
             <div className="w-3/5">

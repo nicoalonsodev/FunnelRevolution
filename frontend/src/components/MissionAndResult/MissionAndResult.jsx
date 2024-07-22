@@ -8,32 +8,24 @@ const MissionAndResult = () => {
           Mi Misión
         </h1>
         <p className="mb-6">
-          Ahora, mi misión es facturar 100 millones de dólares antes de cumplir
-          25 años con mi agencia de infoproductos, con el objetivo de tener el
-          suficiente capital y apalancamiento para cambiar el mundo con el poder
-          de la educación online.
+        Ahora, mi misión en Revolution es crear la comunidad más grande de millonarios en todo latinoamérica brindando las herramientas, el acompañamiento y el espacio para que cuenten con el entorno correcto.
         </p>
         <p className="mb-6">
-          Durante todo este camino en donde voy a escalar empresas de
-          infoproductos, voy a documentar todos y cada uno de los pasos del
-          camino dentro de mi programa AMG.
+        Comenzamos en 2022 y en todo este camino ya pudimos lograr casos de éxito de $1000 usd al mes - $5000 e inlcuso $10000 - $50.000 y hasta $100.000 mensuales con algunos líderes.
         </p>
         <p className="mb-6">
-          Mi objetivo es que no sólo aprendas de mí, sino que también
-          implementes lo que estoy haciendo, para que puedas hacerlo por ti
-          mismo y ganar tu primer millón.
+        También contamos con oficinas en Buenos Aires y eventos presenciales en distintos lugares del mundo.
         </p>
         <p className="mb-6">
-          Quiero que vivas este mismo tipo de vida, que tengas objetivos
-          similares y que te rodees de las personas correctas que te ayudarán a
-          crecer.
+        Mi objetivo es que no sólo aprendas de mí y de nuestro equipo, sino que también implementes lo que estoy haciendo, para que puedas hacerlo por ti mismo y ganar tu primer millón.
+
         </p>
         <p className="mb-6">
-          <span className="text-[#F59800] font-bold">Resumiendo:</span> Quiero
-          que puedas permitirte la mejor comida, que tengas relaciones
-          increíbles con personas de valor, que viajes a lugares épicos, que
-          tengas un propósito, que ganes millones de dólares online y que
-          retribuyas a tu comunidad y a tu familia.
+        Quiero que vivas este mismo tipo de vida, que tengas objetivos similares y que te rodees de las personas correctas que te ayudarán a crecer.
+        </p>
+        <p className="mb-6">
+          <span className="text-[#F59800] font-bold">Resumiendo:</span> Quiero que puedas permitirte la mejor comida, que tengas relaciones increíbles con personas de valor, que viajes a lugares épicos, que tengas un propósito, que ganes millones de dólares online y que retribuyas a tu comunidad y a tu familia.
+
         </p>
         <p className="text-[#F59800] font-bold">
           Si quieres eso, ¡esto es PARA TI!
@@ -41,18 +33,16 @@ const MissionAndResult = () => {
       </div>
       <div className="mt-10">
         <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
-          Resultados
+        Testimonios:
+
         </h1>
         <p className="mb-6">
-          Para que veas que no soy solo palabras, quiero mostrarte algunos de
-          los resultados que nuestros alumnos han tenido gracias a nuestro
-          programa privado en donde te muestro cómo montar una Agencia de
-          Infoproductos.
+        Para que veas que no soy solo palabras, quiero mostrarte algunos de los resultados que nuestros alumnos han tenido gracias a Revolution en donde te muestro como montar tu propio negocio online con este nuevo método.
         </p>
         <p className="mb-6">
-          Por ejemplo, tenemos a{" "}
-          <span className="text-[#F59800] font-bold">Teo Egaña</span> que con
-          solo 17 años, gana $13k/mes gracias a su agencia de infoproductos.
+        En el video podemos ver a 
+          <span className="text-[#F59800] font-bold">(nombre)</span> haciendo x dólares con el método Revolution
+          capturas de su negocio y operaciones en trading:
         </p>
         <div className="flex justify-center mb-6">
           <img
@@ -63,7 +53,8 @@ const MissionAndResult = () => {
         </div>
         <p className="mb-6">
         O como el caso de{" "}
-          <span className="text-[#F59800] font-bold">Facundo Martinez</span> , que a solo 15 días de comenzar con su Agencia consiguió $6,000 dólares de facturación gracias a haber cerrado 2 clientes.
+          <span className="text-[#F59800] font-bold">Facundo Martinez</span> haciendo x dólares con el método Revolution
+          capturas de su negocio y operaciones en trading:
 
         </p>
         <div className="flex justify-center mb-6">
@@ -74,7 +65,7 @@ const MissionAndResult = () => {
           />
         </div>
         <p className="mb-6">
-        Estos son sólo algunos ejemplos del tipo de éxito que es posible alcanzar con el modelo de Agencia de Infoproductos.
+        Estos son sólo algunos ejemplos del tipo de éxito que es posible alcanzar con el Método Revolution.
         </p>
         <p className="mb-6">
         Y lo mejor es que estas historias no son raras. De hecho, hay nuevas historias de éxito todos los días.

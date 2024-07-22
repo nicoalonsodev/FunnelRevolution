@@ -9,8 +9,8 @@ const AnimatedButton = () => {
       rel="noopener noreferrer"
       className="w-full lg:w-2/4 animated-button text-xl"
     >
-      <span className="text">AGENDÁ TU LLAMADA</span>
-      <span className="subtext text-sm lg:text-lg">
+      <span className="text">AGENDA TU LLAMADA</span>
+      <span className="subtext text-sm lg:text-lg text-balance">
         Y comienza a implementar este nuevo modelo de negocio ahora
       </span>
     </a>

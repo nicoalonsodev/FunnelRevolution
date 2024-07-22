@@ -13,69 +13,73 @@ const PresentProgram = () => {
         />
         <div className="bg-black pt-20 pb-10 px-0 lg:px-6 rounded-lg shadow-lg">
           <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
-            Te presento el programa AMG <br />
-            (Agencia MiniGrowing)
+          Te presento el <span className="text-[#F59800]">MÉTODO REVOLUTION</span>
           </h1>
           <p className="text-center mb-6">
-            El mejor programa del mundo para montar una agencia de infoproductos
-            y comenzar a ganar $10k dólares al mes.
+          El mejor programa del mundo para montar tu propio negocio online y comenzar a ganar más de $10k dólares al mes.
+
           </p>
           <hr className="my-6 border-gray-700" />
           <h2 className="text-2xl text-center font-bold mb-4">
-            Esto es lo que recibirás al unirte HOY:
+          Esto es lo que recibirás al unirte HOY:
+
           </h2>
           <p className="text-center">
-            Programa completo AMG, en donde te guiamos paso a paso en montar tu
-            agencia de infoproductos y llevarla a más de $10k/mes. Todo esto al
-            interno de una plataforma gamificada con premios para los más
-            activos (viajes, mentorías, iPhones y experiencias).
+          Programa completo Revolution, en donde te guiamos paso a paso en tu habilidad para ser rentable en trading y/o montar tu negocio online y llevarlo a más de $10k/mes.
+
+          </p>
+          <p className="text-center">
+          Todo esto a través de una organización online y presencial con premios para los más activos (viajes, premios, mentorías, oficina presencial y experiencias).
+
+
           </p>
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
-          Módulos del Programa
-        </h1>
+      
         <div className="space-y-10">
           {[
             {
-              title: "Cómo conseguir tu PRIMER CLIENTE en una semana",
-              module: "MÓDULO 1",
+              title: "Curso grabado completo y sesiones en vivo todos los días.",
+              price: "$1.200 anual.",
+              module: "Carrera de Trading:",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
             },
             {
-              title: "Cómo hacer viral la Marca Personal de tu Cliente",
-              module: "MÓDULO 2",
-              image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
-            },
-            {
-              title:
-                "Cómo escalar a 10K/mes ayudando a lanzar y vender infoproductos a tus clientes",
-              module: "MÓDULO 3",
-              image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
-            },
-            {
-              title: "Cómo conseguir tu PRIMER CLIENTE en una semana",
-              module: "MÓDULO 4",
-              image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
-            },
-            {
-              title: "Cómo hacer viral la Marca Personal de tu Cliente",
-              module: "MÓDULO 5",
+              title: "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
+              module: "Carrera de Afiliado:",
+              price: "$600 anual.",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
             },
             {
               title:
-                "Cómo escalar a 10K/mes ayudando a lanzar y vender infoproductos a tus clientes",
-              module: "MÓDULO 6",
+                "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
+              module: "Servicio de marketing profesional:",
+              price: "$12.000 anual.",
               image:
                 "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
             },
+            // {
+            //   title: "Cómo conseguir tu PRIMER CLIENTE en una semana",
+            //   module: "MÓDULO 4",
+            //   image:
+            //     "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+            // },
+            // {
+            //   title: "Cómo hacer viral la Marca Personal de tu Cliente",
+            //   module: "MÓDULO 5",
+            //   image:
+            //     "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+            // },
+            // {
+            //   title:
+            //     "Cómo escalar a 10K/mes ayudando a lanzar y vender infoproductos a tus clientes",
+            //   module: "MÓDULO 6",
+            //   image:
+            //     "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+            // },
           ].map((item, index) => (
             <div
               key={index}
@@ -87,6 +91,7 @@ const PresentProgram = () => {
                     {item.module}
                   </h2>
                   <p className="text-2xl font-bold">{item.title}</p>
+                  <p className="mt-3 text-lg text-gray-300 font-light text-left w-full">{item.price}</p>
                 </div>
               </div>
               <div className="w-full md:w-1/2">
@@ -100,7 +105,7 @@ const PresentProgram = () => {
           ))}
         </div>
       </div>
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
           Y también recibirás:
         </h1>
@@ -143,7 +148,7 @@ const PresentProgram = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
