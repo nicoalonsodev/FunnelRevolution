@@ -25,7 +25,7 @@ const LandingPage = () => {
         <TitleAndVideo />
         </div>
       </div>
-      <MailchimpForm />
+      {/* <MailchimpForm /> */}
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600 ">
         <Footer />
       </div>
