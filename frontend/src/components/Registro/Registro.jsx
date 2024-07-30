@@ -68,57 +68,58 @@ const Registro = ({ actualizarEstado }) => {
     setErrors(errors);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     validate(registro);
     if (Object.keys(errors).length === 0) {
-      setRegistro({
-        FNAME: "",
-        EMAIL: "",
-        PHONE: "",
-        CountryCode: null,
-        Country: "",
-        DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
-      });
+      setIsLoading(true);
 
-      if (formRef.current) {
-        formRef.current.submit();
+      // Enviar a Google Sheets
+      const formDatab = new FormData();
+      for (const key in registro) {
+        formDatab.append(key, registro[key]);
       }
-      Submit(e);
+
+      try {
+        await fetch(
+          "https://script.google.com/macros/s/AKfycbwxNtO_uUa8bFfC9D4VaFMwN9DpTADVjqPBhHbaq1Lq7fpTGpGjFFsdie23ennNABfv3Q/exec",
+          {
+            method: "POST",
+            body: formDatab,
+            mode: "no-cors",
+          }
+        );
+
+        // Enviar a Mailchimp
+        const mailchimpForm = formRef.current;
+        const formData = new FormData(mailchimpForm);
+
+        await fetch(mailchimpForm.action, {
+          method: mailchimpForm.method,
+          body: formData,
+          mode: 'no-cors',
+        });
+
+        // Mostrar mensaje de éxito o realizar alguna acción adicional
+        setRegistro({
+          FNAME: "",
+          EMAIL: "",
+          PHONE: "",
+          CountryCode: null,
+          Country: "",
+          DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
+        });
+        setIsLoading(false);
+        actualizarEstado(false);
+        history.push("/vsl?registered=true"); // Redirigir si es necesario
+      } catch (error) {
+        console.log(error);
+        setIsLoading(false);
+        // Mostrar mensaje de error
+      }
     } else {
       setFormSubmitted(true);
     }
-  };
-
-  const Submit = (e) => {
-    const formDatab = new FormData();
-    for (const key in registro) {
-      formDatab.append(key, registro[key]);
-    }
-
-    fetch(
-      "https://script.google.com/macros/s/AKfycbwxNtO_uUa8bFfC9D4VaFMwN9DpTADVjqPBhHbaq1Lq7fpTGpGjFFsdie23ennNABfv3Q/exec",
-      {
-        method: "POST",
-        body: formDatab,
-        mode: "no-cors",
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => {})
-      .catch((error) => {
-        console.log(error);
-      });
-
-    setRegistro({
-      FNAME: "",
-      EMAIL: "",
-      PHONE: "",
-      CountryCode: null,
-      Country: "",
-      DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
-    });
-    history.push("/vsl?registered=true");
   };
 
   const handleClick = (click) => {
@@ -129,26 +130,27 @@ const Registro = ({ actualizarEstado }) => {
     (country) => country.code === registro.CountryCode
   );
 
-
   return (
     <div className="max-w-[1100px] flex items-center justify-center">
       <div className="max-w-[700px] p-4 bg-white rounded-lg shadow-lg overflow-auto max-h-[700px] relative">
         <button
           className="bg-gray-500 hover:bg-gray-700 transition duration-300 ease-in-out text-white font-semibold text-sm py-1 px-2 rounded absolute top-0 right-0 mt-2 mr-2"
           onClick={() => handleClick(false)}
-          // style={{ marginLeft: "250px" }}
         >
           X
         </button>
-        {/* <div className="flex justify-center mb-2">
-          <img src={logo} alt="Logo" className="w-30 h-20 p-0" />
-        </div> */}
         <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2">
           INGRESA TUS DATOS.
         </h1>
-       
-
-        <form className="max-w-[400px] sm:max-w-[700px] mx-auto">
+        <form
+          className="max-w-[400px] sm:max-w-[700px] mx-auto"
+          action="https://revolutionoficial.us13.list-manage.com/subscribe/post?u=8449426f8fafa7d818754f177&amp;id=8098f80fd7&amp;f_id=000e67e1f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          ref={formRef}
+          onSubmit={handleSubmit}
+        >
           <div className="mb-2">
             <input
               type="text"
@@ -165,23 +167,15 @@ const Registro = ({ actualizarEstado }) => {
                 backgroundPosition: "5px center",
                 backgroundRepeat: "no-repeat",
               }}
-              autocomplete="name"
+              autoComplete="name"
             />
             {formSubmitted && errors.FNAME && (
               <span className="text-red-500">{errors.FNAME}</span>
             )}
           </div>
-
           <div className="mb-4">
-            {/* <label
-              htmlFor="phone"
-              className="block mb-1 sm:mb-2 text-sm text-gray-600"
-            >
-              Ingresá tu Numero de telefono
-            </label> */}
             <div className="flex max-h-[54px] cursor-pointer">
               <Select
-
                 options={countries.map((country) => ({
                   value: [country.code, country.name],
                   label: (
@@ -235,19 +229,17 @@ const Registro = ({ actualizarEstado }) => {
                     };
 
                     if (!selectedCountry) {
-                      // Agregar estilo de fondo de imagen si no hay país seleccionado
-                      controlStyles.backgroundImage = `url(${country})`; // Reemplaza con la ruta de tu imagen de marcador de posición
+                      controlStyles.backgroundImage = `url(${country})`;
                       controlStyles.backgroundSize = "25px 25px";
                       controlStyles.backgroundPosition = "5px center";
                       controlStyles.backgroundRepeat = "no-repeat";
-                      controlStyles.paddingLeft = "40px"; // Ajusta el espacio para la imagen
-                    } 
+                      controlStyles.paddingLeft = "40px";
+                    }
 
                     return controlStyles;
                   },
                 }}
               />
-
               <input
                 type="text"
                 id="PHONE"
@@ -263,18 +255,16 @@ const Registro = ({ actualizarEstado }) => {
                   backgroundPosition: "5px center",
                   backgroundRepeat: "no-repeat",
                 }}
-                autocomplete="tel"
+                autoComplete="tel"
               />
             </div>
             {formSubmitted && errors.PHONE && (
               <span className="text-red-500">{errors.PHONE}</span>
             )}
           </div>
-
-
           <div className="mb-4">
             <input
-              type="Email"
+              type="email"
               id="EMAIL"
               name="EMAIL"
               value={registro.EMAIL}
@@ -288,7 +278,7 @@ const Registro = ({ actualizarEstado }) => {
                 backgroundPosition: "5px center",
                 backgroundRepeat: "no-repeat",
               }}
-              autocomplete="email"
+              autoComplete="email"
             />
             {formSubmitted && errors.EMAIL && (
               <span className="text-red-500">{errors.EMAIL}</span>
@@ -303,13 +293,11 @@ const Registro = ({ actualizarEstado }) => {
               />
             ) : (
               <button
-              type="submit"
-              onClick={handleSubmit}
-              className="w-4/5 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
-            >
-              VER EL MÉTODO AHORA
-
-            </button>
+                type="submit"
+                className="w-4/5 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
+              >
+                VER EL MÉTODO AHORA
+              </button>
             )}
           </div>
         </form>
@@ -323,6 +311,3 @@ const Registro = ({ actualizarEstado }) => {
 };
 
 export default Registro;
-
-// className="w-32 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white py-2 rounded-lg mx-auto block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 mb-2"
- 

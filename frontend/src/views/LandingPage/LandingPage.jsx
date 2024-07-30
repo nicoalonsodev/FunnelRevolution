@@ -3,6 +3,7 @@ import TitleAndVideo from "../../components/TitleAndVideo/TitleAndVideo";
 import background3 from "../../assets/background3.png";
 import logo from "../../assets/logo/logo_blanco-re.png";
 import Footer from "../../components/Footer/Footer";
+import MailchimpForm from "../../components/MailchimpForm/MailchimpForm";
 const LandingPage = () => {
   const background3Style = {
     backgroundImage: `url(${background3})`,
@@ -24,6 +25,7 @@ const LandingPage = () => {
         <TitleAndVideo />
         </div>
       </div>
+      <MailchimpForm />
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600 ">
         <Footer />
       </div>
