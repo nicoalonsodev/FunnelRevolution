@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import video from "../../assets/video.mp4";
 import Registro from "../Registro/Registro";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 
-const Video = () => { 
+const Video = () => {
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -15,12 +14,22 @@ const Video = () => {
   const isRegistered =
     new URLSearchParams(location.search).get("registered") === "true"; // Convertir el parámetro a boolean
 
+  const videoId = '1p-JMz6-w8hHHb8wOtfOiZX9tZu_pB3Hd';
+  const videoUrl = `https://drive.google.com/file/d/${videoId}/preview`;
+
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.muted = !isRegistered; // Mute o no dependiendo de si está registrado
-      videoRef.current.play().catch((error) => {
-        console.error("Error al reproducir el video:", error);
-      });
+      const command = isRegistered ? 'unMute' : 'mute';
+      videoRef.current.contentWindow.postMessage(
+        JSON.stringify({ event: 'command', func: command, args: [] }),
+        '*'
+      );
+      setTimeout(() => {
+        videoRef.current.contentWindow.postMessage(
+          JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
+          '*'
+        );
+      }, 3000); // Retrasar la reproducción del video por 3 segundos
     }
   }, [isRegistered]);
 
@@ -29,19 +38,18 @@ const Video = () => {
     if (estado && !formSubmitted) {
       setFormSubmitted(true);
       if (videoRef.current) {
-        videoRef.current.currentTime = 0;
-        videoRef.current.muted = false;
-        videoRef.current.play().catch((error) => {
-          console.error("Error al reproducir el video:", error);
-        });
+        videoRef.current.contentWindow.postMessage(
+          JSON.stringify({ event: 'command', func: 'unMute', args: [] }),
+          '*'
+        );
+        setTimeout(() => {
+          videoRef.current.contentWindow.postMessage(
+            JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
+            '*'
+          );
+        }, 3000); // Retrasar la reproducción del video por 3 segundos
         setShowOverlay(false);
       }
-    }
-  };
-
-  const handleTimeUpdate = () => {
-    if (videoRef.current && videoRef.current.currentTime >= 30 && !showButton) {
-      setShowButton(true);
     }
   };
 
@@ -51,34 +59,46 @@ const Video = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center pb-4  relative px-2">
-      <div className="w-full lg:w-1/2 flex justify-center px-3 lg:px-6 py-4 bg-[#57575787] rounded-2xl mb-4 border-[#57575787] border-[2px] relative">
-        <video
+    <div className="w-full h-full flex flex-col items-center justify-center pb-4 px-2">
+      <div className="w-full h-full lg:w-2/3 flex flex-col items-center px-3 lg:px-6 py-4 bg-gray-800 rounded-2xl mb-4 border-gray-800 border-2 relative">
+        <iframe
           ref={videoRef}
-          className="h-auto w-full"
-          controls
-          playsInline
-          autoPlay
-          onTimeUpdate={handleTimeUpdate}
-          onClick={() => actualizarEstadoPadre(true)}
-        >
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          className="h-full w-full rounded-lg shadow-lg"
+          src={videoUrl}
+          allow="autoplay"
+          frameBorder="0"
+          title="Google Drive Video"
+          allowFullScreen
+          onLoad={() => {
+            const command = isRegistered ? 'unMute' : 'mute';
+            videoRef.current.contentWindow.postMessage(
+              JSON.stringify({ event: 'command', func: command, args: [] }),
+              '*'
+            );
+            setTimeout(() => {
+              videoRef.current.contentWindow.postMessage(
+                JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
+                '*'
+              );
+            }, 3000); // Retrasar la reproducción del video por 3 segundos
+          }}
+        ></iframe>
         {showOverlay && !isRegistered && (
           <div
             className="absolute inset-0 flex items-center justify-center"
             onClick={handleOverlayClick}
           >
-            <div className="bg-yellow-500 border-[2px] border-gray-100 bg-opacity-75 p-2 lg:p-4 rounded-lg flex flex-col items-center justify-center text-white text-center cursor-pointer">
-              <img src={gif} alt="Click to unmute" className="w-8 lg:w-16 h-8 lg:h-16 mb-2 lg:mb-4" />
-              <p className="text-md lg:text-xl font-bold">Tu video ya ha comenzado</p>
-              <p className="text-sm lg:text-lg">Haga clic para escuchar</p>
+            <div className="bg-yellow-500 border-2 border-gray-100 bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center text-white text-center cursor-pointer">
+              <img src={gif} alt="Click to unmute" className="w-16 h-16 mb-4" />
+              <p className="text-xl font-bold">Tu video ya ha comenzado</p>
+              <p className="text-lg">Haga clic para escuchar</p>
             </div>
           </div>
         )}
       </div>
-      <div className="w-full">{showButton && <AnimatedButton />}</div>
+      <div className="w-full flex justify-center">
+        {showButton && <AnimatedButton />}
+      </div>
       {showForm && (
         <>
           <div
