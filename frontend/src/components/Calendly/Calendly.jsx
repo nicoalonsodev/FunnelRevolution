@@ -17,7 +17,7 @@ const Calendly = () => {
   return (
     <div
       className="calendly-inline-widget h-[1266px] lg:h-[766px]"
-      data-url="https://calendly.com/acasillas-xpazul/30min?month=2024-05"
+      data-url="https://calendly.com/ignacio-alonso-info/llamada-de-iniciacion?month=2024-08"
       style={{ minWidth: "320px" }}
     ></div>
   );
