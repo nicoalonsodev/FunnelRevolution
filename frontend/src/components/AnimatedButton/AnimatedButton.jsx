@@ -5,7 +5,6 @@ const AnimatedButton = () => {
   return (
     <a
       href="https://www.revolutionoficial.com/calendly"
-      target="_blank"
       rel="noopener noreferrer"
       className="w-full lg:w-2/4 animated-button text-xl border-[2px] border-[#dc9c35]"
     >

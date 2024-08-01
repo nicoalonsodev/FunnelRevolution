@@ -1,6 +1,7 @@
 import React from "react";
 import VideoPreview from "../Video/VideoPreview";
 import Video from "../Video/Video";
+import VideoWistia from "../Video/VideoWistia";
 const TitleAndVideo = ({ video }) => {
   return (
     <div className="flex flex-wrap justify-center items-start text-center space-y-4">
@@ -32,7 +33,7 @@ const TitleAndVideo = ({ video }) => {
 
       </p>
       <div className="flex justify-center w-full">
-        {video ? <Video /> : <VideoPreview />}
+        {video ? <VideoWistia /> : <VideoPreview />}
       </div>
     </div>
   );

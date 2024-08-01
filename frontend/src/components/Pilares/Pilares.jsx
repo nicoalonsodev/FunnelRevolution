@@ -5,10 +5,12 @@ import version1 from "../../assets/imagenes/Version-1.png";
 const Pilares = () => {
   return (
     <div className="flex flex-wrap justify-center">
-      <div className="flex flex-wrap justify-center items-center  space-y-16 py-10">
+      <div className="flex flex-wrap justify-center items-center space-y-8 py-10">
         <div className="w-full flex flex-wrap justify-center items-center  space-y-6">
           <h1 className="text-3xl lg:text-5xl lato-bold text-gray-100 text-center">
-            ¿Cómo llegó Cristian Diaz a (x dólares) al mes siendo de Argentina?
+            De: Cristian y Marcelo Diaz..
+            <br />
+            ¿Cómo llegamos a (x dólares) al mes siendo de Argentina?
           </h1>
           <p className="text-gray-300 text-xl text-center poppins-regular">
             Estos son mis 3 pilares fundamentales
@@ -63,9 +65,7 @@ const Pilares = () => {
           <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
             <img
               className="w-full object-cover object-center"
-              src={
-               version1
-              }
+              src={version1}
               alt=""
             />
           </div>
@@ -76,9 +76,7 @@ const Pilares = () => {
           <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-center overflow-hidden rounded-lg mb-2 lg:mb-0">
             <img
               className="w-full object-cover object-center"
-              src={
-               lambo
-              }
+              src={lambo}
               alt=""
             />
           </div>
@@ -132,9 +130,7 @@ const Pilares = () => {
             <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
               <img
                 className="w-full object-cover object-center"
-                src={
-                 marketing
-                }
+                src={marketing}
                 alt=""
               />
             </div>
@@ -182,9 +178,7 @@ const Pilares = () => {
           <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
             <img
               className="w-full object-cover object-center"
-              src={
-                marketing
-              }
+              src={marketing}
               alt=""
             />
           </div>

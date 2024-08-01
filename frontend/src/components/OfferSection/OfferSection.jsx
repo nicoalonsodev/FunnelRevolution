@@ -14,7 +14,7 @@ const OfferSection = () => {
         <p className="text-2xl line-through text-gray-400">
           Normalmente: $1,200 USD
         </p>
-        <p className="text-5xl font-bold text-white mt-4">SOLO HOY: GARTIS</p>
+        <p className="text-5xl font-bold text-white mt-4">SOLO HOY: GRATIS</p>
         <p className="text-sm text-gray-400 poppins-regular text-balance">
           (Sólo tienes que depositar $300 USD en tu cuenta de trading)
         </p>

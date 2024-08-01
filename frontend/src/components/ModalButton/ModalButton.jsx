@@ -24,8 +24,7 @@ const ModalButton = () => {
 
   return (
       <a
-        href="https://www.instagram.com"
-        target="_blank"
+            href="https://www.revolutionoficial.com/calendly"
         rel="noopener noreferrer"
         className={`fixed-button w-full lg:w-full animated-button text-xl border-[2px] border-[#dc9c35] ${
           showButton ? "show" : ""
