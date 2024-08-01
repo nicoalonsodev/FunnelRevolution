@@ -1,5 +1,7 @@
 import React from "react";
 import result from "../../assets/imagenes/result.jpeg";
+import result2 from "../../assets/imagenes/result2.jpeg";
+
 const MissionAndResult = () => {
   return (
     <div className="text-gray-100 py-10 px-0 lg:px-64 poppins-regular">
@@ -50,7 +52,7 @@ const MissionAndResult = () => {
 
         <div className="flex justify-center mb-6">
           <img
-            src={result}
+            src={result2}
             alt="Resultados"
             className="w-2/3 lg:w-full max-w-md"
           />
