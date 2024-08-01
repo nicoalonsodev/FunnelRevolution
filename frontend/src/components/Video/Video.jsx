@@ -3,7 +3,7 @@ import Registro from "../Registro/Registro";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
-
+import "./Video.css";
 const Video = () => {
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -11,10 +11,9 @@ const Video = () => {
   const [showOverlay, setShowOverlay] = useState(true);
   const location = useLocation();
   const videoRef = useRef(null);
-  const isRegistered =
-    new URLSearchParams(location.search).get("registered") === "true"; // Convertir el parámetro a boolean
+  const isRegistered = new URLSearchParams(location.search).get("registered") === "true"; // Convertir el parámetro a boolean
 
-  const videoId = '1p-JMz6-w8hHHb8wOtfOiZX9tZu_pB3Hd';
+  const videoId = '1GX5Fm7AJ0wiyNxtDS_ZpxIWEZ26u4biS';
   const videoUrl = `https://drive.google.com/file/d/${videoId}/preview`;
 
   useEffect(() => {
@@ -24,12 +23,10 @@ const Video = () => {
         JSON.stringify({ event: 'command', func: command, args: [] }),
         '*'
       );
-      setTimeout(() => {
-        videoRef.current.contentWindow.postMessage(
-          JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-          '*'
-        );
-      }, 3000); // Retrasar la reproducción del video por 3 segundos
+      videoRef.current.contentWindow.postMessage(
+        JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
+        '*'
+      );
     }
   }, [isRegistered]);
 
@@ -42,12 +39,10 @@ const Video = () => {
           JSON.stringify({ event: 'command', func: 'unMute', args: [] }),
           '*'
         );
-        setTimeout(() => {
-          videoRef.current.contentWindow.postMessage(
-            JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-            '*'
-          );
-        }, 3000); // Retrasar la reproducción del video por 3 segundos
+        videoRef.current.contentWindow.postMessage(
+          JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
+          '*'
+        );
         setShowOverlay(false);
       }
     }
@@ -60,29 +55,29 @@ const Video = () => {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center pb-4 px-2">
-      <div className="w-full h-full lg:w-2/3 flex flex-col items-center px-3 lg:px-6 py-4 bg-gray-800 rounded-2xl mb-4 border-gray-800 border-2 relative">
-        <iframe
-          ref={videoRef}
-          className="h-full w-full rounded-lg shadow-lg"
-          src={videoUrl}
-          allow="autoplay"
-          frameBorder="0"
-          title="Google Drive Video"
-          allowFullScreen
-          onLoad={() => {
-            const command = isRegistered ? 'unMute' : 'mute';
-            videoRef.current.contentWindow.postMessage(
-              JSON.stringify({ event: 'command', func: command, args: [] }),
-              '*'
-            );
-            setTimeout(() => {
+      <div className="w-full lg:w-2/3 h-full flex flex-col items-center px-3 lg:px-6 py-4 bg-gray-800 rounded-2xl mb-4 border-gray-800 border-2 relative">
+        <div className="aspect-w-16 aspect-h-9 w-full">
+          <iframe
+            ref={videoRef}
+            className="w-full h-full rounded-lg shadow-lg"
+            src={videoUrl}
+            allow="autoplay"
+            frameBorder="0"
+            title="Google Drive Video"
+            allowFullScreen
+            onLoad={() => {
+              const command = isRegistered ? 'unMute' : 'mute';
+              videoRef.current.contentWindow.postMessage(
+                JSON.stringify({ event: 'command', func: command, args: [] }),
+                '*'
+              );
               videoRef.current.contentWindow.postMessage(
                 JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
                 '*'
               );
-            }, 3000); // Retrasar la reproducción del video por 3 segundos
-          }}
-        ></iframe>
+            }}
+          ></iframe>
+        </div>
         {showOverlay && !isRegistered && (
           <div
             className="absolute inset-0 flex items-center justify-center"

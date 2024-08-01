@@ -1,7 +1,10 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import CallToAction from "../CallToAction/CallToAction";
-
+import rev from "../../assets/imagenes/rev2.jpeg";
+import dubai from "../../assets/imagenes/Dunai-imagen.png";
+import mapa from "../../assets/imagenes/Mapa-icon.png";
+import rev3 from "../../assets/imagenes/rev3.jpeg"
 const Gifts = () => {
   return (
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
@@ -21,7 +24,7 @@ const Gifts = () => {
                 <img
                   className="w-1/2 object-cover object-center "
                   src={
-                    "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
+                    rev
                   }
                   alt="Nichos Rentables"
                 />
@@ -51,7 +54,7 @@ const Gifts = () => {
               <img
                 className="w-2/4 object-cover object-center"
                 src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
+                  rev
                 }
                 alt="Vehículo AMG"
               />
@@ -64,7 +67,7 @@ const Gifts = () => {
               <img
                 className="w-full object-cover object-center"
                 src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/aa/f0beddefad40a39ffc5f0ef2342089/Viaje-a-Dubai.png"
+                  dubai
                 }
                 alt="Vehículo AMG"
               />
@@ -95,7 +98,7 @@ const Gifts = () => {
                 <img
                   className="w-1/2 object-cover object-center"
                   src={
-                    "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
+                   mapa
                   }
                   alt="Vehículo AMG"
                 />
@@ -123,7 +126,7 @@ const Gifts = () => {
               <img
                 className="w-2/4 object-cover object-center"
                 src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/d1/aa8d613145401093366af7145a639b/Secretos-400k.png"
+                 mapa
                 }
                 alt="Vehículo AMG"
               />
@@ -135,7 +138,7 @@ const Gifts = () => {
               <img
                 className="w-full object-cover object-center"
                 src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/aa/f0beddefad40a39ffc5f0ef2342089/Viaje-a-Dubai.png"
+                 rev3
                 }
                 alt="Vehículo AMG"
               />

@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../../assets/logo/logo_blanco-re.png";
+import money from "../../assets/imagenes/Version-2.png"
+import negocio from "../../assets/imagenes/Negocio-online.png";
+import cohete from "../../assets/imagenes/Cohete-icon.png";
 
 const PresentProgram = () => {
   return (
@@ -44,14 +47,14 @@ const PresentProgram = () => {
               price: "$1.200 USD anual.",
               module: "Carrera de Trading:",
               image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+                money,
             },
             {
               title: "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
               module: "Carrera de Afiliado:",
               price: "$600 USD anual.",
               image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+                negocio,
             },
             {
               title:
@@ -59,7 +62,7 @@ const PresentProgram = () => {
               module: "Servicio de marketing profesional:",
               price: "$12.000 USD anual.",
               image:
-                "https://www.agenciadeinfoproductos.com/hosted/images/10/a16e07dbd44e049deeb8c40363c175/4.png",
+                cohete,
             },
             // {
             //   title: "Cómo conseguir tu PRIMER CLIENTE en una semana",
@@ -98,7 +101,7 @@ const PresentProgram = () => {
                 <img
                   src={item.image}
                   alt={item.module}
-                  className="object-cover w-full h-full rounded-lg shadow-md"
+                  className="object-cover w-full lg:w-2/3 h-full rounded-lg shadow-md "
                 />
               </div>
             </div>

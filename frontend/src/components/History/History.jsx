@@ -1,5 +1,8 @@
 import React from "react";
-
+import img1 from "../../assets/raul_crisorio/raul1.jpeg";
+import img2 from "../../assets/raul_crisorio/raul2.jpeg";
+import img3 from "../../assets/raul_crisorio/raul3.jpeg";
+import img4 from "../../assets/raul_crisorio/raul4.jpeg";
 const History = () => {
   return (
     <div className="flex flex-wrap justify-center bg-gray-50">
@@ -19,13 +22,13 @@ const History = () => {
             <div className="w-full lg:hidden flex justify-center items-start overflow-hidden ">
               <img
                 className="w-2/3 object-cover object-center rounded-lg"
-                src="https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
+                src={img4}
                 alt=""
               />
             </div>
             <div className="w-full">
               <p className="text-md font-bold text-gray-800">
-                De: Agustín Nievas
+                De: Raúl Crisorio
               </p>
               <p className="text-md text-gray-800">
                 Ubicación: Córdoba, Argentina
@@ -59,7 +62,7 @@ const History = () => {
           <div className="w-full lg:w-[40%] hidden lg:flex justify-end items-start overflow-hidden rounded-lg">
             <img
               className="w-full object-cover object-center"
-              src="https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
+              src={img4}
               alt=""
             />
           </div>
@@ -69,9 +72,7 @@ const History = () => {
           <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-start overflow-hidden rounded-lg">
             <img
               className="w-2/3 lg:w-full object-cover object-center rounded-lg"
-              src={
-                "https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
-              }
+              src={img3}
               alt=""
             />
           </div>
@@ -110,7 +111,7 @@ const History = () => {
             <div className="w-full lg:hidden flex justify-center items-start overflow-hidden ">
               <img
                 className="w-2/3 object-cover object-center rounded-lg"
-                src="https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
+                src={img1}
                 alt=""
               />
             </div>
@@ -144,7 +145,7 @@ const History = () => {
             <img
               className="w-full object-cover object-center"
               src={
-                "https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
+               img1
               }
               alt=""
             />

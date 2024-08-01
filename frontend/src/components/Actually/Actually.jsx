@@ -1,5 +1,5 @@
 import React from "react";
-
+import img2 from "../../assets/raul_crisorio/raul2.jpeg";
 const Actually = () => {
   return (
     <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 py-4 ">
@@ -52,7 +52,7 @@ const Actually = () => {
           <div className="w-full lg:w-[46%]">
             <img
               className="w-full rounded-lg  object-cover"
-              src="https://www.agenciadeinfoproductos.com/hosted/images/13/d109d8e427462080f289ac1f7f89f4/Captura-de-pantalla-2024-05-10-102526.png"
+              src={img2}
               alt="Profile"
             />{" "}
           </div>

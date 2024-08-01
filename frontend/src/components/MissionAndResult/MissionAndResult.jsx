@@ -1,5 +1,5 @@
 import React from "react";
-
+import result from "../../assets/imagenes/result.jpeg";
 const MissionAndResult = () => {
   return (
     <div className="text-gray-100 py-10 px-0 lg:px-64 poppins-regular">
@@ -11,7 +11,7 @@ const MissionAndResult = () => {
         Ahora, mi misión en Revolution es crear la comunidad más grande de millonarios en todo latinoamérica brindando las herramientas, el acompañamiento y el espacio para que cuenten con el entorno correcto.
         </p>
         <p className="mb-6">
-        Comenzamos en 2022 y en todo este camino ya pudimos lograr casos de éxito de $1000 usd al mes - $5000 e inlcuso $10000 - $50.000 y hasta $100.000 mensuales con algunos líderes.
+        Comenzamos en 2022 y en todo este camino ya pudimos lograr casos de éxito de $1000 USD al mes - $5000 USD e inlcuso $10000 USD - $50.000 USD y hasta $100.000 USD mensuales con algunos líderes.
         </p>
         <p className="mb-6">
         También contamos con oficinas en Buenos Aires y eventos presenciales en distintos lugares del mundo.
@@ -39,27 +39,18 @@ const MissionAndResult = () => {
         <p className="mb-6">
         Para que veas que no soy solo palabras, quiero mostrarte algunos de los resultados que nuestros alumnos han tenido gracias a Revolution en donde te muestro como montar tu propio negocio online con este nuevo método.
         </p>
-        <p className="mb-6">
-        En el video podemos ver a 
-          <span className="text-[#F59800] font-bold">(nombre)</span> haciendo x dólares con el método Revolution
-          capturas de su negocio y operaciones en trading:
-        </p>
+       
         <div className="flex justify-center mb-6">
           <img
-            src="https://www.agenciadeinfoproductos.com/hosted/images/2f/4f25837d8d4eb89d772390a0b6a999/Captura-de-pantalla-2024-05-08-154432.png"
+            src={result}
             alt="Resultados"
             className="w-2/3 lg:w-full max-w-md"
           />
         </div>
-        <p className="mb-6">
-        O como el caso de{" "}
-          <span className="text-[#F59800] font-bold">Facundo Martinez</span> haciendo x dólares con el método Revolution
-          capturas de su negocio y operaciones en trading:
 
-        </p>
         <div className="flex justify-center mb-6">
           <img
-            src="https://www.agenciadeinfoproductos.com/hosted/images/da/3fa41f56f74646ab1263f0a3e9172e/Captura-de-pantalla-2024-05-08-154848.png"
+            src={result}
             alt="Resultados"
             className="w-2/3 lg:w-full max-w-md"
           />

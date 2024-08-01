@@ -1,5 +1,7 @@
 import React from "react";
-
+import lambo from "../../assets/imagenes/lambo.png";
+import marketing from "../../assets/imagenes/Marketing-icon.png";
+import version1 from "../../assets/imagenes/Version-1.png";
 const Pilares = () => {
   return (
     <div className="flex flex-wrap justify-center">
@@ -24,41 +26,29 @@ const Pilares = () => {
             <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
               <img
                 className="w-full object-cover object-center"
-                src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
-                }
+                src={version1}
                 alt=""
               />
             </div>
             <div className="w-full mt-4">
               <p className="poppins-regular text-lg text-[#F59800]">
-                N° 1 | El vehículo adecuado
+                N° 1 | La Habilidad Adecuada
               </p>
             </div>
             <div className="w-full mt-4">
-              <p className="poppins-semibold text-4xl text-gray-100">
-                Academia de Trading
+              <p className="poppins-semibold text-4xl text-gray-100">Trading</p>
+            </div>
+            <div className="w-full mt-4">
+              <p className="poppins-regular text-lg text-gray-200">
+                Necesitas concentrar todos tus esfuerzos en una habilidad que
+                puedas aprovechar y que genere buenos resultados
               </p>
             </div>
             <div className="w-full mt-4">
               <p className="poppins-regular text-lg text-gray-200">
-                Necesitas concentrar todos tus esfuerzos en algo que puedas
-                aprovechar y que genere buenos resultados a tus clientes para
-                que estén satisfechos.
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-gray-200">
-                Así es como empezó Cristian Diaz, aprendiendo la habilidad del
-                trading en (x año) y luego de muchos altibajos comenzó a ser
-                rentable y vivir del trading.
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-gray-200">
-                Luego en (x año) fundó Revolution que empezó como una academia
-                de Trading con la misión de ayudar a otras personas a ser
-                rentable en el trading.
+                Así es como empezamos, aprendiendo la habilidad del trading en
+                (x año) y luego de muchos altibajos comenzamos a ser rentables y
+                vivir de ello.
               </p>
             </div>
             <div className="w-full mt-4">
@@ -66,7 +56,7 @@ const Pilares = () => {
                 Es por esto que hoy, después de (x años) somos la mejor academia
                 de trading de todo latinoamérica con más de (x alumnos) y
                 cientos de casos de éxito, lo que da muchísimo valor a la
-                organización.
+                organización
               </p>
             </div>
           </div>
@@ -74,7 +64,7 @@ const Pilares = () => {
             <img
               className="w-full object-cover object-center"
               src={
-                "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+               version1
               }
               alt=""
             />
@@ -87,7 +77,7 @@ const Pilares = () => {
             <img
               className="w-full object-cover object-center"
               src={
-                "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+               lambo
               }
               alt=""
             />
@@ -143,7 +133,7 @@ const Pilares = () => {
               <img
                 className="w-full object-cover object-center"
                 src={
-                  "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+                 marketing
                 }
                 alt=""
               />
@@ -185,7 +175,7 @@ const Pilares = () => {
             </div>
             <div className="w-full mt-4">
               <p className="poppins-regular text-lg text-gray-200">
-              Ayuda a otros y recibe dinero a cambio del valor que compartes.
+                Ayuda a otros y recibe dinero a cambio del valor que compartes.
               </p>
             </div>
           </div>
@@ -193,7 +183,7 @@ const Pilares = () => {
             <img
               className="w-full object-cover object-center"
               src={
-                "https://www.agenciadeinfoproductos.com/hosted/images/80/12345fe7e54440a92fec2e17e53f08/Vehiculo-AMG.png"
+                marketing
               }
               alt=""
             />

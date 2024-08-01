@@ -31,7 +31,7 @@ const TitleAndVideo = ({ video }) => {
         Combinando 3 modelos altamente rentables: Trading, Marketing de Afiliados y Growth Partner.
 
       </p>
-      <div className="flex justify-center w-full md:h-[300px] lg:h-[400px]">
+      <div className="flex justify-center w-full">
         {video ? <Video /> : <VideoPreview />}
       </div>
     </div>
