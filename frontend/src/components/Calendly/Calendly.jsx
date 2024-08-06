@@ -9,8 +9,18 @@ const Calendly = () => {
     script.async = true;
     document.head.appendChild(script);
 
+    // Listener para el evento de Calendly
+    const handleEventScheduled = (e) => {
+      if (e.data.event === "calendly.event_scheduled") {
+        window.location.href = "https://revolutionoficial.com/gracias?registro=true";
+      }
+    };
+
+    window.addEventListener("message", handleEventScheduled);
+
     return () => {
       document.head.removeChild(script);
+      window.removeEventListener("message", handleEventScheduled);
     };
   }, []);
 

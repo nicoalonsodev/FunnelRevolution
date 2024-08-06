@@ -9,7 +9,7 @@ function App() {
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/vsl" component={LandingVsl} />
       <Route exact path="/calendly" component={CalendlyPage} />
-      <Route exact path="/thanks" component={ThanksPage} />
+      <Route exact path="/gracias" component={ThanksPage} />
     </div>
   );
 }
