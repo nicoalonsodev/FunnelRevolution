@@ -11,7 +11,7 @@ const VideoWistia = () => {
   const [showButton, setShowButton] = useState(false);
   const [showOverlay, setShowOverlay] = useState(true);
   const location = useLocation();
-  const isRegistered = new URLSearchParams(location.search).get("registered") === "true"; // Convertir el parámetro a boolean
+  const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
   const videoRef = useRef(null);
 
   const videoUrl = "https://fast.wistia.net/embed/iframe/1naankg6lg";
@@ -27,6 +27,14 @@ const VideoWistia = () => {
         JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
         '*'
       );
+
+      // Establecer showButton en true después de 30 segundos
+      const timer = setTimeout(() => {
+        setShowButton(true);
+      }, 30000); // 30000 ms = 30 segundos
+
+      // Limpieza del temporizador cuando el componente se desmonte o cambie el estado relevante
+      return () => clearTimeout(timer);
     }
   }, [isRegistered]);
 
