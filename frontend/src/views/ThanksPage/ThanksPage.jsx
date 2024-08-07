@@ -1,15 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import rev from "../../assets/imagenes/rev3.jpeg";
 import logo from "../../assets/logo/logo_blanco-re.png";
 
 const ThanksPage = () => {
   return (
-    <div
-      className="flex flex-wrap justify-center  py-4 bg-gray-900 "
-    >
-      <div className="w-screen h-14 lg:h-20  flex justify-center items-center border-b-[1px] border-yellow-600">
+    <div className="flex flex-wrap justify-center py-4 bg-gray-900">
+      <div className="w-screen h-14 lg:h-20 flex justify-center items-center border-b-[1px] border-yellow-600">
         <img className="w-14 lg:w-20" src={logo} alt="logo" />
       </div>
       <div className="flex flex-wrap justify-center items-center px-2 lg:px-32 py-10 space-y-3">
@@ -23,9 +20,12 @@ const ThanksPage = () => {
         <a className="poppins-regular text-gray-300">
           Conoce más sobre Revolution
         </a>
-        <img src={rev} alt="rev" />
+        <div className="wistia_responsive_padding" style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+          <div className="wistia_responsive_wrapper" style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
+            <iframe src="https://fast.wistia.com/embed/medias/ccdss25z35" title="Wistia Video" allow="autoplay; fullscreen" allowTransparency="true" style={{ height: '100%', position: 'relative', width: '100%' }}></iframe>
+          </div>
+        </div>
       </div>
-
       <Footer />
     </div>
   );
