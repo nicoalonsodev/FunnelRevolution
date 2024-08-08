@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
+import VideoWistiaThanks from "../../components/Video/VideoWistiaThanks";
 import logo from "../../assets/logo/logo_blanco-re.png";
 
 const ThanksPage = () => {
@@ -20,11 +20,9 @@ const ThanksPage = () => {
         <a className="poppins-regular text-gray-300">
           Conoce más sobre Revolution
         </a>
-        <div className="wistia_responsive_padding" style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-          <div className="wistia_responsive_wrapper" style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
-            <iframe src="https://fast.wistia.com/embed/medias/ccdss25z35" title="Wistia Video" allow="autoplay; fullscreen" allowTransparency="true" style={{ height: '100%', position: 'relative', width: '100%' }}></iframe>
-          </div>
-        </div>
+        
+         <VideoWistiaThanks />
+
       </div>
       <Footer />
     </div>
