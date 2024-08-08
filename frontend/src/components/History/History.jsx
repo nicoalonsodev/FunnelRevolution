@@ -1,155 +1,99 @@
 import React from "react";
-import img1 from "../../assets/raul_crisorio/raul1.jpeg";
-import img2 from "../../assets/raul_crisorio/raul2.jpeg";
-import img3 from "../../assets/raul_crisorio/raul3.jpeg";
-import img4 from "../../assets/raul_crisorio/raul4.jpeg";
-const History = () => {
+
+const History = ({ historyData, historyImages, historyPart1, historyPart2, historyPart3,  }) => {
+
+  console.log(historyData);
+  console.log(historyImages);
+  
+
   return (
     <div className="flex flex-wrap justify-center bg-gray-50">
       <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 space-y-16 py-10">
-        <div className="w-full flex flex-wrap justify-center items-center  space-y-6">
+        <div className="w-full flex flex-wrap justify-center items-center space-y-6">
           <h1 className="text-3xl lg:text-5xl lato-bold text-[#1D1D1B] text-center">
-          HISTORIA DE <span className="text-[#F59800] font-bold">ÉXITO</span>  EN REVOLUTION
+          HISTORIA DE ÉXITO EN REVOLUTION
           </h1>
-          <div className="w-full flex justify-center ">
+          <div className="w-full flex justify-center">
             <div className="w-3/5">
-              <hr className=" border-[1.5px] border-[#F59800]" />
+              <hr className="border-[1.5px] border-[#F59800]" />
             </div>
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
-            <div className="w-full lg:hidden flex justify-center items-start overflow-hidden ">
-              <img
-                className="w-2/3 object-cover object-center rounded-lg"
-                src={img4}
-                alt=""
-              />
+            <div className="w-full lg:hidden flex justify-center items-start overflow-hidden">
+              <img className="w-2/3 object-cover object-center rounded-lg" src={historyImages ? historyImages[0] : ""} alt="" />
             </div>
             <div className="w-full">
-              <p className="text-md font-bold text-gray-800">
-                De: Raúl Crisorio
-              </p>
-              <p className="text-md text-gray-800">
-                Ubicación: Córdoba, Argentina
-              </p>
-              <p className="text-md text-gray-800">2021–2022</p>
+              <p className="text-md font-bold text-gray-800">De: {historyData ? historyData[0] : ""}</p>
+              <p className="text-md text-gray-800">Ubicación: {historyData ? historyData[1] : ""}</p>
+              <p className="text-md text-gray-800">{historyData ? historyData[2] : ""}</p>
             </div>
-            <div className="w-full flex justify-start ">
+            <div className="w-full flex justify-start">
               <div className="w-3/5">
-                <hr className=" border-[1.5px] border-[#F59800]" />
+                <hr className="border-[1.5px] border-[#F59800]" />
               </div>
             </div>
             <div className="w-full mt-4">
-              <p className="text-md lg:text-lg poppins-regular text-gray-700">
-                Tengo una meta clara para ti que estás leyendo esto:
-              </p>
+              <p className="text-md lg:text-lg poppins-regular text-gray-700">Tengo una meta clara para ti que estás leyendo esto:</p>
             </div>
             <div className="w-full mt-2">
-              <p className="text-xl poppins-semibold text-black">
-                Hacer de ti el próximo millonario de latinoamérica con este
-                nuevo modelo de negocio.
-              </p>
+              <p className="text-xl poppins-semibold text-black">Hacer de ti el próximo millonario de latinoamérica con este nuevo modelo de negocio.</p>
             </div>
             <div className="w-full mt-4">
-              <p className="poppins-regular text-gray-700">
-                Si esto capta tu atención, te sugiero que leas cada palabra de
-                esta página, porque será lo más importante que leas en todo el
-                año.
-              </p>
+              <p className="poppins-regular text-gray-700">Si esto capta tu atención, te sugiero que leas cada palabra de esta página, porque será lo más importante que leas en todo el año.</p>
             </div>
           </div>
           <div className="w-full lg:w-[40%] hidden lg:flex justify-end items-start overflow-hidden rounded-lg">
-            <img
-              className="w-full object-cover object-center"
-              src={img4}
-              alt=""
-            />
+            <img className="w-full object-cover object-center" src={historyImages ? historyImages[0] : ""} alt="" />
           </div>
         </div>
 
+        {/* Parte 1 */}
         <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-start overflow-hidden rounded-lg">
-            <img
-              className="w-2/3 lg:w-full object-cover object-center rounded-lg"
-              src={img3}
-              alt=""
-            />
+            <img className="w-2/3 lg:w-full object-cover object-center rounded-lg" src={historyImages ? historyImages[1] : ""} alt="" />
           </div>
           <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Todo empezó cuando yo tenía (x años) y{" "}
-                <span className="poppins-semibold">
-                  salía y tomaba todos los días.
-                </span>
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Estaba perdido, tomaba y fumaba casi todos los días, hasta que
-                un día…
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Me encontré con la oportunidad de Revolution en redes sociales,
-                decidí ingresar a una presentación porque tenía mucha curiosidad
-                y estaba harto de mi situación
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Luego de la presentación tome acción y comencé en Revolution el
-                03/06/2023
-              </p>
-            </div>
+            {historyPart1?.map((text, index) => (
+              <div className="w-full mt-4" key={index}>
+                <p className="poppins-regular text-md text-gray-700">{text}</p>
+              </div>
+            ))}
           </div>
         </div>
+
+        {/* Parte 2 */}
         <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
-            <div className="w-full lg:hidden flex justify-center items-start overflow-hidden ">
-              <img
-                className="w-2/3 object-cover object-center rounded-lg"
-                src={img1}
-                alt=""
-              />
+            <div className="w-full lg:hidden flex justify-center items-start overflow-hidden">
+              <img className="w-2/3 object-cover object-center rounded-lg" src={historyImages ? historyImages[2] : ""} alt="" />
             </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Mientras estuve allí, aprendí muchísimo, hice amigos que estaban
-                en la misma que yo y conocí personas que tenían libertad
-                financiera
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Ganaban dinero con trading y por venta de afiliados todos los
-                días, vivían en las mejores zonas de Argentina y se compraban
-                ropa en las tiendas más caras, como si nada…
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Y todo esto mientras yo era el único que no tenía dinero en el
-                bolsillo.
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-md lg:text-lg text-gray-700">
-                Pero cambió mi perspectiva sobre cómo veía la vida.
-              </p>
-            </div>
+            {historyPart2?.map((text, index) => (
+              <div className="w-full mt-4" key={index}>
+                <p className="poppins-regular text-md  text-gray-700">{text}</p>
+              </div>
+            ))}
           </div>
-          <div className="w-full  lg:w-[40%] hidden lg:flex items-start overflow-hidden rounded-lg">
-            <img
-              className="w-full object-cover object-center"
-              src={
-               img1
-              }
-              alt=""
-            />
+          <div className="w-full lg:w-[40%] hidden lg:flex items-start overflow-hidden rounded-lg">
+            <img className="w-full object-cover object-center" src={historyImages ? historyImages[2] : ""} alt="" />
           </div>
+        </div>
+
+        {/* Parte 3 */}
+        <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">
+        <div className="w-full lg:w-[40%] hidden lg:flex items-start overflow-hidden rounded-lg">
+            <img className="w-full object-cover object-center" src={historyImages ? historyImages[3] : ""} alt="" />
+          </div>
+          <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
+            
+            {historyPart3?.map((text, index) => (
+              <div className="w-full mt-4" key={index}>
+                <p className="poppins-regular text-md  text-gray-700">{text}</p>
+              </div>
+            ))}
+          </div>
+
         </div>
       </div>
     </div>
