@@ -40,7 +40,14 @@ const LandingVslRaul = () => {
     "Es una locura, asumen que todo lo que les pasa es normal, y dejame de decirte, que eso NO es normal, tienes todas las capacidades para vivir la vida que vos elijas, no la que te toca.",
     "Solo tienes que tener huevos para tomar la decisión de hacerlo, y huevos para mantenerte.",
   ]
-
+const actually = [
+  "Gané más de $500.000, vivo en Buenos Aires y tengo amigos que comparten los mismos objetivos.",
+  "El dinero ya no es un problema.",
+  "Puedo cuidar de mí mismo, de mi familia, de mis amigos y, lo más importante…",
+  "Puedo aportarles a personas que son como yo.",
+  "Y ahora seguramente te estarás preguntando, ¿cómo es que este joven argentino creció tanto y tan rápido con Revolution?",
+ ` Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`,
+]
   const historyData = [
    "Raúl Crisorio",
     "Buenos Aires, Argentina",
@@ -62,7 +69,7 @@ const historyImages = [ img1, img2, img3, img4]
       </div>
       <div style={background2Style} className="py-2">
         <div className="px-2 lg:px-14 xl:px-[9rem] py-4">
-          <Actually />
+          <Actually historyPart3={historyPart3} actually={actually} img4={img4}/>
           <Pilares />
           <MissionAndResult />
         </div>

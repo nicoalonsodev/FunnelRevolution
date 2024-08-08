@@ -80,21 +80,7 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
           </div>
         </div>
 
-        {/* Parte 3 */}
-        <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">
-        <div className="w-full lg:w-[40%] hidden lg:flex items-start overflow-hidden rounded-lg">
-            <img className="w-full object-cover object-center" src={historyImages ? historyImages[3] : ""} alt="" />
-          </div>
-          <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
-            
-            {historyPart3?.map((text, index) => (
-              <div className="w-full mt-4" key={index}>
-                <p className="poppins-regular text-md  text-gray-700">{text}</p>
-              </div>
-            ))}
-          </div>
-
-        </div>
+       
       </div>
     </div>
   );
