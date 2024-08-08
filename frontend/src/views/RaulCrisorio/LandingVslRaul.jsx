@@ -25,9 +25,9 @@ const LandingVslRaul = () => {
     backgroundRepeat: "no-repeat",
   };
   const historyPart1 =  [
-    "Todo empezó cuando yo tenía 25 años, apenas egresado de la facultad, con un trabajo estable y bien pagado para aquel entonces, pero sin embargo, me sentía completamente perdido. Todo mi sueldo se destinaba a gastos innecesarios, fiestas, alcohol y cosas que lo único que hacían era arruinar mi salud.",
-    "Si hay algo que me caracterizó siempre, son mis dos pasiones, dormir y comer bien. En Agosto del 2018, hay algo que capto mi atención fuertemente, una historia de una colega mía de la facultad que había posteado “Gané $4 dólares mientras dormía”, lo que captó mi atención no fueron los dólares, sino la palabra clave “mientras dormía…”. De inmediato me contacté con ella para saber como lo había hecho. Mis expectativas me decían que trabajaba para una empresa de colchones y ella los testeaba. Para mi sorpresa, era mucho mejor que eso.",
-    "Por primera vez, había visto un gráfico y había escuchado hablar sobre trading. Estuvimos como 3 horas conversando sobre el tema y salí de allí maravillado y super esperanzado. Sabía que tenía delante mío una gran oportunidad para cambiar mi vida y la de mi familia. Y así fue…",
+    "Todo empezó a los 25 años, recién egresado y con un trabajo estable, me sentía perdido. Mi sueldo se iba en gastos innecesarios, fiestas y alcohol, afectando mi salud",
+    "Mis dos pasiones siempre han sido dormir y comer bien. En agosto de 2018, una colega posteó 'Gané $4 mientras dormía', y me intrigó. La contacté esperando que trabajara en una empresa de colchones, pero era mucho mejor.",
+    "Vi un gráfico y oí hablar de trading por primera vez. Conversamos tres horas, salí maravillado y esperanzado, sabiendo que tenía una gran oportunidad para cambiar mi vida y la de mi familia. Y así fue.",
   ]
   const historyPart2 =  [
     "Fue un proceso largo desde el 2018 hasta hoy, pero no me arrepiento de absolutamente nada, logre conocer muchas personas, grandes mentores, conocí millonarios, gane sumas de dinero que nunca antes había conocido. Hoy en día conozco más de 20 países, puedo elegir el lugar en donde vivir y gozo de la libertad diaria de elegir que quiero hacer todos los días.",
