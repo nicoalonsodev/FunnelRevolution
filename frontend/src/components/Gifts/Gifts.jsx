@@ -5,7 +5,7 @@ import rev from "../../assets/imagenes/rev2.jpeg";
 import dubai from "../../assets/imagenes/Dunai-imagen.png";
 import mapa from "../../assets/imagenes/Mapa-icon.png";
 import rev3 from "../../assets/imagenes/rev3.jpeg"
-const Gifts = () => {
+const Gifts = ({calendlyPage}) => {
   return (
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
       <h1 className="text-2xl lg:text-4xl text-center font-bold mb-6 poppins-bold text-balance">
@@ -217,7 +217,7 @@ const Gifts = () => {
           
         </div>
       </div>
-      <CallToAction />
+      <CallToAction calendlyPageUrl={calendlyPage} />
     </div>
   );
 };

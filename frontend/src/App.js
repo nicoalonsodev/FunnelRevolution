@@ -5,6 +5,7 @@ import CalendlyPage from "./views/CalendlyPage/CalendlyPage";
 import ThanksPage from "./views/ThanksPage/ThanksPage";
 import LandingPageRaul from "./views/RaulCrisorio/LandingPageRaul";
 import LandingVslRaul from "./views/RaulCrisorio/LandingVslRaul";
+import CalendlyPageRaul from "./views/RaulCrisorio/CalendlyPageRaul";
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,11 @@ function App() {
       <Route exact path="/vsl" component={LandingVsl} />
       <Route exact path="/calendly" component={CalendlyPage} />
       <Route exact path="/gracias" component={ThanksPage} />
+      
       <Route exact path="/raul-crisorio/vsl" component={LandingVslRaul} />
+      <Route exact path="/raul-crisorio" component={LandingPageRaul} />
+      <Route exact path="/raul-crisorio/calendly" component={CalendlyPageRaul} />
+
     </div>
   );
 }

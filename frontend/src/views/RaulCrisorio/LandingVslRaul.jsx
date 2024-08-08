@@ -53,6 +53,8 @@ const actually = [
     "Buenos Aires, Argentina",
     "2021–2022",
   ]
+
+  const calendlyPage = "https://www.revolutionoficial.com/raul-crisorio/calendly";
 const historyImages = [ img1, img2, img3, img4]
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
@@ -61,7 +63,7 @@ const historyImages = [ img1, img2, img3, img4]
           <img className="w-14 lg:w-20" src={logo} alt="logo" />
         </div>
         <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
-          <TitleAndVideo video={"True"} />
+          <TitleAndVideo video={"True"} calendlyPage={calendlyPage}/>
         </div>
       </div>
       <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
@@ -74,13 +76,13 @@ const historyImages = [ img1, img2, img3, img4]
           <MissionAndResult />
         </div>
         <PresentProgram />
-        <Gifts />
-        <OfferSection />
+        <Gifts calendlyPage={calendlyPage} />
+        <OfferSection calendlyPageUrl={calendlyPage} />
       </div>
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
         <Footer />
       </div>
-      <ModalButton />
+      <ModalButton calendlyPage={calendlyPage} />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Calendly = () => {
+const Calendly = ({calendlyLink}) => {
   useEffect(() => {
     // Cargar el script de Calendly de forma asíncrona
     const script = document.createElement("script");
@@ -27,7 +27,7 @@ const Calendly = () => {
   return (
     <div
       className="calendly-inline-widget h-[1266px] lg:h-[766px]"
-      data-url="https://calendly.com/ignacio-alonso-info/llamada-de-iniciacion?month=2024-08"
+      data-url={calendlyLink}
       style={{ minWidth: "320px" }}
     ></div>
   );

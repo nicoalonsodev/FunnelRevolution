@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 
-const OfferSection = () => {
+const OfferSection = ({calendlyPageUrl}) => {
   return (
     <div className="text-gray-100 mt-10 text-center">
     
@@ -21,6 +21,7 @@ const OfferSection = () => {
       </div>
       <div className="mt-10 mx-2">
         <AnimatedButton
+        calendlyPage={calendlyPageUrl}
           text='Escríbeme "AMG" en Instagram'
           subtext="Y comienza a construir tu propia agencia de Infoproductos"
         />

@@ -1,10 +1,10 @@
 import React from "react";
 import "./AnimatedButton.css";
 
-const AnimatedButton = () => {
+const AnimatedButton = ({calendlyPage}) => {
   return (
     <a
-      href="https://www.revolutionoficial.com/calendly"
+      href={calendlyPage}
       rel="noopener noreferrer"
       className="w-full lg:w-2/4 animated-button text-xl border-[2px] border-[#dc9c35]"
     >

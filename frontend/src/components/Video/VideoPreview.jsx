@@ -3,7 +3,7 @@ import video from "../../assets/gif.mp4";
 import Registro from "../Registro/Registro";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 
-const VideoPreview = () => {
+const VideoPreview = ({urlPreview, googleSheets}) => {
   const [showForm, setShowform] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const videoRef = useRef(null);
@@ -60,7 +60,7 @@ const VideoPreview = () => {
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <Registro actualizarEstado={actualizarEstadoPadre} />
+              <Registro actualizarEstado={actualizarEstadoPadre} redirectUrl={urlPreview} googleSheetsUrl={googleSheets} />
             </div>
           </div>
         </>

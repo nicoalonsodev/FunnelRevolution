@@ -5,7 +5,7 @@ import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 import "./Video.css";
 
-const VideoWistia = () => {
+const VideoWistia = ({calendlyPageUrl}) => {
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -100,7 +100,7 @@ const VideoWistia = () => {
         )}
       </div>
       <div className="w-full flex justify-center">
-        {showButton && <AnimatedButton />}
+        {showButton && <AnimatedButton calendlyPage={calendlyPageUrl} />}
       </div>
       {showForm && (
         <>

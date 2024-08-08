@@ -10,7 +10,7 @@ import countries from "./countries";
 import { useHistory } from "react-router-dom";
 import "./Registro.css";
 
-const Registro = ({ actualizarEstado }) => {
+const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   const formRef = useRef(null);
   const history = useHistory();
   const [registro, setRegistro] = useState({
@@ -82,7 +82,7 @@ const Registro = ({ actualizarEstado }) => {
 
       try {
         await fetch(
-          "https://script.google.com/macros/s/AKfycbwxNtO_uUa8bFfC9D4VaFMwN9DpTADVjqPBhHbaq1Lq7fpTGpGjFFsdie23ennNABfv3Q/exec",
+          googleSheetsUrl,
           {
             method: "POST",
             body: formDatab,
@@ -111,7 +111,7 @@ const Registro = ({ actualizarEstado }) => {
         });
         setIsLoading(false);
         actualizarEstado(false);
-        history.push("/vsl?registered=true"); // Redirigir si es necesario
+              history.push(redirectUrl); // Redirigir si es necesario
       } catch (error) {
         console.log(error);
         setIsLoading(false);
