@@ -10,10 +10,10 @@ const Pilares = () => {
           <h1 className="text-3xl lg:text-5xl lato-bold text-gray-100 text-center">
             De: Cristian y Marcelo Diaz..
             <br />
-            ¿Cómo llegamos a (x dólares) al mes siendo de Argentina?
+            ¿Cómo llegamos a $500.000 dólares al mes siendo de Argentina?
           </h1>
           <p className="text-gray-300 text-xl text-center poppins-regular">
-            Estos son mis 3 pilares fundamentales
+            Estos son nuestros 3 pilares fundamentales
           </p>
           <div className="w-full flex justify-center ">
             <div className="w-3/5">
@@ -49,14 +49,14 @@ const Pilares = () => {
             <div className="w-full mt-4">
               <p className="poppins-regular text-lg text-gray-200">
                 Así es como empezamos, aprendiendo la habilidad del trading en
-                (x año) y luego de muchos altibajos comenzamos a ser rentables y
+                2018 y luego de muchos altibajos comenzamos a ser rentables y
                 vivir de ello.
               </p>
             </div>
             <div className="w-full mt-4">
               <p className="poppins-regular text-lg text-gray-200">
-                Es por esto que hoy, después de (x años) somos la mejor academia
-                de trading de todo latinoamérica con más de (x alumnos) y
+                Es por esto que hoy, después de 6 años somos la mejor academia
+                de trading de todo latinoamérica con más de 22.240 alumnos y
                 cientos de casos de éxito, lo que da muchísimo valor a la
                 organización
               </p>

@@ -4,13 +4,13 @@ import CallToAction from "../CallToAction/CallToAction";
 import rev from "../../assets/imagenes/rev2.jpeg";
 import dubai from "../../assets/imagenes/Dunai-imagen.png";
 import mapa from "../../assets/imagenes/Mapa-icon.png";
-import rev3 from "../../assets/imagenes/rev3.jpeg"
-const Gifts = ({calendlyPage}) => {
+import rev3 from "../../assets/imagenes/rev3.jpeg";
+const Gifts = ({ calendlyPage }) => {
   return (
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
       <h1 className="text-2xl lg:text-4xl text-center font-bold mb-6 poppins-bold text-balance">
         Además de los siguientes regalos para formar parte de la comunidad y
-        cambiar tu entorno:
+        cambiar tu entorno.
       </h1>
       <p className="text-center mb-6">
         Para las primeras 100 personas que accedan al programa
@@ -23,9 +23,7 @@ const Gifts = ({calendlyPage}) => {
               <div className="w-full flex justify-center lg:hidden items-center overflow-hidden rounded-lg  mb-2">
                 <img
                   className="w-1/2 object-cover object-center "
-                  src={
-                    rev
-                  }
+                  src={rev}
                   alt="Nichos Rentables"
                 />
               </div>
@@ -53,9 +51,7 @@ const Gifts = ({calendlyPage}) => {
             <div className="w-full lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
               <img
                 className="w-2/4 object-cover object-center"
-                src={
-                  rev
-                }
+                src={rev}
                 alt="Vehículo AMG"
               />
             </div>
@@ -66,9 +62,7 @@ const Gifts = ({calendlyPage}) => {
             <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-center overflow-hidden rounded-lg mb-2 lg:mb-0">
               <img
                 className="w-full object-cover object-center"
-                src={
-                  dubai
-                }
+                src={dubai}
                 alt="Vehículo AMG"
               />
             </div>
@@ -97,9 +91,7 @@ const Gifts = ({calendlyPage}) => {
               <div className="w-full flex justify-center lg:hidden items-center overflow-hidden rounded-lg  mb-2">
                 <img
                   className="w-1/2 object-cover object-center"
-                  src={
-                   mapa
-                  }
+                  src={mapa}
                   alt="Vehículo AMG"
                 />
               </div>
@@ -125,9 +117,7 @@ const Gifts = ({calendlyPage}) => {
             <div className="w-full lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
               <img
                 className="w-2/4 object-cover object-center"
-                src={
-                 mapa
-                }
+                src={mapa}
                 alt="Vehículo AMG"
               />
             </div>
@@ -137,9 +127,7 @@ const Gifts = ({calendlyPage}) => {
             <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-center overflow-hidden rounded-lg mb-2 lg:mb-0">
               <img
                 className="w-full object-cover object-center"
-                src={
-                 rev3
-                }
+                src={rev3}
                 alt="Vehículo AMG"
               />
             </div>
@@ -167,54 +155,14 @@ const Gifts = ({calendlyPage}) => {
               Sinergia:
             </h1>
             <div className="w-full lg:w-2/3  bg-black p-6 rounded-lg shadow-lg border border-[#F59800] inline-block text-left">
-            <p className="text-center text-md lg:text-lg text-balance">
-              Combinando estos 3 beneficios vas a ser capaz de cambiar 100% tu
-              realidad y desarrollarte en Revolution en donde no sólo ganarás
-              dinero sino que crecerás como persona y crearás relaciones con
-              mucha gente en tu misma sintonía.
-            </p>
-
-            {/* <div className="flex flex-wrap justify-around space-y-4 md:space-y-0 gap-x-4">
-          <div className="flex flex-col space-y-2">
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Programa AMG completo</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Plataforma Gamificada con Premios</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>6 meses de coaching con Agus y 20+ expertos</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Comunidad VIP</span>
+              <p className="text-center text-md lg:text-lg text-balance">
+                Combinando estos 3 beneficios vas a ser capaz de cambiar 100% tu
+                realidad y desarrollarte en Revolution en donde no sólo ganarás
+                dinero sino que crecerás como persona y crearás relaciones con
+                mucha gente en tu misma sintonía.
+              </p>
             </div>
           </div>
-          <div className="flex flex-col space-y-2">
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Scripts para Cerrar tu primer Cliente</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Regalo #1: Checklist Nichos Rentables</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Regalo #2: Un viaje a Dubai</span>
-            </div>
-            <div className="flex items-center">
-              <FaCheck className="text-[#F59800] mr-2" />
-              <span>Regalo #3: Secretos de Agus para facturar $400k dólares al mes</span>
-            </div>
-          </div>
-        </div> */}
-          </div>
-          </div>
-          
         </div>
       </div>
       <CallToAction calendlyPageUrl={calendlyPage} />

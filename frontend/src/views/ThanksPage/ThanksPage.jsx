@@ -20,9 +20,8 @@ const ThanksPage = () => {
         <a className="poppins-regular text-gray-300">
           Conoce más sobre Revolution
         </a>
-        
-         <VideoWistiaThanks />
 
+        <VideoWistiaThanks />
       </div>
       <Footer />
     </div>
