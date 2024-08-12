@@ -8,7 +8,7 @@ const CalendlyPageRomina = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const calendlyLink = "";
+  const calendlyLink = "https://calendly.com/romiluppi/30min?back=1&month=2024-08";
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
       <div className="w-screen h-24  py- flex justify-center items-center border-b-[1px] border-yellow-600">
