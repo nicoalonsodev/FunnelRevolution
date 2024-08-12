@@ -12,10 +12,10 @@ import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
 
-import img1 from "../../assets/rodrigo_perez/1.webp";
-import img2 from "../../assets/rodrigo_perez/2.webp";
-import img3 from "../../assets/rodrigo_perez/3.webp";
-import img4 from "../../assets/rodrigo_perez/4.webp";
+import img1 from "../../assets/romina_luppi/1.webp";
+import img2 from "../../assets/romina_luppi/2.webp";
+import img3 from "../../assets/romina_luppi/3.webp";
+import img4 from "../../assets/romina_luppi/4.webp";
 
 const LandingVslRomina = () => {
   const background2Style = {
