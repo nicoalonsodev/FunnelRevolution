@@ -1,7 +1,7 @@
 import React from "react";
-import TitleAndVideo from "../../components/TitleAndVideo/TitleAndVideo";
-import logo from "../../assets/logo/logo_blanco-re.png";
-import Footer from "../../components/Footer/Footer";
+import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
+import logo from "../../../../assets/logo/logo_blanco-re.png";
+import Footer from "../../../../components/Footer/Footer";
 const LandingPageMaria = () => {
 const url = "/maria-medina/vsl?registered=true";
 const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbzwBNIbu_XKHtURRzVeghFDlmizk2PhxeM3w-Tse3HneJiBreWpOUKBhPe-A-Gbk8wg/exec"

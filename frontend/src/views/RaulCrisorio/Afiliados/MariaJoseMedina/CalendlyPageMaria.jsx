@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Calendly from "../../components/Calendly/Calendly";
-import logo from "../../assets/logo/logo_blanco-re.png";
+import Header from "../../../../components/Header/Header";
+import Footer from "../../../../components/Footer/Footer";
+import Calendly from "../../../../components/Calendly/Calendly";
+import logo from "../../../../assets/logo/logo_blanco-re.png";
 const CalendlyPageMaria = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

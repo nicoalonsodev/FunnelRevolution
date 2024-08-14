@@ -1,21 +1,21 @@
 import React from "react";
-import TitleAndVideo from "../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../assets/background2.png";
-import logo from "../../assets/logo/logo_blanco-re.png";
-import History from "../../components/History/History";
-import Actually from "../../components/Actually/Actually";
-import Pilares from "../../components/Pilares/Pilares";
-import MissionAndResult from "../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../components/Gifts/Gifts";
-import OfferSection from "../../components/OfferSection/OfferSection";
-import Footer from "../../components/Footer/Footer";
-import ModalButton from "../../components/ModalButton/ModalButton";
+import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
+import background2 from "../../../../assets/background2.png";
+import logo from "../../../../assets/logo/logo_blanco-re.png";
+import History from "../../../../components/History/History";
+import Actually from "../../../../components/Actually/Actually";
+import Pilares from "../../../../components/Pilares/Pilares";
+import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../../../components/Gifts/Gifts";
+import OfferSection from "../../../../components/OfferSection/OfferSection";
+import Footer from "../../../../components/Footer/Footer";
+import ModalButton from "../../../../components/ModalButton/ModalButton";
 
-import img1 from "../../assets/raul_crisorio/raul1.jpeg";
-import img2 from "../../assets/raul_crisorio/raul2.jpeg";
-import img3 from "../../assets/raul_crisorio/raul3.jpeg";
-import img4 from "../../assets/raul_crisorio/raul4.jpeg";
+import img1 from "../../../../assets/raul_crisorio/raul1.jpeg";
+import img2 from "../../../../assets/raul_crisorio/raul2.jpeg";
+import img3 from "../../../../assets/raul_crisorio/raul3.jpeg";
+import img4 from "../../../../assets/raul_crisorio/raul4.jpeg";
 
 const LandingVslMaria = () => {
   const background2Style = {
