@@ -51,6 +51,9 @@ import CalendlyPageJairo from "./views/RominaLuppi/Afiliados/JairoVillegas/Calen
 import LandingPageRocioC from "./views/RaulCrisorio/Afiliados/RocioCarla/LandingPageRocioC";
 import LandingVslRocioC from "./views/RaulCrisorio/Afiliados/RocioCarla/LandingVslRocioC";
 import CalendlyPageRocioC from "./views/RaulCrisorio/Afiliados/RocioCarla/CalendlyPageRocioC";
+import LandingPageDiego from "./views/CristianCastellon/Afiliados/DiegoUrquiza/LandingPageDiego";
+import CalendlyPageDiego from "./views/CristianCastellon/Afiliados/DiegoUrquiza/CalendlyPageDiego";
+import LandingVslDiego from "./views/CristianCastellon/Afiliados/DiegoUrquiza/LandingVsldiego";
 function App() {
   return (
     <div className="App">
@@ -201,6 +204,15 @@ function App() {
         exact
         path="/carla-salomon/calendly"
         component={CalendlyPageRocioC}
+      />
+
+      {/* Landing diego-urquiza */}
+      <Route exact path="/diego-urquiza/vsl" component={LandingVslDiego} />
+      <Route exact path="/diego-urquiza" component={LandingPageDiego} />
+      <Route
+        exact
+        path="/diego-urquiza/calendly"
+        component={CalendlyPageDiego}
       />
 
     </div>
