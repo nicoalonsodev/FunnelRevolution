@@ -30,6 +30,9 @@ import LandingVslNicolas from "./views/RaulCrisorio/Afiliados/NicolasBalverdi/La
 import LandingPageCristian from "./views/CristianCastellon/LandingPageCristian";
 import LandingVslCristian from "./views/CristianCastellon/LandingVslCristian";
 import CalendlyPageCristian from "./views/CristianCastellon/CalendlyPageCristian";
+import LandingPageAriel from "./views/RominaLuppi/Afiliados/ArielMinicucci/LandingPageAriel";
+import LandingVslAriel from "./views/RominaLuppi/Afiliados/ArielMinicucci/LandingVslAriel";
+import CalendlyPageAriel from "./views/RominaLuppi/Afiliados/ArielMinicucci/CalendlyPageAriel";
 function App() {
   return (
     <div className="App">
@@ -117,6 +120,15 @@ function App() {
         exact
         path="/cristian-castellon/calendly"
         component={CalendlyPageCristian}
+      />
+
+      {/* Landing Ariel Minicucci */}
+      <Route exact path="/ariel-minicucci/vsl" component={LandingVslAriel} />
+      <Route exact path="/ariel-minicucci" component={LandingPageAriel} />
+      <Route
+        exact
+        path="/ariel-minicucci/calendly"
+        component={CalendlyPageAriel}
       />
 
     </div>
