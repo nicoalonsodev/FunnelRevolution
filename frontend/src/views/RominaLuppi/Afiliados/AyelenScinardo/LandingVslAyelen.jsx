@@ -17,7 +17,7 @@ import img2 from "../../../../assets/romina_luppi/2.webp";
 import img3 from "../../../../assets/romina_luppi/3.webp";
 import img4 from "../../../../assets/romina_luppi/4.webp";
 
-const LandingVslAriel = () => {
+const LandingVslAyelen = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
@@ -56,7 +56,7 @@ const actually = [
 ]
 
 
-  const calendlyPage = "https://www.revolutionoficial.com/ariel-minicucci/calendly";
+  const calendlyPage = "https://www.revolutionoficial.com/ayelen-scinardo/calendly";
 const historyImages = [ img1, img2, img3, img4]
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
@@ -89,4 +89,4 @@ const historyImages = [ img1, img2, img3, img4]
   );
 };
 
-export default LandingVslAriel;
+export default LandingVslAyelen;
