@@ -1,8 +1,9 @@
 import React from "react";
-const Actually = ({ historyPart3, actually, img4}) => {
+const Actually = ({ historyPart3, actually, img4 }) => {
   return (
     <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 py-4 ">
       <div className="w-full flex flex-wrap justify-center items-center text-left space-y-6">
+       
         {historyPart3?.map((paragraph, index) => (
           <div className="w-full mt-4" key={index}>
             <p className="poppins-regular text-lg lg:text-xl text-gray-100">
@@ -22,6 +23,11 @@ const Actually = ({ historyPart3, actually, img4}) => {
             />{" "}
           </div>
           <div className="w-full lg:w-[46%] flex flex-wrap items-start">
+          <div className="w-full mt-4">
+          <p className="poppins-bold text-3xl text-gray-700">
+            Ya en 2024...
+          </p>
+        </div>
             {actually?.map((paragraph, index) => (
               <div className="w-full mt-4" key={index}>
                 <p className="poppins-regular text-lg lg:text-xl text-gray-700">
