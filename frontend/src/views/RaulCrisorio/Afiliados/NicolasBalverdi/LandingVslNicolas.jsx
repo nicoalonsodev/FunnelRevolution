@@ -51,7 +51,7 @@ const actually = [
   const historyData = [
    "Raúl Crisorio",
     "Buenos Aires, Argentina",
-    "2021–2022",
+    "2018–2024",
   ]
 
   const calendlyPage = "https://www.revolutionoficial.com/nicolas-balverdi/calendly";
