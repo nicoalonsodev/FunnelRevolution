@@ -1,17 +1,12 @@
 import React from "react";
 
-const History = ({ historyData, historyImages, historyPart1, historyPart2, historyPart3,  }) => {
-
-  console.log(historyData);
-  console.log(historyImages);
-  
-
+const History = ({ historyData, historyImages, historyPart1, historyPart2, historyPart3 }) => {
   return (
     <div className="flex flex-wrap justify-center bg-gray-50">
       <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 space-y-16 py-10">
         <div className="w-full flex flex-wrap justify-center items-center space-y-6">
           <h1 className="text-3xl lg:text-5xl lato-bold text-[#1D1D1B] text-center">
-          HISTORIA DE ÉXITO EN REVOLUTION
+            HISTORIA DE ÉXITO EN REVOLUTION
           </h1>
           <div className="w-full flex justify-center">
             <div className="w-3/5">
@@ -25,9 +20,9 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
               <img className="w-2/3 object-cover object-center rounded-lg" src={historyImages ? historyImages[0] : ""} alt="" />
             </div>
             <div className="w-full">
-              <p className="text-md font-bold text-gray-800">De: {historyData ? historyData[0] : ""}</p>
-              <p className="text-md text-gray-800">Ubicación: {historyData ? historyData[1] : ""}</p>
-              <p className="text-md text-gray-800">{historyData ? historyData[2] : ""}</p>
+              <p className="text-md font-bold text-gray-800">De: <span dangerouslySetInnerHTML={{ __html: historyData ? historyData[0] : "" }} /></p>
+              <p className="text-md text-gray-800">Ubicación: <span dangerouslySetInnerHTML={{ __html: historyData ? historyData[1] : "" }} /></p>
+              <p className="text-md text-gray-800"><span dangerouslySetInnerHTML={{ __html: historyData ? historyData[2] : "" }} /></p>
             </div>
             <div className="w-full flex justify-start">
               <div className="w-3/5">
@@ -57,7 +52,7 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
           <div className="w-full lg:w-[45%] flex flex-wrap justify-start items-start px-0 lg:px-10 space-y-3">
             {historyPart1?.map((text, index) => (
               <div className="w-full mt-4" key={index}>
-                <p className="poppins-regular text-md text-gray-700">{text}</p>
+                <p className="poppins-regular text-md text-gray-700" dangerouslySetInnerHTML={{ __html: text }} />
               </div>
             ))}
           </div>
@@ -71,7 +66,7 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
             </div>
             {historyPart2?.map((text, index) => (
               <div className="w-full mt-4" key={index}>
-                <p className="poppins-regular text-md  text-gray-700">{text}</p>
+                <p className="poppins-regular text-md text-gray-700" dangerouslySetInnerHTML={{ __html: text }} />
               </div>
             ))}
           </div>
@@ -79,8 +74,6 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
             <img className="w-full object-cover object-center" src={historyImages ? historyImages[2] : ""} alt="" />
           </div>
         </div>
-
-       
       </div>
     </div>
   );
