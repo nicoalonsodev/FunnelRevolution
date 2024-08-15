@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import Footer from "../../../../components/Footer/Footer";
 import Calendly from "../../../../components/Calendly/Calendly";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-const CalendlyPageFlorencia = () => {
+const CalendlyPageRojas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   // El Link de Calendly
-  const calendlyLink = "https://calendly.com/florenciaanyelengartner";
+  const calendlyLink = "https://calendly.com/rojasjuanignacio94/";
 
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
@@ -33,4 +33,4 @@ const CalendlyPageFlorencia = () => {
   );
 };
 
-export default CalendlyPageFlorencia;
+export default CalendlyPageRojas;
