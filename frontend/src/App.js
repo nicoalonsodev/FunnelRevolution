@@ -66,6 +66,18 @@ import LandingVslMarcelo from "./views/MarceloDiaz/LandingVslMarcelo";
 import LandingPageDiegoV from "./views/MarceloDiaz/Afiliados/DiegoVargas/LandingPageDiegoV";
 import LandingVslDiegoV from "./views/MarceloDiaz/Afiliados/DiegoVargas/LandingVslDiegoV";
 import CalendlyPageDiegoV from "./views/MarceloDiaz/Afiliados/DiegoVargas/CalendlyPageDiegoV";
+import LandingVslSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/LandingVslSabrina";
+import LandingPageSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/LandingPageSabrina";
+import CalendlyPageSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/CalendlyPageSabrina";
+import LandingVslDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/LandingVslDavidA";
+import LandingPageDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/LandingPageDavidA";
+import CalendlyPageDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/CalendlyPageDavidA";
+import LandingVslFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/LandingVslFlorencia";
+import LandingPageFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/LandingPageFlorencia";
+import CalendlyPageFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/CalendlyPageFlorencia";
+import LandingVslJeronimo from "./views/MarceloDiaz/Afiliados/JeronimoGallasso/LandingVslJeronimo";
+import LandingPageJeronimo from "./views/MarceloDiaz/Afiliados/JeronimoGallasso/LandingPageJeronimo";
+import CalendlyPageJeronimo from "./views/MarceloDiaz/Afiliados/JeronimoGallasso/CalendlyPageJeronimo";
 function App() {
   return (
     <div className="App">
@@ -261,6 +273,42 @@ function App() {
         exact
         path="/diego-vargas/calendly"
         component={CalendlyPageDiegoV}
+      />
+
+      {/* Landing sabrina-bernhardt*/}
+      <Route exact path="/sabrina-bernhardt/vsl" component={LandingVslSabrina} />
+      <Route exact path="/sabrina-bernhardt" component={LandingPageSabrina} />
+      <Route
+        exact
+        path="/sabrina-bernhardt/calendly"
+        component={CalendlyPageSabrina}
+      />
+
+      {/* Landing david-ana*/}
+      <Route exact path="/david-ana/vsl" component={LandingVslDavidA} />
+      <Route exact path="/david-ana" component={LandingPageDavidA} />
+      <Route
+        exact
+        path="/david-ana/calendly"
+        component={CalendlyPageDavidA}
+      />
+
+      {/* Landing florencia-gartner*/}
+      <Route exact path="/florencia-gartner/vsl" component={LandingVslFlorencia} />
+      <Route exact path="/florencia-gartner" component={LandingPageFlorencia} />
+      <Route
+        exact
+        path="/florencia-gartner/calendly"
+        component={CalendlyPageFlorencia}
+      />
+
+      {/* Landing jeronimo-gallasso*/}
+      <Route exact path="/jeronimo-gallasso/vsl" component={LandingVslJeronimo} />
+      <Route exact path="/jeronimo-gallasso" component={LandingPageJeronimo} />
+      <Route
+        exact
+        path="/jeronimo-gallasso/calendly"
+        component={CalendlyPageJeronimo}
       />
 
     </div>
