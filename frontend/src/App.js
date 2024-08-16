@@ -108,6 +108,21 @@ import CalendlyPageLautaro from "./views/RodrigoPerez/Afiliados/LautaroOviedo/Ca
 import LandingVslMelinaT from "./views/CristianCastellon/Afiliados/MelinaTroina/LandingVslMelinaT";
 import LandingPageMelina from "./views/CristianCastellon/Afiliados/MelinaTroina/LandingPageMelina";
 import CalendlyPageMelina from "./views/CristianCastellon/Afiliados/MelinaTroina/CalendlyPageMelina";
+import LandingVslGabrielM from "./views/CristianCastellon/Afiliados/GabrielMazzoca/LandingVslGabrielM";
+import LandingPageGabrielM from "./views/CristianCastellon/Afiliados/GabrielMazzoca/LandingPageGabrielM";
+import CalendlyPageGabrielM from "./views/CristianCastellon/Afiliados/GabrielMazzoca/CalendlyPageGabrielM";
+import LandingVslMartinV from "./views/CristianCastellon/Afiliados/MartinVecchi/LandingVslMartinV";
+import LandingPageMartinV from "./views/CristianCastellon/Afiliados/MartinVecchi/LandingPageMartinV";
+import CalendlyPageMartin from "./views/CristianCastellon/Afiliados/MartinVecchi/CalendlyPageMartin";
+import LandingVslAlejandroDe from "./views/CristianCastellon/Afiliados/AlejandroDeLaFuente/LandingVslAlejandroDe";
+import LandingPageAlejandroDe from "./views/CristianCastellon/Afiliados/AlejandroDeLaFuente/LandingPageAlejandroDe";
+import CalendlyPageAlejandroDe from "./views/CristianCastellon/Afiliados/AlejandroDeLaFuente/CalendlyPageAlejandroDe";
+import LandingVslPabloB from "./views/CristianCastellon/Afiliados/PabloBarboni/LandingVslPabloB";
+import LandingPagePabloB from "./views/CristianCastellon/Afiliados/PabloBarboni/LandingPagePabloB";
+import CalendlyPagePabloB from "./views/CristianCastellon/Afiliados/PabloBarboni/CalendlyPagePabloB";
+import LandingVslLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/LandingVslLucasCa";
+import LandingPageLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/LandingPageLucasCa";
+import CalendlyPageLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/CalendlyPageLucasCa";
 function App() {
   return (
     <div className="App">
@@ -438,6 +453,51 @@ function App() {
         exact
         path="/melina-troina/calendly"
         component={CalendlyPageMelina}
+      />
+
+      {/* Landing gabriel-mazzoca*/}
+      <Route exact path="/gabriel-mazzoca/vsl" component={LandingVslGabrielM} />
+      <Route exact path="/gabriel-mazzoca" component={LandingPageGabrielM} />
+      <Route
+        exact
+        path="/gabriel-mazzoca/calendly"
+        component={CalendlyPageGabrielM}
+      />
+
+      {/* Landing martin-vecchi*/}
+      <Route exact path="/martin-vecchi/vsl" component={LandingVslMartinV} />
+      <Route exact path="/martin-vecchi" component={LandingPageMartinV} />
+      <Route
+        exact
+        path="/martin-vecchi/calendly"
+        component={CalendlyPageMartin}
+      />
+
+      {/* Landing alejandro-de-la-fuente*/}
+      <Route exact path="/alejandro-de-la-fuente/vsl" component={LandingVslAlejandroDe} />
+      <Route exact path="/alejandro-de-la-fuente" component={LandingPageAlejandroDe} />
+      <Route
+        exact
+        path="/alejandro-de-la-fuente/calendly"
+        component={CalendlyPageAlejandroDe}
+      />
+
+      {/* Landing pablo-barboni*/}
+      <Route exact path="/pablo-barboni/vsl" component={LandingVslPabloB} />
+      <Route exact path="/pablo-barboni" component={LandingPagePabloB} />
+      <Route
+        exact
+        path="/pablo-barboni/calendly"
+        component={CalendlyPagePabloB}
+      />
+
+      {/* Landing lucas-catoldi*/}
+      <Route exact path="/lucas-catoldi/vsl" component={LandingVslLucasCa} />
+      <Route exact path="/lucas-catoldi" component={LandingPageLucasCa} />
+      <Route
+        exact
+        path="/lucas-catoldi/calendly"
+        component={CalendlyPageLucasCa}
       />
 
     </div>
