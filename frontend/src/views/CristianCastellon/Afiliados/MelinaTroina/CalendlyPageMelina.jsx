@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Calendly from "../../components/Calendly/Calendly";
-import logo from "../../assets/logo/logo_blanco-re.png";
-const CalendlyPageCristian = () => {
+import Footer from "../../../../components/Footer/Footer";
+import Calendly from "../../../../components/Calendly/Calendly";
+import logo from "../../../../assets/logo/logo_blanco-re.png";
+const CalendlyPageMelina = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const calendlyLink = "https://calendly.com/cristiancastellon95/llamada-de-iniciacion-en-comunidad-revolution-1";
+  const calendlyLink = "https://calendly.com/meltroina/iniciacion-revolution";
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
       <div className="w-screen h-24  py- flex justify-center items-center border-b-[1px] border-yellow-600">
@@ -32,4 +31,4 @@ const CalendlyPageCristian = () => {
   );
 };
 
-export default CalendlyPageCristian;
+export default CalendlyPageMelina;
