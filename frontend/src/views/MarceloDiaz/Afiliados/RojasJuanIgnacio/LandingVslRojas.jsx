@@ -24,19 +24,21 @@ const LandingVslRojas = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
-  const historyPart1 =  [
-    "Todo comenzó cuando, influenciado por mi hermano, Cristian Díaz, decidí asistir a una videoconferencia. Yo venía de una familia humilde, sin grandes oportunidades a la vista, pero con el deseo de crecer y cambiar mi realidad. En ese momento, me mostraron los beneficios de estudiar los mercados financieros y la posibilidad de alcanzar un desarrollo personal profundo.",
-    "Cristian ya había obtenido pequeños resultados, y eso fue lo que me inspiró a dar el primer paso. Empezamos como un grupo pequeño, éramos solo 10 personas que confiaban en la habilidad de mi hermano. Comenzamos con sesiones en vivo, donde él nos explicaba lo que estaba funcionando en ese momento.",
-  ]
-  const historyPart2 =  [
-    "Pasaron casi cuatro años desde aquellos días, y lo que comenzó como un pequeño grupo en Telegram ha crecido hasta convertirse en una comunidad sólida con nuestra propia aplicación, Revolution. Aquí, las personas pueden recibir educación, consejos, y seguir un proceso que les permitirá convertirse en profesionales del trading y crecer a nivel personal.",
-    "Durante este tiempo, aprendí muchísimo y conocí a personas que vivían de manera distinta, generando ingresos a través del trading y las afiliaciones. Me di cuenta de que el trading es un proceso, y al seguirlo, logré obtener resultados que nunca había imaginado.",
-   
-  ]
-  const historyPart3 =  [
-    "Puedo decir que mi vida cambió completamente.",
-  "Revolution no solo me permitió generar ingresos, sino que me dio una comunidad y un propósito.",
-  ]
+ const historyPart1 = [
+  "Todo comenzó cuando, influenciado por mi <strong>hermano</strong>, <strong>Cristian Díaz</strong>, decidí asistir a una <strong>videoconferencia</strong>. Yo venía de una <strong>familia humilde</strong>, sin grandes <strong>oportunidades</strong> a la vista, pero con el <strong>deseo</strong> de crecer y cambiar mi <strong>realidad</strong>. En ese momento, me mostraron los <strong>beneficios</strong> de estudiar los <strong>mercados financieros</strong> y la posibilidad de alcanzar un <strong>desarrollo personal</strong> profundo.",
+  "<strong>Cristian</strong> ya había obtenido <strong>pequeños resultados</strong>, y eso fue lo que me inspiró a dar el <strong>primer paso</strong>. Empezamos como un <strong>grupo pequeño</strong>, éramos solo <strong>10 personas</strong> que confiaban en la habilidad de mi hermano. Comenzamos con <strong>sesiones en vivo</strong>, donde él nos explicaba lo que estaba funcionando en ese momento.",
+]
+
+const historyPart2 = [
+  "Pasaron casi <strong>cuatro años</strong> desde aquellos días, y lo que comenzó como un <strong>pequeño grupo</strong> en <strong>Telegram</strong> ha crecido hasta convertirse en una <strong>comunidad sólida</strong> con nuestra propia <strong>aplicación</strong>, <strong>Revolution</strong>. Aquí, las personas pueden recibir <strong>educación</strong>, <strong>consejos</strong>, y seguir un <strong>proceso</strong> que les permitirá convertirse en <strong>profesionales del trading</strong> y crecer a nivel <strong>personal</strong>.",
+  "Durante este tiempo, aprendí muchísimo y conocí a <strong>personas</strong> que vivían de manera distinta, generando <strong>ingresos</strong> a través del <strong>trading</strong> y las <strong>afiliaciones</strong>. Me di cuenta de que el <strong>trading</strong> es un <strong>proceso</strong>, y al seguirlo, logré obtener <strong>resultados</strong> que nunca había imaginado.",
+]
+
+const historyPart3 = [
+  "Puedo decir que mi <strong>vida</strong> cambió completamente.",
+  "<strong>Revolution</strong> no solo me permitió <strong>generar ingresos</strong>, sino que me dio una <strong>comunidad</strong> y un <strong>propósito</strong>.",
+]
+
 const actually = [
   
   "Hoy, puedo cuidar de mí mismo, de mi familia, y lo más importante, puedo ayudar a otras personas que están buscando un cambio en sus vidas, tal como yo lo hice.",

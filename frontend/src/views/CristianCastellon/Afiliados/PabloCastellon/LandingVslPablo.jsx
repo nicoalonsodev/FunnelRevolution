@@ -24,19 +24,20 @@ const LandingVslPablo = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
-  const historyPart1 =  [
-    "Siempre me llamó la atención el mundo del emprendimiento, los negocios y la formación de empresas. Me recibí de Técnico en administración de empresas, estudie 1 año en la UBA y 2 años en la UADE. Trabajé un año en IBM, y eso fue más que suficiente para darme cuenta que el sistema tradicional no me iba a dar la vida que quería.",
-    "Ahí inició mi carrera como emprendedor, a los 21 años compre un auto a crédito para ponerlo a hacer UBER,  avance con un local de comida, después llegó a mi vida el mundo de los negocios digitales. Me presentaron la empresa AMWAY, que es una empresa Norteamericana que lleva más de 60 años en funcionamiento, donde vos podrías distribuir sus productos, comisionar por tus ventas y armar equipos de trabajo. Gracias a esa actividad conocí más de 20 países y gané mucho dinero durante 5 años. Después armé una empresa de ventas de planes de autos con 2 amigos, puse una oficina con personas haciendo arbitraje, armé una comunidad de cripto players en AXIE INFINITY, pero no me fue tan bien como planeaba…",
-  ]
-  const historyPart2 =  [
-    "Despues me empezo a llamar la atención el Trading y fue ahí cuando conocí a REVOLUTION y Cristian Diaz, y me encanto, en el minuto uno supe que acá si podía hacer carrera y dedicar años de mi vida a convertirme en un profesional e impactar de forma positiva a más personas.",
-    "Me encanta ponerme metas y trabajar con personas así que cuando entendí lo potente del trading y el plan de mercadeo lo empecé a escalar , mis primeros 5 mese me costó un poco superar los usd 500 de ganancias mensuales, hoy en dia soy un trader rentable y el principal creador de equipos de REVOLUTION, ganó más de usd 30.000 al mes, vivo en una casa soñada, viajo seguido, ayudo economicamente a mis viejos para que no les falte nada, y lo mejor de todo es hay cientos de personas en el equipò ganado cientos y miles de dólares extras al mes gracias a tomar la decisión de emprender con nosotros en REVOLUTION.",
-   
-  ]
-  const historyPart3 =  [
-    "Te invitamos a dar el paso, anímate a hacer algo distinto, tenemos un método que funciona, que ya fue testeado, y constantemente lo estamos mejorando. ",
-    "Si vos das tu 100% vas a poder progresar y hacer carrera con nosotros. Lo tradicional ya no funciona, el mundo cambió, las oportunidades están, hay personas que las aprovechan y otras no! ¡Animate! ¡Nosotros te ayudamos!",
-  ]
+const historyPart1 = [
+  "Siempre me llamó la atención el mundo del <strong>emprendimiento</strong>, los <strong>negocios</strong> y la formación de <strong>empresas</strong>. Me recibí de <strong>Técnico en administración de empresas</strong>, estudié 1 año en la <strong>UBA</strong> y 2 años en la <strong>UADE</strong>. Trabajé un año en <strong>IBM</strong>, y eso fue más que suficiente para darme cuenta que el <strong>sistema tradicional</strong> no me iba a dar la <strong>vida</strong> que quería.",
+  "Ahí inició mi carrera como <strong>emprendedor</strong>, a los 21 años compré un <strong>auto</strong> a crédito para ponerlo a hacer <strong>UBER</strong>, avancé con un <strong>local de comida</strong>, después llegó a mi vida el mundo de los <strong>negocios digitales</strong>. Me presentaron la empresa <strong>AMWAY</strong>, que es una empresa <strong>Norteamericana</strong> que lleva más de 60 años en funcionamiento, donde vos podrías distribuir sus <strong>productos</strong>, comisionar por tus <strong>ventas</strong> y armar <strong>equipos de trabajo</strong>. Gracias a esa actividad conocí más de <strong>20 países</strong> y gané mucho <strong>dinero</strong> durante 5 años. Después armé una empresa de <strong>ventas de planes de autos</strong> con 2 amigos, puse una <strong>oficina</strong> con personas haciendo <strong>arbitraje</strong>, armé una <strong>comunidad de cripto players</strong> en <strong>AXIE INFINITY</strong>, pero no me fue tan bien como planeaba...",
+]
+
+const historyPart2 = [
+  "Después me empezó a llamar la atención el <strong>Trading</strong> y fue ahí cuando conocí a <strong>REVOLUTION</strong> y <strong>Cristian Diaz</strong>, y me encantó, en el minuto uno supe que acá sí podía hacer <strong>carrera</strong> y dedicar años de mi vida a convertirme en un <strong>profesional</strong> e impactar de forma positiva a más personas.",
+  "Me encanta ponerme <strong>metas</strong> y trabajar con <strong>personas</strong> así que cuando entendí lo potente del <strong>trading</strong> y el <strong>plan de mercadeo</strong> lo empecé a escalar, mis primeros 5 meses me costó un poco superar los <strong>usd 500 de ganancias mensuales</strong>, hoy en día soy un <strong>trader rentable</strong> y el principal <strong>creador de equipos</strong> de <strong>REVOLUTION</strong>, gano más de <strong>usd 30.000 al mes</strong>, vivo en una <strong>casa soñada</strong>, viajo seguido, ayudo económicamente a mis <strong>viejos</strong> para que no les falte nada, y lo mejor de todo es que hay cientos de personas en el <strong>equipo</strong> ganando <strong>cientos y miles de dólares extras</strong> al mes gracias a tomar la decisión de emprender con nosotros en <strong>REVOLUTION</strong>.",
+]
+
+const historyPart3 = [
+  "Te invitamos a dar el <strong>paso</strong>, anímate a hacer algo <strong>distinto</strong>, tenemos un <strong>método</strong> que funciona, que ya fue testeado, y constantemente lo estamos <strong>mejorando</strong>.",
+  "Si vos das tu <strong>100%</strong> vas a poder <strong>progresar</strong> y hacer <strong>carrera</strong> con nosotros. Lo <strong>tradicional</strong> ya no funciona, el mundo cambió, las <strong>oportunidades</strong> están, hay personas que las aprovechan y otras no! ¡Animate! ¡Nosotros te ayudamos!",
+]
 const actually = [
   "Facturé más de 200.000 USD con Revolution, vivo en Argentina y tengo amigos que comparten los mismos objetivos.",
   "El dinero ya no es un problema.",

@@ -30,23 +30,22 @@ const LandingVslDebora = () => {
      "Buenos Aires, Argentina",
      "2023 - 2024",
    ]
-  const historyPart1 =  [
-    "A los 18 años decidí comenzar a estudiar una carrera universitaria para “poder ser alguien en el futuro”. Mientras estudiaba también trabajé en varias empresas de renombre.",
-    "Después de muchos años de estudio y trabajo, me di cuenta que mi sueldo nunca alcanzaba para nada. Me di cuenta que dedicaba todo mi tiempo por muy poco dinero. No quería seguir con ese estilo de vida que tenía, necesitaba hacer algo distinto si quería conseguir una vida con libertad de tiempo y libertad financiera.",
-    "Comencé a cambiar mi mentalidad, leía libros sobre mentalidad y sobre el mundo de las inversiones y así fue como llegué a Revolution.",
-  ]
+  const historyPart1 = [
+  "A los <strong>18 años</strong> decidí comenzar a estudiar una <strong>carrera universitaria</strong> para “poder ser alguien en el futuro”. Mientras estudiaba también trabajé en varias <strong>empresas de renombre</strong>.",
+  "Después de muchos años de <strong>estudio</strong> y <strong>trabajo</strong>, me di cuenta que mi <strong>sueldo</strong> nunca alcanzaba para nada. Me di cuenta que dedicaba todo mi <strong>tiempo</strong> por muy <strong>poco dinero</strong>. No quería seguir con ese estilo de vida que tenía, necesitaba hacer algo <strong>distinto</strong> si quería conseguir una vida con <strong>libertad de tiempo</strong> y <strong>libertad financiera</strong>.",
+  "Comencé a cambiar mi <strong>mentalidad</strong>, leía <strong>libros</strong> sobre mentalidad y sobre el mundo de las <strong>inversiones</strong> y así fue como llegué a <strong>Revolution</strong>.",
+]
 
+const historyPart2 = [
+  "Inicié en <strong>Revolution</strong> en <strong>Agosto del 2023</strong>, sin <strong>conocimientos previos</strong>, si bien estudié una <strong>carrera contable</strong>, nada tenía que ver con el mundo del <strong>trading</strong>. Encontré <strong>personas</strong> y <strong>amigos</strong> con <strong>objetivos</strong> similares a los míos y conocí muchas personas que tenían la <strong>libertad de tiempo</strong> y <strong>financiera</strong> que yo estaba buscando.",
+  "En tan poco tiempo no solo aprendí a desarrollar una <strong>nueva habilidad</strong> que está cambiando mi <strong>vida</strong> y la de muchas personas, sino que también <strong>facturé muchísimo dinero</strong> que en mi trabajo anterior me hubiera llevado muchos años conseguirlo.",
+]
 
-  const historyPart2 =  [
-    "Inicie en Revolution en Agosto del 2023, sin conocimientos previos, si bien estudié una carrera contable, nada tenía que ver con el mundo del trading. Encontré personas y amigos con objetivos similares a los míos y conocí muchas personas que tenían la libertad de tiempo y financiera que yo estaba buscando.",
-    "En tan poco tiempo no solo aprendí a desarrollar una nueva habilidad que está cambiando mi vida y la de muchas personas, sino que también facture muchísimo dinero que en mi trabajo anterior me hubiera llevado muchos años conseguirlo.",
-    
-  ]
-  const historyPart3 =  [
+const historyPart3 = [
+  "Hoy tengo una <strong>vida soñada</strong>, puedo <strong>trabajar</strong> desde la comodidad de mi <strong>casa</strong> o cualquier parte del <strong>mundo</strong>. Puedo <strong>viajar</strong> y recorrer otras <strong>provincias</strong> o <strong>países</strong>, ayudando a las personas a que se animen a conocer una <strong>nueva habilidad</strong> que también va a cambiar sus <strong>vidas</strong>.",
+  "Obvio que cuando comencé tenía mucho <strong>miedo</strong>, como todo lo nuevo que uno hace. Pero estoy <strong>feliz</strong> y <strong>agradecida</strong> de la <strong>decisión</strong> que tomé, gracias a eso mi <strong>vida</strong> cambió <strong>100%</strong>. Disfruto de mi <strong>familia</strong>, de <strong>viajar</strong>, de rodearme de <strong>personas millonarias</strong> que me impulsan siempre a ir por más. Y lo que más disfruto es el poder <strong>ayudar</strong> a muchísimas personas más.",
+]
 
-    "Hoy tengo una vida soñada, puedo trabajar desde la comodidad de mi casa o cualquier parte del mundo. Puedo viajar y recorrer otras provincias o países, ayudando a las personas a que se animen a conocer una nueva habilidad que también va a cambiar sus vidas.",
-    "Obvio que cuando comencé tenía mucho miedo, como todo lo nuevo que uno hace. Pero estoy feliz y agradecida de la decisión que tomé, gracias a eso mi vida cambió 100%. Disfruto de mi familia, de viajar, de rodearme de personas millonarias que me impulsan siempre a ir por más. Y lo que más disfruto es el poder ayudar a muchísimas personas más. ",
-  ]
 const actually = [
   "Gané más de 20.000 usd con tan solo 8 meses en Revolution, me rodeo de personas exitosas que tienen los mismos objetivos. ",
   "Puedo disfrutar de la vida mientras viajo por cualquier lugar del mundo.",
