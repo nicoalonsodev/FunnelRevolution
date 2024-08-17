@@ -123,6 +123,15 @@ import CalendlyPagePabloB from "./views/CristianCastellon/Afiliados/PabloBarboni
 import LandingVslLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/LandingVslLucasCa";
 import LandingPageLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/LandingPageLucasCa";
 import CalendlyPageLucasCa from "./views/CristianCastellon/Afiliados/LucasCatoldi/CalendlyPageLucasCa";
+import LandingVslLautaroG from "./views/CristianCastellon/Afiliados/LautaroGarcia/LandingVslLautaroG";
+import LandingPageLautaroG from "./views/CristianCastellon/Afiliados/LautaroGarcia/LandingPageLautaroG";
+import CalendlyPageLautaroG from "./views/CristianCastellon/Afiliados/LautaroGarcia/CalendlyPageLautaroG";
+import LandingVslMilagrosR from "./views/RodrigoPerez/Afiliados/MilagrosRodriguez/LandingVslMilagrosR";
+import LandingPageMilagrosR from "./views/RodrigoPerez/Afiliados/MilagrosRodriguez/LandingPageMilagrosR";
+import CalendlyPageMilagrosR from "./views/RodrigoPerez/Afiliados/MilagrosRodriguez/CalendlyPageMilagrosR";
+import LandingVslMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/LandingVslMarcelaPa";
+import LandingPageMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/LandingPageMarcelaPa";
+import CalendlyPageMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/CalendlyPageMarcelaPa";
 function App() {
   return (
     <div className="App">
@@ -498,6 +507,33 @@ function App() {
         exact
         path="/lucas-catoldi/calendly"
         component={CalendlyPageLucasCa}
+      />
+
+      {/* Landing lautaro-garcia*/}
+      <Route exact path="/lautaro-garcia/vsl" component={LandingVslLautaroG} />
+      <Route exact path="/lautaro-garcia" component={LandingPageLautaroG} />
+      <Route
+        exact
+        path="/lautaro-garcia/calendly"
+        component={CalendlyPageLautaroG}
+      />
+
+      {/* Landing milagros-rodriguez*/}
+      <Route exact path="/milagros-rodriguez/vsl" component={LandingVslMilagrosR} />
+      <Route exact path="/milagros-rodriguez" component={LandingPageMilagrosR} />
+      <Route
+        exact
+        path="/milagros-rodriguez/calendly"
+        component={CalendlyPageMilagrosR}
+      />
+
+      {/* Landing marcela-paola-medina*/}
+      <Route exact path="/marcela-paola-medina/vsl" component={LandingVslMarcelaPa} />
+      <Route exact path="/marcela-paola-medina" component={LandingPageMarcelaPa} />
+      <Route
+        exact
+        path="/marcela-paola-medina/calendly"
+        component={CalendlyPageMarcelaPa}
       />
 
     </div>
