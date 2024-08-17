@@ -247,7 +247,7 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
                 value={registro.PHONE}
                 onChange={handleChange}
                 className="input-f h-[40px] w-full px-4 pl-10 mt-2 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                placeholder="Tu número de teléfono..."
+                placeholder="Tu número de teléfono sin codigo de área"
                 required
                 style={{
                   backgroundImage: `url(${phone})`,
