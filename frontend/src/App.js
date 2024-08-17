@@ -132,6 +132,9 @@ import CalendlyPageMilagrosR from "./views/RodrigoPerez/Afiliados/MilagrosRodrig
 import LandingVslMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/LandingVslMarcelaPa";
 import LandingPageMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/LandingPageMarcelaPa";
 import CalendlyPageMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMedina/CalendlyPageMarcelaPa";
+import LandingVslAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/LandingVslAlejandroMa";
+import LandingPageAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/LandingPageAlejandroMa";
+import CalendlyPageAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/CalendlyPageAlejandroMa";
 function App() {
   return (
     <div className="App">
@@ -534,6 +537,15 @@ function App() {
         exact
         path="/marcela-paola-medina/calendly"
         component={CalendlyPageMarcelaPa}
+      />
+
+      {/* Landing alejandro-mansilla*/}
+      <Route exact path="/alejandro-mansilla/vsl" component={LandingVslAlejandroMa} />
+      <Route exact path="/alejandro-mansilla" component={LandingPageAlejandroMa} />
+      <Route
+        exact
+        path="/alejandro-mansilla/calendly"
+        component={CalendlyPageAlejandroMa}
       />
 
     </div>
