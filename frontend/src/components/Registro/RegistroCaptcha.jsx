@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha"; // Importa ReCAPTCHA
 import loading from "../../assets/load3.gif";
 import Select from "react-select";
 import country from "../../assets/country.svg";
@@ -9,7 +10,7 @@ import countries from "./countries";
 import { useHistory } from "react-router-dom";
 import "./Registro.css";
 
-const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
+const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   const formRef = useRef(null);
   const history = useHistory();
   const [registro, setRegistro] = useState({
@@ -22,13 +23,9 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   });
 
   const [isLoading, setIsLoading] = useState(false);
-  const [errors, setErrors] = useState({
-    FNAME: "completar con su nombre",
-    EMAIL: "completar email",
-    PHONE: "colocar su numero",
-    countryCode: "colocar Country Code",
-  });
+  const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null); // Estado para almacenar el token de reCAPTCHA
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -58,11 +55,7 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
       errors.PHONE = "Debe ingresar su numero de celular.";
     }
     if (!registro.CountryCode) {
-      errors.PHONE = "Debe ingresar el código de su pais.";
-    }
-    if (!registro.CountryCode && !registro.PHONE) {
-      errors.PHONE =
-        "Debe ingresar el código de su pais y su numero de celular.";
+      errors.PHONE = "Debe ingresar el código de su país.";
     }
     setErrors(errors);
   };
@@ -70,36 +63,31 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     validate(registro);
-    if (Object.keys(errors).length === 0) {
+    if (Object.keys(errors).length === 0 && captchaToken) { // Asegúrate de tener un token de reCAPTCHA válido
       setIsLoading(true);
 
-      // Enviar a Google Sheets
-      const formDatab = new FormData();
-      for (const key in registro) {
-        formDatab.append(key, registro[key]);
-      }
+      // Añadimos el token de reCAPTCHA al formulario
+      const formData = new FormData(formRef.current);
+      formData.append('recaptchaToken', captchaToken);
 
       try {
+        // Enviar a Google Sheets
         await fetch(
           googleSheetsUrl,
           {
             method: "POST",
-            body: formDatab,
+            body: formData,
             mode: "no-cors",
           }
         );
 
         // Enviar a Mailchimp
-        const mailchimpForm = formRef.current;
-        const formData = new FormData(mailchimpForm);
-
-        await fetch(mailchimpForm.action, {
-          method: mailchimpForm.method,
+        await fetch(formRef.current.action, {
+          method: formRef.current.method,
           body: formData,
           mode: 'no-cors',
         });
 
-        // Mostrar mensaje de éxito o realizar alguna acción adicional
         setRegistro({
           FNAME: "",
           EMAIL: "",
@@ -110,15 +98,18 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
         });
         setIsLoading(false);
         actualizarEstado(false);
-              history.push(redirectUrl); // Redirigir si es necesario
+        history.push(redirectUrl);
       } catch (error) {
         console.log(error);
         setIsLoading(false);
-        // Mostrar mensaje de error
       }
     } else {
       setFormSubmitted(true);
     }
+  };
+
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token); // Actualiza el estado con el token de reCAPTCHA
   };
 
   const handleClick = (click) => {
@@ -283,6 +274,18 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
               <span className="text-red-500">{errors.EMAIL}</span>
             )}
           </div>
+
+          {/* Aquí se renderiza el componente de reCAPTCHA */}
+          <div className="mb-4">
+            <ReCAPTCHA
+              sitekey="6LeoQiUqAAAAACxySWKCay_FVFUIrcW4eN5XqtCu" // Tu clave de sitio de reCAPTCHA
+              onChange={handleCaptchaChange}
+            />
+            {formSubmitted && !captchaToken && (
+              <span className="text-red-500">Por favor, verifica que no eres un robot.</span>
+            )}
+          </div>
+
           <div className="flex items-center justify-center ">
             {isLoading ? (
               <img
@@ -309,4 +312,4 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   );
 };
 
-export default Registro;
+export default RegistroCaptcha;
