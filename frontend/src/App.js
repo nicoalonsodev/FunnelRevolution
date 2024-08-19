@@ -144,6 +144,12 @@ import LandingPageAlfonsoAgui from "./views/RomanCorrea/Afiliados/AlfonsoAguirre
 import LandingVslKarinaKin from "./views/RomanCorrea/Afiliados/KarinaKintana/LandingVslKarinaKin";
 import LandingPageKarinaKinta from "./views/RomanCorrea/Afiliados/KarinaKintana/LandingPageKarinaKinta";
 import CalendlyPageKarinaKinta from "./views/RomanCorrea/Afiliados/KarinaKintana/CalendlyPageKarinaKinta";
+import LandingVslSantiagoFer from "./views/RomanCorrea/Afiliados/SantiagoFerreiro/LandingVslSantiagoFer.jsx";
+import LandingPageSantiagoFerreiro from "./views/RomanCorrea/Afiliados/SantiagoFerreiro/LandingPageSantiagoFerreiro";
+import CalendlyPageSantiago from "./views/RomanCorrea/Afiliados/SantiagoFerreiro/CalendlyPageSantiago";
+import LandingVslFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/LandingVslFrancoNav.jsx";
+import LandingPageFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/LandingPageFrancoNav.jsx";
+import CalendlyPageFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/CalendlyPageFrancoNav.jsx";
 function App() {
   return (
     <div className="App">
@@ -582,6 +588,24 @@ function App() {
         exact
         path="/karina-quintana/calendly"
         component={CalendlyPageKarinaKinta}
+      />
+
+      {/* Landing santiago-ferreiro*/}
+      <Route exact path="/santiago-ferreiro/vsl" component={LandingVslSantiagoFer} />
+      <Route exact path="/santiago-ferreiro" component={LandingPageSantiagoFerreiro} />
+      <Route
+        exact
+        path="/santiago-ferreiro/calendly"
+        component={CalendlyPageSantiago}
+      />
+
+      {/* Landing franco-navarro*/}
+      <Route exact path="/franco-navarro/vsl" component={LandingVslFrancoNav} />
+      <Route exact path="/franco-navarro" component={LandingPageFrancoNav} />
+      <Route
+        exact
+        path="/franco-navarro/calendly"
+        component={CalendlyPageFrancoNav}
       />
 
     </div>
