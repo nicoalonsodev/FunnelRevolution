@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import ReCAPTCHA from "react-google-recaptcha"; // Importa ReCAPTCHA
+import ReCAPTCHA from "react-google-recaptcha";
 import loading from "../../assets/load3.gif";
 import Select from "react-select";
 import country from "../../assets/country.svg";
@@ -19,7 +19,7 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
     PHONE: "",
     CountryCode: null,
     Country: "",
-    DATE: new Date().toLocaleString(), // Añadir la fecha de creación
+    DATE: new Date().toLocaleString(),
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -60,32 +60,32 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
     setErrors(errors);
   };
 
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token); // Guardamos el token de reCAPTCHA
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     validate(registro);
-    if (Object.keys(errors).length === 0 && captchaToken) { // Asegúrate de tener un token de reCAPTCHA válido
+    if (Object.keys(errors).length === 0 && captchaToken) {
       setIsLoading(true);
 
-      // Añadimos el token de reCAPTCHA al formulario
+      // Enviar a Google Sheets
       const formData = new FormData(formRef.current);
-      formData.append('recaptchaToken', captchaToken);
+      formData.append("recaptchaToken", captchaToken);
 
       try {
-        // Enviar a Google Sheets
-        await fetch(
-          googleSheetsUrl,
-          {
-            method: "POST",
-            body: formData,
-            mode: "no-cors",
-          }
-        );
+        await fetch(googleSheetsUrl, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        });
 
         // Enviar a Mailchimp
         await fetch(formRef.current.action, {
           method: formRef.current.method,
           body: formData,
-          mode: 'no-cors',
+          mode: "no-cors",
         });
 
         setRegistro({
@@ -94,7 +94,7 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
           PHONE: "",
           CountryCode: null,
           Country: "",
-          DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
+          DATE: new Date().toLocaleString(),
         });
         setIsLoading(false);
         actualizarEstado(false);
@@ -106,10 +106,6 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
     } else {
       setFormSubmitted(true);
     }
-  };
-
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token); // Actualiza el estado con el token de reCAPTCHA
   };
 
   const handleClick = (click) => {
@@ -274,18 +270,12 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
               <span className="text-red-500">{errors.EMAIL}</span>
             )}
           </div>
-
-          {/* Aquí se renderiza el componente de reCAPTCHA */}
           <div className="mb-4">
             <ReCAPTCHA
-              sitekey="6LeoQiUqAAAAACxySWKCay_FVFUIrcW4eN5XqtCu" // Tu clave de sitio de reCAPTCHA
+              sitekey="6LdclioqAAAAAKqyo9Oeco4U-2Lb9nBJzC2_aAsF"
               onChange={handleCaptchaChange}
             />
-            {formSubmitted && !captchaToken && (
-              <span className="text-red-500">Por favor, verifica que no eres un robot.</span>
-            )}
           </div>
-
           <div className="flex items-center justify-center ">
             {isLoading ? (
               <img
