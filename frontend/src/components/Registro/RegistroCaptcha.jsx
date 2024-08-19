@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import loading from "../../assets/load3.gif";
 import Select from "react-select";
 import country from "../../assets/country.svg";
@@ -8,24 +7,30 @@ import person from "../../assets/person.svg";
 import phone from "../../assets/phone.svg";
 import countries from "./countries";
 import { useHistory } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Registro.css";
 
-const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
+const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   const formRef = useRef(null);
   const history = useHistory();
+  const [captchaValidate, setCaptchaValidate] = useState(false);
   const [registro, setRegistro] = useState({
     FNAME: "",
     EMAIL: "",
     PHONE: "",
     CountryCode: null,
     Country: "",
-    DATE: new Date().toLocaleString(),
+    DATE: new Date().toLocaleString(), // Añadir la fecha de creación
   });
 
   const [isLoading, setIsLoading] = useState(false);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({
+    FNAME: "completar con su nombre",
+    EMAIL: "completar email",
+    PHONE: "colocar su numero",
+    countryCode: "colocar Country Code",
+  });
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null); // Estado para almacenar el token de reCAPTCHA
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -55,55 +60,65 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
       errors.PHONE = "Debe ingresar su numero de celular.";
     }
     if (!registro.CountryCode) {
-      errors.PHONE = "Debe ingresar el código de su país.";
+      errors.PHONE = "Debe ingresar el código de su pais.";
+    }
+    if (!registro.CountryCode && !registro.PHONE) {
+      errors.PHONE =
+        "Debe ingresar el código de su pais y su numero de celular.";
     }
     setErrors(errors);
-  };
-
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token); // Guardamos el token de reCAPTCHA
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     validate(registro);
-    if (Object.keys(errors).length === 0 && captchaToken) {
+    if (Object.keys(errors).length === 0 && captchaValidate === true) {
       setIsLoading(true);
 
       // Enviar a Google Sheets
-      const formData = new FormData(formRef.current);
-      formData.append("recaptchaToken", captchaToken);
+      const formDatab = new FormData();
+      for (const key in registro) {
+        formDatab.append(key, registro[key]);
+      }
 
       try {
         await fetch(googleSheetsUrl, {
           method: "POST",
-          body: formData,
+          body: formDatab,
           mode: "no-cors",
         });
 
         // Enviar a Mailchimp
-        await fetch(formRef.current.action, {
-          method: formRef.current.method,
+        const mailchimpForm = formRef.current;
+        const formData = new FormData(mailchimpForm);
+
+        await fetch(mailchimpForm.action, {
+          method: mailchimpForm.method,
           body: formData,
           mode: "no-cors",
         });
 
+        // Mostrar mensaje de éxito o realizar alguna acción adicional
         setRegistro({
           FNAME: "",
           EMAIL: "",
           PHONE: "",
           CountryCode: null,
           Country: "",
-          DATE: new Date().toLocaleString(),
+          DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
         });
         setIsLoading(false);
         actualizarEstado(false);
-        history.push(redirectUrl);
+        history.push(redirectUrl); // Redirigir si es necesario
       } catch (error) {
         console.log(error);
         setIsLoading(false);
+        // Mostrar mensaje de error
       }
     } else {
+      if(captchaValidate !== true){
+        alert("Debes validar que no eres un Robot")
+      }
       setFormSubmitted(true);
     }
   };
@@ -270,10 +285,10 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
               <span className="text-red-500">{errors.EMAIL}</span>
             )}
           </div>
-          <div className="mb-4">
+          <div>
             <ReCAPTCHA
-              sitekey="6LdclioqAAAAAKqyo9Oeco4U-2Lb9nBJzC2_aAsF"
-              onChange={handleCaptchaChange}
+              sitekey="6LdcIioqAAAAAKqyo9Oeco4U-2Lb9nBJzC2_aAsF"
+              onChange={() => setCaptchaValidate(!captchaValidate)}
             />
           </div>
           <div className="flex items-center justify-center ">
@@ -302,4 +317,4 @@ const RegistroCaptcha = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => 
   );
 };
 
-export default RegistroCaptcha;
+export default Registro;
