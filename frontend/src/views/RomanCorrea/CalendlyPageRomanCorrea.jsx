@@ -8,7 +8,7 @@ const CalendlyPageRomanCorrea = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const calendlyLink = "https://calendly.com/cachicachi08/inicio-en-revolution";
+  const calendlyLink = "https://calendly.com/roman-revolution08/ingreso-a-revolution";
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
       <div className="w-screen h-24  py- flex justify-center items-center border-b-[1px] border-yellow-600">
