@@ -60,7 +60,7 @@ const VideoPreview = ({urlPreview, googleSheets}) => {
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <RegistroCaptcha actualizarEstado={actualizarEstadoPadre} redirectUrl={urlPreview} googleSheetsUrl={googleSheets} />
+              <Registro actualizarEstado={actualizarEstadoPadre} redirectUrl={urlPreview} googleSheetsUrl={googleSheets} />
             </div>
           </div>
         </>
