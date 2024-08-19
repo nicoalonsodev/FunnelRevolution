@@ -285,7 +285,7 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
               <span className="text-red-500">{errors.EMAIL}</span>
             )}
           </div>
-          <div>
+          <div className="mb-4">
             <ReCAPTCHA
               sitekey="6LdcIioqAAAAAKqyo9Oeco4U-2Lb9nBJzC2_aAsF"
               onChange={() => setCaptchaValidate(!captchaValidate)}
