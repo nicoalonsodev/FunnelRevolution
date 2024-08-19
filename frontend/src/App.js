@@ -150,6 +150,15 @@ import CalendlyPageSantiago from "./views/RomanCorrea/Afiliados/SantiagoFerreiro
 import LandingVslFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/LandingVslFrancoNav.jsx";
 import LandingPageFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/LandingPageFrancoNav.jsx";
 import CalendlyPageFrancoNav from "./views/RomanCorrea/Afiliados/FrancoNavarro/CalendlyPageFrancoNav.jsx";
+import LandingVslHugoGon from "./views/RomanCorrea/Afiliados/HugoGonzalez/LandingVslHugoGon.jsx";
+import LandingPageHugoGon from "./views/RomanCorrea/Afiliados/HugoGonzalez/LandingPageHugoGon.jsx";
+import CalendlyPageHugoGon from "./views/RomanCorrea/Afiliados/HugoGonzalez/CalendlyPageHugoGon.jsx";
+import LandingVslHernanFlores from "./views/RomanCorrea/Afiliados/HernanFlores/LandingVslHernanFlores.jsx";
+import LandingPageHernanFlores from "./views/RomanCorrea/Afiliados/HernanFlores/LandingPageHernanFlores.jsx";
+import CalendlyPageHernanFlores from "./views/RomanCorrea/Afiliados/HernanFlores/CalendlyPageHernanFlores.jsx";
+import LandingPageAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/LandingPageAgustinOrtolani.jsx";
+import CalendlyPageAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/CalendlyPageAgustinOrtolani.jsx";
+import LandingVslAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/LandingVslAgustinOrtolani.jsx";
 function App() {
   return (
     <div className="App">
@@ -606,6 +615,33 @@ function App() {
         exact
         path="/franco-navarro/calendly"
         component={CalendlyPageFrancoNav}
+      />
+
+      {/* Landing hugo-gonzalez*/}
+      <Route exact path="/hugo-gonzalez/vsl" component={LandingVslHugoGon} />
+      <Route exact path="/hugo-gonzalez" component={LandingPageHugoGon} />
+      <Route
+        exact
+        path="/hugo-gonzalez/calendly"
+        component={CalendlyPageHugoGon}
+      />
+
+      {/* Landing hernan-flores*/}
+      <Route exact path="/hernan-flores/vsl" component={LandingVslHernanFlores} />
+      <Route exact path="/hernan-flores" component={LandingPageHernanFlores} />
+      <Route
+        exact
+        path="/hernan-flores/calendly"
+        component={CalendlyPageHernanFlores}
+      />
+
+      {/* Landing agustin-ortolani*/}
+      <Route exact path="/agustin-ortolani/vsl" component={LandingVslAgustinOrtolani} />
+      <Route exact path="/agustin-ortolani" component={LandingPageAgustinOrtolani} />
+      <Route
+        exact
+        path="/agustin-ortolani/calendly"
+        component={CalendlyPageAgustinOrtolani}
       />
 
     </div>
