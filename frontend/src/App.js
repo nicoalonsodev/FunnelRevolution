@@ -135,6 +135,15 @@ import CalendlyPageMarcelaPa from "./views/RaulCrisorio/Afiliados/MarcelaPaolaMe
 import LandingVslAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/LandingVslAlejandroMa";
 import LandingPageAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/LandingPageAlejandroMa";
 import CalendlyPageAlejandroMa from "./views/RominaLuppi/Afiliados/AlejandroMansilla/CalendlyPageAlejandroMa";
+import LandingVslRomanCo from "./views/RomanCorrea/LandingVslRomanCo";
+import CalendlyPageRomanCorrea from "./views/RomanCorrea/CalendlyPageRomanCorrea";
+import LandingPageRomanCo from "./views/RomanCorrea/LandingPageRomanCo";
+import LandingVslAlfonsoAgui from "./views/RomanCorrea/Afiliados/AlfonsoAguirre/LandingVslAlfonsoAgui";
+import CalendlyPageAlfonsoAgui from "./views/RomanCorrea/Afiliados/AlfonsoAguirre/CalendlyPageAlfonsoAgui";
+import LandingPageAlfonsoAgui from "./views/RomanCorrea/Afiliados/AlfonsoAguirre/LandingPageAlfonsoAgui";
+import LandingVslKarinaKin from "./views/RomanCorrea/Afiliados/KarinaKintana/LandingVslKarinaKin";
+import LandingPageKarinaKinta from "./views/RomanCorrea/Afiliados/KarinaKintana/LandingPageKarinaKinta";
+import CalendlyPageKarinaKinta from "./views/RomanCorrea/Afiliados/KarinaKintana/CalendlyPageKarinaKinta";
 function App() {
   return (
     <div className="App">
@@ -546,6 +555,33 @@ function App() {
         exact
         path="/alejandro-mansilla/calendly"
         component={CalendlyPageAlejandroMa}
+      />
+
+      {/* Landing roman-correa*/}
+      <Route exact path="/roman-correa/vsl" component={LandingVslRomanCo} />
+      <Route exact path="/roman-correa" component={LandingPageRomanCo} />
+      <Route
+        exact
+        path="/roman-correa/calendly"
+        component={CalendlyPageRomanCorrea}
+      />
+
+      {/* Landing alfonso-aguirre*/}
+      <Route exact path="/alfonso-aguirre/vsl" component={LandingVslAlfonsoAgui} />
+      <Route exact path="/alfonso-aguirre" component={LandingPageAlfonsoAgui} />
+      <Route
+        exact
+        path="/alfonso-aguirre/calendly"
+        component={CalendlyPageAlfonsoAgui}
+      />
+
+      {/* Landing karina-quintana*/}
+      <Route exact path="/karina-quintana/vsl" component={LandingVslKarinaKin} />
+      <Route exact path="/karina-quintana" component={LandingPageKarinaKinta} />
+      <Route
+        exact
+        path="/karina-quintana/calendly"
+        component={CalendlyPageKarinaKinta}
       />
 
     </div>
