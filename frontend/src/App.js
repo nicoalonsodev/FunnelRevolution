@@ -183,6 +183,18 @@ import LandingPageFabianGonzalez from "./views/RomanCorrea/Afiliados/FabianGonza
 import LandingVslMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/LandingVslMarianaRodriguez.jsx";
 import LandingPageMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/LandingPageMarianaRodriguez.jsx";
 import CalendlyPageMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/CalendlyPageMarianaRodriguez.jsx";
+import LandingVslLautaroAlmeida from "./views/RomanCorrea/Afiliados/LautaroAlmeida/LandingVslLautaroAlmeida.jsx";
+import CalendlyPageLautaroAlmeida from "./views/RomanCorrea/Afiliados/LautaroAlmeida/CalendlyPageLautaroAlmeida.jsx";
+import LandingPageLautaroAlmeida from "./views/RomanCorrea/Afiliados/LautaroAlmeida/LandingPageLautaroAlmeida.jsx";
+import LandingVslUrielBravo from "./views/RomanCorrea/Afiliados/UrielBravo/LandingVslUrielBravo.jsx";
+import CalendlyPageUrielBravo from "./views/RomanCorrea/Afiliados/UrielBravo/CalendlyPageUrielBravo.jsx";
+import LandingPageUrielBravo from "./views/RomanCorrea/Afiliados/UrielBravo/LandingPageUrielBravo.jsx";
+import LandingVslAgustinaRuiz from "./views/CristianCastellon/Afiliados/AgustinaRuiz/LandingVslAgustinaRuiz.jsx";
+import CalendlyPageAgustinaRuiz from "./views/CristianCastellon/Afiliados/AgustinaRuiz/CalendlyPageAgustinaRuiz.jsx";
+import LandingPageAgustinaRuiz from "./views/CristianCastellon/Afiliados/AgustinaRuiz/LandingPageAgustinaRuiz.jsx";
+import LandingVslFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/LandingVslFrancoNatali.jsx";
+import LandingPageFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/LandingPageFrancoNatali.jsx";
+import CalendlyPageFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/CalendlyPageFrancoNatali.jsx";
 function App() {
   return (
     <div className="App">
@@ -738,6 +750,42 @@ function App() {
         exact
         path="/mariana-rodriguez/calendly"
         component={CalendlyPageMarianaRodriguez}
+      />
+
+      {/* Landing lautaro-almeida*/}
+      <Route exact path="/lautaro-almeida/vsl" component={LandingVslLautaroAlmeida} />
+      <Route exact path="/lautaro-almeida" component={LandingPageLautaroAlmeida} />
+      <Route
+        exact
+        path="/lautaro-almeida/calendly"
+        component={CalendlyPageLautaroAlmeida}
+      />
+
+      {/* Landing uriel-bravo*/}
+      <Route exact path="/uriel-bravo/vsl" component={LandingVslUrielBravo} />
+      <Route exact path="/uriel-bravo" component={LandingPageUrielBravo} />
+      <Route
+        exact
+        path="/uriel-bravo/calendly"
+        component={CalendlyPageUrielBravo}
+      />
+
+      {/* Landing agustina-ruiz*/}
+      <Route exact path="/agustina-ruiz/vsl" component={LandingVslAgustinaRuiz} />
+      <Route exact path="/agustina-ruiz" component={LandingPageAgustinaRuiz} />
+      <Route
+        exact
+        path="/agustina-ruiz/calendly"
+        component={CalendlyPageAgustinaRuiz}
+      />
+
+      {/* Landing franco-natali*/}
+      <Route exact path="/franco-natali/vsl" component={LandingVslFrancoNatali} />
+      <Route exact path="/franco-natali" component={LandingPageFrancoNatali} />
+      <Route
+        exact
+        path="/franco-natali/calendly"
+        component={CalendlyPageFrancoNatali}
       />
 
     </div>

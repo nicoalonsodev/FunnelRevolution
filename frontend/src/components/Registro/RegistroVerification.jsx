@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import loading from "../../assets/load3.gif";
 import Select from "react-select";
@@ -29,6 +29,7 @@ const RegistroVerification = ({
 
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCode, setIsLoadingCode] = useState(false);
+  const [verificationCode, setVerificationCode] = useState(null); // Estado para el código de verificación
   const [errors, setErrors] = useState({
     FNAME: "completar con su nombre",
     EMAIL: "completar email",
@@ -37,6 +38,13 @@ const RegistroVerification = ({
     verificationCodeInput: "Ingresa el código de verificación",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Generar un código de verificación aleatorio de 6 dígitos al montar el componente
+    const randomCode = Math.floor(100000 + Math.random() * 900000).toString();
+    setVerificationCode(randomCode);
+    console.log("Generated Verification Code: ", randomCode); // Solo para desarrollo, eliminar en producción
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -91,10 +99,16 @@ const RegistroVerification = ({
   };
 
   const handleSendVerificationCode = async () => {
+    const { CountryCode, PHONE } = registro;
+    
+    if (!CountryCode || !PHONE) {
+      alert("Por favor, ingresa el código de país y un número de teléfono completo.");
+      return;
+    }
+    
+    const phoneNumber = `${CountryCode}${PHONE}`;
+    
     setIsLoadingCode(true); 
-
-    const phoneNumber = `${registro.CountryCode}${registro.PHONE}`;
-    const verificationCode = "3424423"; 
 
     try {
       const response = await axios.post(
@@ -104,7 +118,7 @@ const RegistroVerification = ({
           verificationCode,
         }
       );
-
+    
       if (response.data.res === true) {
         alert("Código enviado. Revisa tu WhatsApp e ingresa el código.");
       } else {
@@ -124,7 +138,7 @@ const RegistroVerification = ({
     e.preventDefault();
     validate(registro);
 
-    if (registro.verificationCodeInput !== "3424423") {
+    if (registro.verificationCodeInput !== verificationCode) {
       alert("El código ingresado es incorrecto.");
       return;
     }
@@ -381,7 +395,7 @@ const RegistroVerification = ({
               </button>
             )}
           </div>
-          <p className="mb-4 text-balance italic">“Un miembro del equipo te hablará por WhatsApp para darte acceso” </p>
+          <p className="mb-4 text-balance italic font-bold">Un miembro del equipo te hablará por WhatsApp para darte acceso </p>
         </form>
         <div className="text-center"></div>
         <p className="text-xs text-gray-600 text-center mt-8">
