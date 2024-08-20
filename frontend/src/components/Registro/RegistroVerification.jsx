@@ -205,8 +205,8 @@ const RegistroVerification = ({
         >
           X
         </button>
-        <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2">
-          Ingresa tus datos para ver la MASTERCLASS
+        <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2 text-balance">
+        Ingresa tus datos para ver la Masterclass de este nuevo Modelo de Negocio Online
         </h1>
         <form
           className="max-w-[400px] sm:max-w-[700px] mx-auto"
@@ -370,7 +370,7 @@ const RegistroVerification = ({
               {isLoadingCode ? (
                 <img className="w-12" src={loading} />
               ) : (
-                <p className="text-xs">Enviar código</p>
+                <p className="text-xs">Enviar código por Whastapp</p>
               )}
             </button>
           </div>
@@ -395,7 +395,7 @@ const RegistroVerification = ({
               </button>
             )}
           </div>
-          <p className="mb-4 text-balance italic font-bold">Un miembro del equipo te hablará por WhatsApp para darte acceso </p>
+          <p className="mb-4 text-balance italic font-bold">Un miembro del equipo te hablará por WhatsApp para darte acceso 🙌🏼</p>
         </form>
         <div className="text-center"></div>
         <p className="text-xs text-gray-600 text-center mt-8">
