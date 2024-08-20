@@ -195,6 +195,21 @@ import LandingPageAgustinaRuiz from "./views/CristianCastellon/Afiliados/Agustin
 import LandingVslFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/LandingVslFrancoNatali.jsx";
 import LandingPageFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/LandingPageFrancoNatali.jsx";
 import CalendlyPageFrancoNatali from "./views/CristianCastellon/Afiliados/FrancoNatali/CalendlyPageFrancoNatali.jsx";
+import LandingVslNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/LandingVslNicolasBevacqua.jsx";
+import LandingPageNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/LandingPageNicolasBevacqua.jsx";
+import CalendlyPageNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/CalendlyPageNicolasBevacqua.jsx";
+import CalendlyPageCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/CalendlyPageCarlosOjeda.jsx";
+import LandingVslCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/LandingVslCarlosOjeda.jsx";
+import CalendlyPageCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/CalendlyPageCarlosOjeda.jsx";
+import LandingVslJorgeMacias from "./views/CristianCastellon/Afiliados/JorgeMacias/LandingVslJorgeMacias.jsx";
+import LandingPageJorgeMacias from "./views/CristianCastellon/Afiliados/JorgeMacias/LandingPageJorgeMacias.jsx";
+import CalendlyPageJorgeMacias from "./views/CristianCastellon/Afiliados/JorgeMacias/CalendlyPageJorgeMacias.jsx";
+import LandingVslFranciscoChiap from "./views/CristianCastellon/Afiliados/FranciscoChiapero/LandingVslFranciscoChiap.jsx";
+import LandingPageFranciscoChiapero from "./views/CristianCastellon/Afiliados/FranciscoChiapero/LandingPageFranciscoChiapero.jsx";
+import CalendlyPageFranciscoChiapero from "./views/CristianCastellon/Afiliados/FranciscoChiapero/CalendlyPageFranciscoChiapero.jsx";
+import LandingVslLucasCeballos from "./views/CristianCastellon/Afiliados/LucasCeballos/LandingVslLucasCeballos.jsx";
+import LandingPageLucasCeballos from "./views/CristianCastellon/Afiliados/LucasCeballos/LandingPageLucasCeballos.jsx";
+import CalendlyPageLucasCeballos from "./views/CristianCastellon/Afiliados/LucasCeballos/CalendlyPageLucasCeballos.jsx";
 function App() {
   return (
     <div className="App">
@@ -786,6 +801,51 @@ function App() {
         exact
         path="/franco-natali/calendly"
         component={CalendlyPageFrancoNatali}
+      />
+
+      {/* Landing nicolas-bevacqua*/}
+      <Route exact path="/nicolas-bevacqua/vsl" component={LandingVslNicolasBevacqua} />
+      <Route exact path="/nicolas-bevacqua" component={LandingPageNicolasBevacqua} />
+      <Route
+        exact
+        path="/nicolas-bevacqua/calendly"
+        component={CalendlyPageNicolasBevacqua}
+      />
+
+      {/* Landing carlos-ojeda*/}
+      <Route exact path="/carlos-ojeda/vsl" component={LandingVslCarlosOjeda} />
+      <Route exact path="/carlos-ojeda" component={CalendlyPageCarlosOjeda} />
+      <Route
+        exact
+        path="/carlos-ojeda/calendly"
+        component={CalendlyPageCarlosOjeda}
+      />
+
+      {/* Landing jorge-macias*/}
+      <Route exact path="/jorge-macias/vsl" component={LandingVslJorgeMacias} />
+      <Route exact path="/jorge-macias" component={LandingPageJorgeMacias} />
+      <Route
+        exact
+        path="/jorge-macias/calendly"
+        component={CalendlyPageJorgeMacias}
+      />
+
+      {/* Landing francisco-chiapero*/}
+      <Route exact path="/francisco-chiapero/vsl" component={LandingVslFranciscoChiap} />
+      <Route exact path="/francisco-chiapero" component={LandingPageFranciscoChiapero} />
+      <Route
+        exact
+        path="/francisco-chiapero/calendly"
+        component={CalendlyPageFranciscoChiapero}
+      />
+
+      {/* Landing lucas-ceballos*/}
+      <Route exact path="/lucas-ceballos/vsl" component={LandingVslLucasCeballos} />
+      <Route exact path="/lucas-ceballos" component={LandingPageLucasCeballos} />
+      <Route
+        exact
+        path="/lucas-ceballos/calendly"
+        component={CalendlyPageLucasCeballos}
       />
 
     </div>
