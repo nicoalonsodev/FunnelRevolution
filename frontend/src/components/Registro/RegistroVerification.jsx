@@ -23,8 +23,8 @@ const RegistroVerification = ({
     PHONE: "",
     CountryCode: null,
     Country: "",
-    DATE: new Date().toLocaleString(), // Añadir la fecha de creación
-    verificationCodeInput: "", // nuevo campo para ingresar el código de verificación
+    DATE: new Date().toLocaleString(),
+    verificationCodeInput: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -34,16 +34,31 @@ const RegistroVerification = ({
     EMAIL: "completar email",
     PHONE: "colocar su numero",
     countryCode: "colocar Country Code",
-    verificationCodeInput: "Ingresa el código de verificación", // nuevo error para el código
+    verificationCodeInput: "Ingresa el código de verificación",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setRegistro((prevRegistro) => ({
-      ...prevRegistro,
-      [name]: value,
-    }));
+
+    if (name === "PHONE") {
+      let formattedPhone = value;
+
+      if (registro.CountryCode === "+54" && !value.startsWith("9")) {
+        formattedPhone = "9" + value;
+      }
+
+      setRegistro((prevRegistro) => ({
+        ...prevRegistro,
+        [name]: formattedPhone,
+      }));
+    } else {
+      setRegistro((prevRegistro) => ({
+        ...prevRegistro,
+        [name]: value,
+      }));
+    }
+
     validate({ ...registro, [name]: value });
   };
 
@@ -76,10 +91,10 @@ const RegistroVerification = ({
   };
 
   const handleSendVerificationCode = async () => {
-    setIsLoadingCode(true); // Activar loading al iniciar la solicitud
+    setIsLoadingCode(true); 
 
     const phoneNumber = `${registro.CountryCode}${registro.PHONE}`;
-    const verificationCode = "3424423"; // código de verificación fijo por ahora
+    const verificationCode = "3424423"; 
 
     try {
       const response = await axios.post(
@@ -101,10 +116,9 @@ const RegistroVerification = ({
       console.error("Error al enviar el código de verificación", error);
       alert("Hubo un error al intentar enviar el código.");
     } finally {
-      setIsLoadingCode(false); // Desactivar loading después de la solicitud
+      setIsLoadingCode(false); 
     }
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -118,7 +132,6 @@ const RegistroVerification = ({
     if (Object.keys(errors).length === 0) {
       setIsLoading(true);
 
-      // Enviar a Google Sheets
       const formDatab = new FormData();
       for (const key in registro) {
         formDatab.append(key, registro[key]);
@@ -131,7 +144,6 @@ const RegistroVerification = ({
           mode: "no-cors",
         });
 
-        // Enviar a Mailchimp
         const mailchimpForm = formRef.current;
         const formData = new FormData(mailchimpForm);
 
@@ -141,7 +153,6 @@ const RegistroVerification = ({
           mode: "no-cors",
         });
 
-        // Mostrar mensaje de éxito o realizar alguna acción adicional
         setRegistro({
           FNAME: "",
           EMAIL: "",
@@ -149,15 +160,14 @@ const RegistroVerification = ({
           CountryCode: null,
           Country: "",
           verificationCodeInput: "",
-          DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
+          DATE: new Date().toLocaleString(),
         });
         setIsLoading(false);
         actualizarEstado(false);
-        history.push(redirectUrl); // Redirigir si es necesario
+        history.push(redirectUrl);
       } catch (error) {
         console.log(error);
         setIsLoading(false);
-        // Mostrar mensaje de error
       }
     } else {
       setFormSubmitted(true);
@@ -182,7 +192,7 @@ const RegistroVerification = ({
           X
         </button>
         <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2">
-          INGRESA TUS DATOS.
+          Ingresa tus datos para ver la MASTERCLASS
         </h1>
         <form
           className="max-w-[400px] sm:max-w-[700px] mx-auto"
@@ -327,7 +337,7 @@ const RegistroVerification = ({
             )}
           </div>
 
-          <div className="mb-4 flex items-center">
+          <div className="mb-2 flex items-center">
             <input
               type="text"
               id="verificationCodeInput"
@@ -350,7 +360,7 @@ const RegistroVerification = ({
               )}
             </button>
           </div>
-
+          <p className="mb-4 text-balance italic">Con el código de acceso que te enviamos por WhatsApp, tenes 72Hs para canjear el acceso al grupo vip de señales y clases en vivo. </p>
           {formSubmitted && errors.verificationCodeInput && (
             <span className="text-red-500">{errors.verificationCodeInput}</span>
           )}
@@ -371,6 +381,7 @@ const RegistroVerification = ({
               </button>
             )}
           </div>
+          <p className="mb-4 text-balance italic">“Un miembro del equipo te hablará por WhatsApp para darte acceso” </p>
         </form>
         <div className="text-center"></div>
         <p className="text-xs text-gray-600 text-center mt-8">

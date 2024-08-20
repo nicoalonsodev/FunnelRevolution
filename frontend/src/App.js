@@ -159,6 +159,30 @@ import CalendlyPageHernanFlores from "./views/RomanCorrea/Afiliados/HernanFlores
 import LandingPageAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/LandingPageAgustinOrtolani.jsx";
 import CalendlyPageAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/CalendlyPageAgustinOrtolani.jsx";
 import LandingVslAgustinOrtolani from "./views/RomanCorrea/Afiliados/AgustinOrtolani/LandingVslAgustinOrtolani.jsx";
+import LandingVslLautaroFredes from "./views/LautaroFredes/LandingVslLautaroFredes.jsx";
+import LandingPageLautaroFredes from "./views/LautaroFredes/LandingPageLautaroFredes.jsx";
+import CalendlyPageLautaroFredes from "./views/LautaroFredes/CalendlyPageLautaroFredes.jsx";
+import LandingVslMarianoSoria from "./views/LautaroFredes/Afiliados/MarianoSoria/LandingVslMarianoSoria.jsx";
+import LandingPageMarianoSoria from "./views/LautaroFredes/Afiliados/MarianoSoria/LandingPageMarianoSoria.jsx";
+import CalendlyPageMarianoSoria from "./views/LautaroFredes/Afiliados/MarianoSoria/CalendlyPageMarianoSoria.jsx";
+import CalendlyPageBrianBaez from "./views/LautaroFredes/Afiliados/BrianBaez/CalendlyPageBrianBaez.jsx";
+import LandingPageBrianBaez from "./views/LautaroFredes/Afiliados/BrianBaez/LandingPageBrianBaez.jsx";
+import LandingVslBrianBaez from "./views/LautaroFredes/Afiliados/BrianBaez/LandingVslBrianBaez.jsx";
+import CalendlyPageAaronMeza from "./views/LautaroFredes/Afiliados/AaronMeza/CalendlyPageAaronMeza.jsx";
+import LandingPageAaronMeza from "./views/LautaroFredes/Afiliados/AaronMeza/LandingPageAaronMeza.jsx";
+import LandingVslAaronMeza from "./views/LautaroFredes/Afiliados/AaronMeza/LandingVslAaronMeza.jsx";
+import LandingVslMiguelLavigna from "./views/LautaroFredes/Afiliados/MiguelLavigna/LandingVslMiguelLavigna.jsx";
+import CalendlyPageMiguelLavigna from "./views/LautaroFredes/Afiliados/MiguelLavigna/CalendlyPageMiguelLavigna.jsx";
+import LandingPageMiguelLavigna from "./views/LautaroFredes/Afiliados/MiguelLavigna/LandingPageMiguelLavigna.jsx";
+import LandingPageIvanCristini from "./views/LautaroFredes/Afiliados/IvanCristini/LandingPageIvanCristini.jsx";
+import LandingVslIvanCristini from "./views/LautaroFredes/Afiliados/IvanCristini/LandingVslIvanCristini.jsx";
+import CalendlyPageIvanCristini from "./views/LautaroFredes/Afiliados/IvanCristini/CalendlyPageIvanCristini.jsx";
+import LandingVslFabianGonzalez from "./views/RomanCorrea/Afiliados/FabianGonzalez/LandingVslFabianGonzalez.jsx";
+import CalendlyPageFabianGonzalez from "./views/RomanCorrea/Afiliados/FabianGonzalez/CalendlyPageFabianGonzalez.jsx";
+import LandingPageFabianGonzalez from "./views/RomanCorrea/Afiliados/FabianGonzalez/LandingPageFabianGonzalez.jsx";
+import LandingVslMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/LandingVslMarianaRodriguez.jsx";
+import LandingPageMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/LandingPageMarianaRodriguez.jsx";
+import CalendlyPageMarianaRodriguez from "./views/RomanCorrea/Afiliados/MarianaRodriguez/CalendlyPageMarianaRodriguez.jsx";
 function App() {
   return (
     <div className="App">
@@ -642,6 +666,78 @@ function App() {
         exact
         path="/agustin-ortolani/calendly"
         component={CalendlyPageAgustinOrtolani}
+      />
+
+      {/* Landing lautaro-fredes*/}
+      <Route exact path="/lautaro-fredes/vsl" component={LandingVslLautaroFredes} />
+      <Route exact path="/lautaro-fredes" component={LandingPageLautaroFredes} />
+      <Route
+        exact
+        path="/lautaro-fredes/calendly"
+        component={CalendlyPageLautaroFredes}
+      />
+
+      {/* Landing mariano-soria*/}
+      <Route exact path="/mariano-soria/vsl" component={LandingVslMarianoSoria} />
+      <Route exact path="/mariano-soria" component={LandingPageMarianoSoria} />
+      <Route
+        exact
+        path="/mariano-soria/calendly"
+        component={CalendlyPageMarianoSoria}
+      />
+
+      {/* Landing brian-baez*/}
+      <Route exact path="/brian-baez/vsl" component={LandingVslBrianBaez} />
+      <Route exact path="/brian-baez" component={LandingPageBrianBaez} />
+      <Route
+        exact
+        path="/brian-baez/calendly"
+        component={CalendlyPageBrianBaez}
+      />
+
+      {/* Landing aaron-meza*/}
+      <Route exact path="/aaron-meza/vsl" component={LandingVslAaronMeza} />
+      <Route exact path="/aaron-meza" component={LandingPageAaronMeza} />
+      <Route
+        exact
+        path="/aaron-meza/calendly"
+        component={CalendlyPageAaronMeza}
+      />
+
+      {/* Landing miguel-lavigna*/}
+      <Route exact path="/miguel-lavigna/vsl" component={LandingVslMiguelLavigna} />
+      <Route exact path="/miguel-lavigna" component={LandingPageMiguelLavigna} />
+      <Route
+        exact
+        path="/miguel-lavigna/calendly"
+        component={CalendlyPageMiguelLavigna}
+      />
+
+      {/* Landing ivan-cristini*/}
+      <Route exact path="/ivan-cristini/vsl" component={LandingVslIvanCristini} />
+      <Route exact path="/ivan-cristini" component={LandingPageIvanCristini} />
+      <Route
+        exact
+        path="/ivan-cristini/calendly"
+        component={CalendlyPageIvanCristini}
+      />
+
+      {/* Landing fabian-gonzalez*/}
+      <Route exact path="/fabian-gonzalez/vsl" component={LandingVslFabianGonzalez} />
+      <Route exact path="/fabian-gonzalez" component={LandingPageFabianGonzalez} />
+      <Route
+        exact
+        path="/fabian-gonzalez/calendly"
+        component={CalendlyPageFabianGonzalez}
+      />
+
+      {/* Landing mariana-rodriguez*/}
+      <Route exact path="/mariana-rodriguez/vsl" component={LandingVslMarianaRodriguez} />
+      <Route exact path="/mariana-rodriguez" component={LandingPageMarianaRodriguez} />
+      <Route
+        exact
+        path="/mariana-rodriguez/calendly"
+        component={CalendlyPageMarianaRodriguez}
       />
 
     </div>

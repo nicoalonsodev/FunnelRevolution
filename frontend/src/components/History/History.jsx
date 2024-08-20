@@ -33,7 +33,7 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
               <p className="text-md lg:text-lg poppins-regular text-gray-700">Tengo una meta clara para ti que estás leyendo esto:</p>
             </div>
             <div className="w-full mt-2">
-              <p className="text-xl poppins-semibold text-black">Hacer de ti el próximo millonario de latinoamérica con este nuevo modelo de negocio.</p>
+              <p className="text-xl poppins-semibold text-black">Hacer de ti el próximo caso de éxito nuestra comunidad con este nuevo modelo de negocio.</p>
             </div>
             <div className="w-full mt-4">
               <p className="poppins-regular text-gray-700">Si esto capta tu atención, te sugiero que leas cada palabra de esta página, porque será lo más importante que leas en todo el año.</p>
