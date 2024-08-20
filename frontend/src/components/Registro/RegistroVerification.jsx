@@ -47,6 +47,22 @@ const RegistroVerification = ({
     console.log("Generated Verification Code: ", randomCode); // Solo para desarrollo, eliminar en producción
   }, []);
 
+  const validatePhoneNumber = () => {
+    const { CountryCode, PHONE } = registro;
+  
+    // Ejemplo de validación para Argentina (+54)
+    if (CountryCode === "+54") {
+      // Argentina: debe empezar con 9 y tener 10 dígitos en total.
+      const argentinaPhoneRegex = /^9\d{9}$/;
+      return argentinaPhoneRegex.test(PHONE);
+    }
+  
+    // Ejemplo de validación general para otros países (mínimo 7 dígitos)
+    const generalPhoneRegex = /^\d{7,}$/;
+    return generalPhoneRegex.test(PHONE);
+  };
+  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -107,10 +123,16 @@ const RegistroVerification = ({
       return;
     }
     
+    // Validar el formato del número de teléfono
+    if (!validatePhoneNumber()) {
+      alert("El número de teléfono ingresado no es válido. Por favor, verifica el número.");
+      return;
+    }
+    
     const phoneNumber = `${CountryCode}${PHONE}`;
     
     setIsLoadingCode(true); 
-
+  
     try {
       const response = await axios.post(
         "https://saksa-production.up.railway.app/send-verification",
@@ -134,6 +156,7 @@ const RegistroVerification = ({
       setIsLoadingCode(false); 
     }
   };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();

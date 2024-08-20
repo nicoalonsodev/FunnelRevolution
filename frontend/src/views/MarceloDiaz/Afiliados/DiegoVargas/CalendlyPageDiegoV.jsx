@@ -8,7 +8,7 @@ const CalendlyPageDiegoV = () => {
   }, []);
 
   // El Link de Calendly
-  const calendlyLink = "https://calendly.com/ivangasolero/llamada-de-iniciacion-a-revolution";
+  const calendlyLink = "https://calendly.com/diegodela9";
 
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
