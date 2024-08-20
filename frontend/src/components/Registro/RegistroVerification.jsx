@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import axios from "axios";
 import loading from "../../assets/load3.gif";
 import Select from "react-select";
 import country from "../../assets/country.svg";
@@ -9,7 +10,11 @@ import countries from "./countries";
 import { useHistory } from "react-router-dom";
 import "./Registro.css";
 
-const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
+const RegistroVerification = ({
+  actualizarEstado,
+  redirectUrl,
+  googleSheetsUrl,
+}) => {
   const formRef = useRef(null);
   const history = useHistory();
   const [registro, setRegistro] = useState({
@@ -19,14 +24,17 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
     CountryCode: null,
     Country: "",
     DATE: new Date().toLocaleString(), // Añadir la fecha de creación
+    verificationCodeInput: "", // nuevo campo para ingresar el código de verificación
   });
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingCode, setIsLoadingCode] = useState(false);
   const [errors, setErrors] = useState({
     FNAME: "completar con su nombre",
     EMAIL: "completar email",
     PHONE: "colocar su numero",
     countryCode: "colocar Country Code",
+    verificationCodeInput: "Ingresa el código de verificación", // nuevo error para el código
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -55,21 +63,58 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
       }
     }
     if (!registro.PHONE) {
-      errors.PHONE = "Debe ingresar su numero de celular.";
+      errors.PHONE = "Debe ingresar su número de celular.";
     }
     if (!registro.CountryCode) {
-      errors.PHONE = "Debe ingresar el código de su pais.";
+      errors.PHONE = "Debe ingresar el código de su país.";
     }
     if (!registro.CountryCode && !registro.PHONE) {
       errors.PHONE =
-        "Debe ingresar el código de su pais y su numero de celular.";
+        "Debe ingresar el código de su país y su número de celular.";
     }
     setErrors(errors);
   };
 
+  const handleSendVerificationCode = async () => {
+    setIsLoadingCode(true); // Activar loading al iniciar la solicitud
+
+    const phoneNumber = `${registro.CountryCode}${registro.PHONE}`;
+    const verificationCode = "3424423"; // código de verificación fijo por ahora
+
+    try {
+      const response = await axios.post(
+        "https://saksa-production.up.railway.app/send-verification",
+        {
+          phoneNumber,
+          verificationCode,
+        }
+      );
+
+      if (response.data.res === true) {
+        alert("Código enviado. Revisa tu WhatsApp e ingresa el código.");
+      } else {
+        alert(
+          "Error al enviar el código. Por favor, verifica tu número de teléfono y código de país."
+        );
+      }
+    } catch (error) {
+      console.error("Error al enviar el código de verificación", error);
+      alert("Hubo un error al intentar enviar el código.");
+    } finally {
+      setIsLoadingCode(false); // Desactivar loading después de la solicitud
+    }
+  };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     validate(registro);
+
+    if (registro.verificationCodeInput !== "3424423") {
+      alert("El código ingresado es incorrecto.");
+      return;
+    }
+
     if (Object.keys(errors).length === 0) {
       setIsLoading(true);
 
@@ -80,14 +125,11 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
       }
 
       try {
-        await fetch(
-          googleSheetsUrl,
-          {
-            method: "POST",
-            body: formDatab,
-            mode: "no-cors",
-          }
-        );
+        await fetch(googleSheetsUrl, {
+          method: "POST",
+          body: formDatab,
+          mode: "no-cors",
+        });
 
         // Enviar a Mailchimp
         const mailchimpForm = formRef.current;
@@ -96,7 +138,7 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
         await fetch(mailchimpForm.action, {
           method: mailchimpForm.method,
           body: formData,
-          mode: 'no-cors',
+          mode: "no-cors",
         });
 
         // Mostrar mensaje de éxito o realizar alguna acción adicional
@@ -106,11 +148,12 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
           PHONE: "",
           CountryCode: null,
           Country: "",
+          verificationCodeInput: "",
           DATE: new Date().toLocaleString(), // Actualizar la fecha de creación
         });
         setIsLoading(false);
         actualizarEstado(false);
-              history.push(redirectUrl); // Redirigir si es necesario
+        history.push(redirectUrl); // Redirigir si es necesario
       } catch (error) {
         console.log(error);
         setIsLoading(false);
@@ -172,7 +215,28 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
               <span className="text-red-500">{errors.FNAME}</span>
             )}
           </div>
-          
+          <div className="mb-4">
+            <input
+              type="email"
+              id="EMAIL"
+              name="EMAIL"
+              value={registro.EMAIL}
+              onChange={handleChange}
+              placeholder="Ingresá tu Correo electrónico"
+              className="input-f h-[40px] w-full px-4 pl-10 mt-2 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              required
+              style={{
+                backgroundImage: `url(${email})`,
+                backgroundSize: "25px 25px",
+                backgroundPosition: "5px center",
+                backgroundRepeat: "no-repeat",
+              }}
+              autoComplete="email"
+            />
+            {formSubmitted && errors.EMAIL && (
+              <span className="text-red-500">{errors.EMAIL}</span>
+            )}
+          </div>
           <div className="mb-4">
             <div className="flex max-h-[54px] cursor-pointer">
               <Select
@@ -247,7 +311,7 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
                 value={registro.PHONE}
                 onChange={handleChange}
                 className="input-f h-[40px] w-full px-4 pl-10 mt-2 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                placeholder="Tu número de teléfono sin codigo de área"
+                placeholder="Tu número de teléfono sin código de área"
                 required
                 style={{
                   backgroundImage: `url(${phone})`,
@@ -262,28 +326,35 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
               <span className="text-red-500">{errors.PHONE}</span>
             )}
           </div>
-          <div className="mb-4">
+
+          <div className="mb-4 flex items-center">
             <input
-              type="email"
-              id="EMAIL"
-              name="EMAIL"
-              value={registro.EMAIL}
+              type="text"
+              id="verificationCodeInput"
+              name="verificationCodeInput"
+              value={registro.verificationCodeInput}
               onChange={handleChange}
-              placeholder="Ingresá tu Correo electrónico"
-              className="input-f h-[40px] w-full px-4 pl-10 mt-2 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="input-f h-[40px] w-full px-2 pl-10 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800"
+              placeholder="Ingresa el código de verificación"
               required
-              style={{
-                backgroundImage: `url(${email})`,
-                backgroundSize: "25px 25px",
-                backgroundPosition: "5px center",
-                backgroundRepeat: "no-repeat",
-              }}
-              autoComplete="email"
             />
-            {formSubmitted && errors.EMAIL && (
-              <span className="text-red-500">{errors.EMAIL}</span>
-            )}
+            <button
+              type="button"
+              onClick={handleSendVerificationCode}
+              className="ml-2 bg-gray-800 text-white px-2 py-2 rounded-lg hover:scale-110 duration-300 "
+            >
+              {isLoadingCode ? (
+                <img className="w-12" src={loading} />
+              ) : (
+                <p className="text-xs">Enviar código</p>
+              )}
+            </button>
           </div>
+
+          {formSubmitted && errors.verificationCodeInput && (
+            <span className="text-red-500">{errors.verificationCodeInput}</span>
+          )}
+
           <div className="flex items-center justify-center ">
             {isLoading ? (
               <img
@@ -310,4 +381,4 @@ const Registro = ({ actualizarEstado, redirectUrl, googleSheetsUrl }) => {
   );
 };
 
-export default Registro;
+export default RegistroVerification;

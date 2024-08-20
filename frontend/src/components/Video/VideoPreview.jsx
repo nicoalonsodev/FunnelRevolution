@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import video from "../../assets/gif.mp4";
 import Registro from "../Registro/Registro";
 import RegistroCaptcha from "../Registro/RegistroCaptcha";
+import RegistroVerification from "../Registro/RegistroVerification";
 
 const VideoPreview = ({urlPreview, googleSheets}) => {
   const [showForm, setShowform] = useState(false);
@@ -60,7 +61,7 @@ const VideoPreview = ({urlPreview, googleSheets}) => {
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <RegistroCaptcha actualizarEstado={actualizarEstadoPadre} redirectUrl={urlPreview} googleSheetsUrl={googleSheets} />
+              <RegistroVerification actualizarEstado={actualizarEstadoPadre} redirectUrl={urlPreview} googleSheetsUrl={googleSheets} />
             </div>
           </div>
         </>
