@@ -198,7 +198,7 @@ import CalendlyPageFrancoNatali from "./views/CristianCastellon/Afiliados/Franco
 import LandingVslNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/LandingVslNicolasBevacqua.jsx";
 import LandingPageNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/LandingPageNicolasBevacqua.jsx";
 import CalendlyPageNicolasBevacqua from "./views/CristianCastellon/Afiliados/NicolasBevacqua/CalendlyPageNicolasBevacqua.jsx";
-import CalendlyPageCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/CalendlyPageCarlosOjeda.jsx";
+import LandingPageCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/LandingPageCarlosOjeda.jsx";
 import LandingVslCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/LandingVslCarlosOjeda.jsx";
 import CalendlyPageCarlosOjeda from "./views/CristianCastellon/Afiliados/CarlosOjeda/CalendlyPageCarlosOjeda.jsx";
 import LandingVslJorgeMacias from "./views/CristianCastellon/Afiliados/JorgeMacias/LandingVslJorgeMacias.jsx";
@@ -814,7 +814,7 @@ function App() {
 
       {/* Landing carlos-ojeda*/}
       <Route exact path="/carlos-ojeda/vsl" component={LandingVslCarlosOjeda} />
-      <Route exact path="/carlos-ojeda" component={CalendlyPageCarlosOjeda} />
+      <Route exact path="/carlos-ojeda" component={LandingPageCarlosOjeda} />
       <Route
         exact
         path="/carlos-ojeda/calendly"
