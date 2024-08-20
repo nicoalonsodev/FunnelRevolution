@@ -12,10 +12,10 @@ import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
 
-import img1 from "../../../../assets/roman_correa/1.webp";
-import img2 from "../../../../assets/roman_correa/2.webp";
-import img3 from "../../../../assets/roman_correa/3.webp";
-import img4 from "../../../../assets/roman_correa/4.webp";
+import img1 from "../../../../assets/lautar_fredes/1.jpg";
+import img2 from "../../../../assets/lautar_fredes/2.jpg";
+import img3 from "../../../../assets/lautar_fredes/3.jpg";
+import img4 from "../../../../assets/lautar_fredes/4.jpg";
 
 const LandingVslBrianBaez = () => {
   const background2Style = {
