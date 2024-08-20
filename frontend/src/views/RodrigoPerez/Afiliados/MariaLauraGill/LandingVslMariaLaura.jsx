@@ -17,7 +17,7 @@ import img2 from "../../../../assets/rodrigo_perez/2.webp";
 import img3 from "../../../../assets/rodrigo_perez/3.webp";
 import img4 from "../../../../assets/rodrigo_perez/4.webp";
 
-const LandingVslMaximilianoD = () => {
+const LandingVslMariaLaura = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
@@ -87,4 +87,4 @@ const historyImages = [ img1, img2, img3, img4]
   );
 };
 
-export default LandingVslMaximilianoD;
+export default LandingVslMariaLaura;
