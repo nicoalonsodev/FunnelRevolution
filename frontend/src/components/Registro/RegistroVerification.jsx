@@ -9,6 +9,7 @@ import phone from "../../assets/phone.svg";
 import countries from "./countries";
 import { useHistory } from "react-router-dom";
 import "./Registro.css";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const RegistroVerification = ({
   actualizarEstado,
@@ -196,6 +197,16 @@ const RegistroVerification = ({
     (country) => country.code === registro.CountryCode
   );
 
+  const getPhoneExample = () => {
+    if (selectedCountry) {
+      if (selectedCountry.code === "+54") {
+        return "Ejemplo: 91123456789 (sin el código de país)";
+      }
+      return "Ejemplo: 1234567890 (sin el código de país)";
+    }
+    return "Selecciona un país para ver el ejemplo";
+  };
+
   return (
     <div className="max-w-[1100px] flex items-center justify-center">
       <div className="max-w-[700px] p-4 bg-white rounded-lg shadow-lg overflow-auto max-h-[700px] relative">
@@ -206,7 +217,7 @@ const RegistroVerification = ({
           X
         </button>
         <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2 text-balance">
-        Ingresa tus datos para ver la Masterclass de este nuevo Modelo de Negocio Online
+          Ingresa tus datos para ver la Masterclass de este nuevo Modelo de Negocio Online
         </h1>
         <form
           className="max-w-[400px] sm:max-w-[700px] mx-auto"
@@ -349,6 +360,7 @@ const RegistroVerification = ({
             {formSubmitted && errors.PHONE && (
               <span className="text-red-500">{errors.PHONE}</span>
             )}
+            <p className="text-sm text-gray-600 mt-2">{getPhoneExample()}</p>
           </div>
 
           <div className="mb-2 flex items-center">
@@ -358,23 +370,23 @@ const RegistroVerification = ({
               name="verificationCodeInput"
               value={registro.verificationCodeInput}
               onChange={handleChange}
-              className="input-f h-[40px] w-full px-2 pl-10 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800"
+              className="input-f h-[40px] w-full px-2  border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-800"
               placeholder="Ingresa el código de verificación"
               required
             />
             <button
               type="button"
               onClick={handleSendVerificationCode}
-              className="ml-2 bg-gray-800 text-white px-2 py-2 rounded-lg hover:scale-110 duration-300 "
+              className="ml-2  bg-green-700 text-white px-2 py-2 rounded-lg hover:scale-110 duration-300 "
             >
               {isLoadingCode ? (
                 <img className="w-12" src={loading} />
               ) : (
-                <p className="text-xs">Enviar código por Whastapp</p>
+                <p className="px-2 text-xs text-center flex gap-x-1">Enviar código por Whatsapp<FaWhatsapp className="text-2xl" /> </p>
               )}
             </button>
           </div>
-          <p className="mb-4 text-balance italic">Con el código de acceso que te enviamos por WhatsApp, tenes 72Hs para canjear el acceso al grupo vip de señales y clases en vivo. </p>
+          <p className="mb-4 text-balance italic text-sm">Con el código de acceso que te enviamos por WhatsApp, tienes 72 hs para canjear (1) acceso al grupo vip de señales y (1) sesión de trading en vivo con Cristian Diaz.  </p>
           {formSubmitted && errors.verificationCodeInput && (
             <span className="text-red-500">{errors.verificationCodeInput}</span>
           )}
@@ -389,13 +401,13 @@ const RegistroVerification = ({
             ) : (
               <button
                 type="submit"
-                className="lol w-4/5 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#108CE0] hover:scale-110 duration-300 mb-2"
+                className="lol w-4/5 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F59800] hover:scale-110 duration-300 mb-2"
               >
                 VER EL MÉTODO AHORA
               </button>
             )}
           </div>
-          <p className="mb-4 text-balance italic font-bold">Un miembro del equipo te hablará por WhatsApp para darte acceso 🙌🏼</p>
+          <p className="mb-4 text-balance italic font-bold">Un miembro del equipo de Revolution te hablará por WhatsApp para darte acceso ⚜️</p>
         </form>
         <div className="text-center"></div>
         <p className="text-xs text-gray-600 text-center mt-8">
