@@ -412,7 +412,15 @@ const RegistroVerification = ({
               )}
             </button>
           </div>
-          <p className="mb-4 text-balance italic font-bold text-sm">Con el código de acceso que te enviamos por WhatsApp, tienes 72 hs para canjear (1) acceso al grupo vip de señales y (1) sesión de trading en vivo con Cristian Diaz.  </p>
+          <p className="mb-4 text-balance italic text-sm">
+   ¡Genial! Con el código de acceso que te enviamos por WhatsApp, tienes 72 horas para:
+  <br />
+  - Obtener acceso al <span className="font-bold">grupo VIP</span> de señales 📈
+  <br />
+  - Disfrutar de una <span className="font-bold">sesión de trading en vivo con Cristian Diaz</span> 💻
+  <br />
+  ¡No dejes pasar esta oportunidad!
+</p>
           {formSubmitted && errors.verificationCodeInput && (
             <span className="text-red-500">{errors.verificationCodeInput}</span>
           )}
