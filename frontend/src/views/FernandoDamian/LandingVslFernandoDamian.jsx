@@ -13,60 +13,52 @@ import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
 import { Link } from "react-router-dom";
 
+import img1 from "../../assets/fernando_damian/1.webp";
+import img2 from "../../assets/fernando_damian/2.webp";
+import img3 from "../../assets/fernando_damian/3.webp";
+import img4 from "../../assets/fernando_damian/4.webp";
 
-import img1 from "../../assets/lautar_fredes/1.jpg";
-import img2 from "../../assets/lautar_fredes/2.jpg";
-import img3 from "../../assets/lautar_fredes/3.jpg";
-import img4 from "../../assets/lautar_fredes/4.jpg";
-
-const LandingVslLautaroFredes = () => {
-
-
+const LandingVslFernandoDamian = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
-
-  const historyPart1 = [
-    "Todo empezó cuando yo tenía (19 años) y tenía una ambición muy grande por crecer pero las oportunidades que tenían eran muy pocas, más que un trabajo en comida rápida donde ganaba muy poco y trabajaba mucho.",
-    "Estaba bastante frustrado porque creía que esa iba a hacer mi realidad por siempre, hasta que un día un amigo me invitó a una oportunidad digital si bien no se expresó mucho pero me dijo “Amigo tengo algo muy bueno para contarte, nos tenemos que juntar”…",
-    "Me encontré con la oportunidad que estaba buscando, crecer sin límite y ganar por mi desempeño. Luego de desarrollarme como un experto en la industria del Network Marketing me encontré con Revolution en redes sociales, decidí ingresar a una presentación porque tenía mucha curiosidad y estaba con ganas de profundizar en el mundo del trading",
-    "Luego de la presentación tome acción y comencé en Revolution el 10/02/2023",
+const historyPart1 = [
+  "Soy Fernando Damián Migliano, tengo 41 años y soy instructor de musculación y culturismo. Desde los 18 años, siempre he sido un emprendedor independiente.",
+  "Comencé vendiendo productos y luego expandí mis negocios a un kiosco y un local de ropa en Buenos Aires. Con el tiempo, me convertí en agente inmobiliario y adquirí propiedades en Miami.",
 ]
 
 const historyPart2 = [
-    "Mientras estuve allí, aprendí muchísimo, hice amigos que estaban en la misma que yo y conocí personas que tenían libertad financiera",
-    "Ganaban dinero con trading y por venta de afiliados todos los días, vivían en las mejores zonas de Argentina y se compraban ropa en las tiendas más caras, como si nada…",
-    "Y todo esto mientras que yo era el que menos ganaba del círculo. Pero cambió mi perspectiva sobre cómo veía la vida.",
-    "En (buenos aires), mis amigos salían de fiesta y eskabiaban todos los días… Y yo trabajaba de (cajero) y apenas ganaba (200 dólares por mes) Quería una vida diferente, quería ser más y sabía que podía.",
-    "En Revolution generan ingresos en dólares todos los días con trading y afiliaciones y viven en las mejores zonas del país…",
+  "En 2013, lancé una tienda de ropa online llamada 'Let Me Shine'. Luego, en 2023, descubrí Revolution a través de un anuncio en Facebook.",
+  "En solo seis meses, ya estaba generando más de 500 USD al mes haciendo trading desde mi casa.",
+  "Esto me llevó a formar parte del staff de Revolution, ayudando a más de 20 personas a transformar sus vidas y dejar sus empleos tradicionales."
 ]
 
 const historyPart3 = [
-    "Después de ingresar a Revolution algo cambió en mi. No era el mismo de antes...",
-    "Quería una vida diferente, quería ser más y sabía que podía.",
-    "Empecé a aprender y a trabajar y así pude generar mis primeros (500 dolares x mes)",
-    "Mi familia no me apoyaba porque me veían distinto, mis amigos me molestaban",
-    "Pero yo no quería volver a mi vida de antes, sabía que no era mi camino Todo esto fue en ( 2023 año en que empezó en Revolution) …"
+  "Te invitamos a dar el <strong>paso</strong>, anímate a hacer algo <strong>distinto</strong>, tenemos un <strong>método</strong> que funciona, que ya fue testeado, y constantemente lo estamos <strong>mejorando</strong>.",
+  "Si vos das tu <strong>100%</strong> vas a poder <strong>progresar</strong> y hacer <strong>carrera</strong> con nosotros. Lo <strong>tradicional</strong> ya no funciona, el mundo cambió, las <strong>oportunidades</strong> están, hay personas que las aprovechan y otras no! ¡Animate! ¡Nosotros te ayudamos!",
 ]
 const actually = [
-  "Facturé más de (4000 dólares por mes) con Revolution, vivo en (en Nordelta) y tengo amigos que comparten los mismos objetivos.",
-  "El dinero ya no es un problema.",
+  "Hoy, después de 18 meses, genero un promedio de 10.000 USD al mes. ",
+  "Revolution ha cambiado mi vida y ahora tengo la libertad financiera que siempre soñé.",
+" Si estás buscando una oportunidad para cambiar tu vida, este es tu momento.",
   "Puedo cuidar de mí mismo, de mi familia, de mis amigos y, lo más importante…",
   "Puedo aportarles a personas que son como yo.",
   "Y ahora seguramente te estarás preguntando, ¿cómo es que este joven argentino creció tanto y tan rápido con Revolution?",
-  `Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`
+ ` Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`,
 ]
+  const historyData = [
+   "Fernando Migliano",
+    "Buenos Aires",
+    "2 años",
+  ]
 
-
-  const historyData = ["Lautaro Fredes", "Argentina, Bs As", "8 años"];
-  const calendlyPage = "https://www.revolutionoficial.com/lautaro-fredes/calendly";
-  const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
-
-const path = "lautaro-fredes"
+  const calendlyPage = "https://www.revolutionoficial.com/fernando-migliano/calendly";
+const historyImages = [ img1, img2, img3, img4]
+    const isRegistered = localStorage.getItem("isRegistered") === "true";
+const path = "fernando-migliano"
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
       <div className="bg-gray-900 py-4">
@@ -116,4 +108,4 @@ const path = "lautaro-fredes"
   );
 };
 
-export default LandingVslLautaroFredes;
+export default LandingVslFernandoDamian;
