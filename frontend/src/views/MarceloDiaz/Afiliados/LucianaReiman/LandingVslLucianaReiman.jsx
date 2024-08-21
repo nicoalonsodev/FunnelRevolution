@@ -17,7 +17,7 @@ import img2 from "../../../../assets/marcelo_diaz/2.webp";
 import img3 from "../../../../assets/marcelo_diaz/3.webp";
 import img4 from "../../../../assets/marcelo_diaz/4.webp";
 
-const LandingVslUlisesCoronel = () => {
+const LandingVslLucianaReiman = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
@@ -52,7 +52,7 @@ const actually = [
     "2020 - 2024",
   ]
 
-  const calendlyPage = "https://www.revolutionoficial.com/ulises-coronel/calendly";
+  const calendlyPage = "https://www.revolutionoficial.com/luciana-reiman/calendly";
 const historyImages = [ img1, img2, img3, img4]
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
@@ -85,4 +85,4 @@ const historyImages = [ img1, img2, img3, img4]
   );
 };
 
-export default LandingVslUlisesCoronel;
+export default LandingVslLucianaReiman;

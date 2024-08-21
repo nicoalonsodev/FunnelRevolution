@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import Footer from "../../../../components/Footer/Footer";
 import Calendly from "../../../../components/Calendly/Calendly";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-const CalendlyUlisesCoronel = () => {
+const CalendlyPageLeandroAlvarez = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   // El Link de Calendly
-  const calendlyLink = "";
+  const calendlyLink = "https://calendly.com/leanalvarez/llamada-de-iniciacion-en-revolution";
 
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
@@ -33,4 +33,4 @@ const CalendlyUlisesCoronel = () => {
   );
 };
 
-export default CalendlyUlisesCoronel;
+export default CalendlyPageLeandroAlvarez;
