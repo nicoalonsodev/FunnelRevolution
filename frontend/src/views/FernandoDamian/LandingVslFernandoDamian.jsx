@@ -37,12 +37,11 @@ const historyPart2 = [
 ]
 
 const historyPart3 = [
-  "Te invitamos a dar el <strong>paso</strong>, anímate a hacer algo <strong>distinto</strong>, tenemos un <strong>método</strong> que funciona, que ya fue testeado, y constantemente lo estamos <strong>mejorando</strong>.",
-  "Si vos das tu <strong>100%</strong> vas a poder <strong>progresar</strong> y hacer <strong>carrera</strong> con nosotros. Lo <strong>tradicional</strong> ya no funciona, el mundo cambió, las <strong>oportunidades</strong> están, hay personas que las aprovechan y otras no! ¡Animate! ¡Nosotros te ayudamos!",
-]
-const actually = [
   "Hoy, después de 18 meses, genero un promedio de 10.000 USD al mes. ",
   "Revolution ha cambiado mi vida y ahora tengo la libertad financiera que siempre soñé.",
+]
+const actually = [
+ 
 " Si estás buscando una oportunidad para cambiar tu vida, este es tu momento.",
   "Puedo cuidar de mí mismo, de mi familia, de mis amigos y, lo más importante…",
   "Puedo aportarles a personas que son como yo.",

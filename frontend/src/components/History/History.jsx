@@ -3,7 +3,7 @@ import React from "react";
 const History = ({ historyData, historyImages, historyPart1, historyPart2, historyPart3 }) => {
   return (
     <div className="flex flex-wrap justify-center bg-gray-50">
-      <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 space-y-16 py-10">
+      <div className="flex flex-wrap justify-center items-center px-2 lg:px-10 xl:px-32 space-y-6 lg:space-y-16 py-10">
         <div className="w-full flex flex-wrap justify-center items-center space-y-6">
           <h1 className="text-3xl lg:text-5xl lato-bold text-[#1D1D1B] text-center">
             HISTORIA DE ÉXITO EN REVOLUTION
