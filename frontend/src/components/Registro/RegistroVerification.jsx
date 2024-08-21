@@ -412,7 +412,7 @@ const RegistroVerification = ({
               )}
             </button>
           </div>
-          <p className="mb-4 text-balance italic text-sm">
+          <p className="mb-4 text-balance italic text-xs lg:text-sm">
    ¡Genial! Con el código de acceso que te enviamos por WhatsApp, tienes 72 horas para:
   <br />
   - Obtener acceso al <span className="font-bold">grupo VIP</span> de señales 📈
