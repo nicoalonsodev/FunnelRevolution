@@ -17,7 +17,7 @@ import img2 from "../../../../assets/cristian_castellon/2.webp";
 import img3 from "../../../../assets/cristian_castellon/3.webp";
 import img4 from "../../../../assets/cristian_castellon/4.webp";
 
-const LandingVslAgustinaRuiz = () => {
+const LandingVslAdrianMachuca = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
@@ -52,7 +52,7 @@ const actually = [
     "5 años",
   ]
 
-  const calendlyPage = "https://www.revolutionoficial.com/agustina-ruiz/calendly";
+  const calendlyPage = "https://www.revolutionoficial.com/adrian-machuca/calendly";
 const historyImages = [ img1, img2, img3, img4]
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
@@ -85,4 +85,4 @@ const historyImages = [ img1, img2, img3, img4]
   );
 };
 
-export default LandingVslAgustinaRuiz;
+export default LandingVslAdrianMachuca;
