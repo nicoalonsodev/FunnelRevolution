@@ -191,6 +191,9 @@ const RegistroVerification = ({
           mode: "no-cors",
         });
 
+        // Guardar en localStorage que el usuario se ha registrado
+        localStorage.setItem("isRegistered", "true");
+
         setRegistro({
           FNAME: "",
           EMAIL: "",

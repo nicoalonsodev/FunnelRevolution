@@ -438,13 +438,13 @@ function App() {
       />
 
       {/* Landing sabrina-bernhardt*/}
-      <Route exact path="/sabrina-bernhardt/vsl" component={LandingVslSabrina} />
+      {/*<Route exact path="/sabrina-bernhardt/vsl" component={LandingVslSabrina} />
       <Route exact path="/sabrina-bernhardt" component={LandingPageSabrina} />
       <Route
         exact
         path="/sabrina-bernhardt/calendly"
         component={CalendlyPageSabrina}
-      />
+       />*/}
 
       {/* Landing david-ana*/}
       <Route exact path="/david-ana/vsl" component={LandingVslDavidA} />
