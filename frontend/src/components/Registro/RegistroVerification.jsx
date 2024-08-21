@@ -53,7 +53,7 @@ const RegistroVerification = ({
     // Ejemplo de validación para Argentina (+54)
     if (CountryCode === "+54") {
       // Argentina: debe empezar con 9 y tener 10 dígitos en total.
-      const argentinaPhoneRegex = /^9\d{9}$/;
+      const argentinaPhoneRegex = /^9\d{10}$/;
       return argentinaPhoneRegex.test(PHONE);
     }
   
@@ -409,7 +409,7 @@ const RegistroVerification = ({
               )}
             </button>
           </div>
-          <p className="mb-4 text-balance italic text-sm">Con el código de acceso que te enviamos por WhatsApp, tienes 72 hs para canjear (1) acceso al grupo vip de señales y (1) sesión de trading en vivo con Cristian Diaz.  </p>
+          <p className="mb-4 text-balance italic font-bold text-sm">Con el código de acceso que te enviamos por WhatsApp, tienes 72 hs para canjear (1) acceso al grupo vip de señales y (1) sesión de trading en vivo con Cristian Diaz.  </p>
           {formSubmitted && errors.verificationCodeInput && (
             <span className="text-red-500">{errors.verificationCodeInput}</span>
           )}
