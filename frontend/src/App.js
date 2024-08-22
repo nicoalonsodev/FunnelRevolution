@@ -69,9 +69,9 @@ import CalendlyPageDiegoV from "./views/MarceloDiaz/Afiliados/DiegoVargas/Calend
 import LandingVslSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/LandingVslSabrina";
 import LandingPageSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/LandingPageSabrina";
 import CalendlyPageSabrina from "./views/MarceloDiaz/Afiliados/SabrinaBernhardt/CalendlyPageSabrina";
-import LandingVslDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/LandingVslDavidA";
-import LandingPageDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/LandingPageDavidA";
-import CalendlyPageDavidA from "./views/MarceloDiaz/Afiliados/DavidAna/CalendlyPageDavidA";
+import LandingVslDavidA from "./views/DavidAna/LandingVslDavidA";
+import LandingPageDavidA from "./views/DavidAna/LandingPageDavidA";
+import CalendlyPageDavidA from "./views/DavidAna/CalendlyPageDavidA";
 import LandingVslFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/LandingVslFlorencia";
 import LandingPageFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/LandingPageFlorencia";
 import CalendlyPageFlorencia from "./views/MarceloDiaz/Afiliados/FlorenciaGartner/CalendlyPageFlorencia";
@@ -243,6 +243,12 @@ import LandingVslAdrianMachuca from "./views/CristianCastellon/Afiliados/AdrianM
 import CalendlyPageFernandoDamian from "./views/FernandoDamian/CalendlyPageFernandoDamian.jsx";
 import LandingPageFernandoDamian from "./views/FernandoDamian/LandingPageFernandoDamian.jsx";
 import LandingVslFernandoDamian from "./views/FernandoDamian/LandingVslFernandoDamian.jsx";
+import CalendlyPageEzequielGrazina from "./views/CristianCastellon/Afiliados/EzequielGrazina/CalendlyPageEzequielGrazina.jsx";
+import LandingPageEzequielGrazina from "./views/CristianCastellon/Afiliados/EzequielGrazina/LandingPageEzequielGrazina.jsx";
+import LandingVslEzequielGrazina from "./views/CristianCastellon/Afiliados/EzequielGrazina/LandingVslEzequielGrazina.jsx";
+import LandingVslPedroDantas from "./views/CristianCastellon/Afiliados/PedroDantas/LandingVslPedroDantas.jsx";
+import CalendlyPagePedroDantas from "./views/CristianCastellon/Afiliados/PedroDantas/CalendlyPagePedroDantas.jsx";
+import LandingPagePedroDantas from "./views/CristianCastellon/Afiliados/PedroDantas/LandingPagePedroDantas.jsx";
 function App() {
   return (
     <div className="App">
@@ -969,6 +975,24 @@ function App() {
         exact
         path="/fernando-migliano/calendly"
         component={CalendlyPageFernandoDamian}
+      />
+
+      {/* Landing ezequiel-grazina*/}
+      <Route exact path="/ezequiel-grazina/vsl" component={LandingVslEzequielGrazina} />
+      <Route exact path="/ezequiel-grazina" component={LandingPageEzequielGrazina} />
+      <Route
+        exact
+        path="/ezequiel-grazina/calendly"
+        component={CalendlyPageEzequielGrazina}
+      />
+
+      {/* Landing pedro-dantas*/}
+      <Route exact path="/pedro-dantas/vsl" component={LandingVslPedroDantas} />
+      <Route exact path="/pedro-dantas" component={LandingPagePedroDantas} />
+      <Route
+        exact
+        path="/pedro-dantas/calendly"
+        component={CalendlyPagePedroDantas}
       />
 
     </div>

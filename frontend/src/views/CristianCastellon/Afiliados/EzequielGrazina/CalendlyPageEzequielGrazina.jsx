@@ -2,14 +2,12 @@ import React, { useEffect } from "react";
 import Footer from "../../../../components/Footer/Footer";
 import Calendly from "../../../../components/Calendly/Calendly";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-const CalendlyPageDavidA = () => {
+const CalendlyPageEzequielGrazina = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // El Link de Calendly
-  const calendlyLink = "https://calendly.com/revolutiontrading";
-
+  const calendlyLink = "https://calendly.com/zekegrazina226/30min";
   return (
     <div className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2">
       <div className="w-screen h-24  py- flex justify-center items-center border-b-[1px] border-yellow-600">
@@ -33,4 +31,4 @@ const CalendlyPageDavidA = () => {
   );
 };
 
-export default CalendlyPageDavidA;
+export default CalendlyPageEzequielGrazina;
