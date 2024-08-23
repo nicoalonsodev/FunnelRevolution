@@ -185,7 +185,7 @@ const RegistroVerification = ({
 
         // Guardar en localStorage que el usuario se ha registrado
         localStorage.setItem("isRegistered", "true");
-
+        history.push(`${redirectUrl}?email=${registro.EMAIL}?phone=${registro.CountryCode}${registro.PHONE}`);
         setRegistro({
           FNAME: "",
           EMAIL: "",
@@ -197,7 +197,8 @@ const RegistroVerification = ({
         });
         setIsLoading(false);
         actualizarEstado(false);
-        history.push(redirectUrl);
+        
+        // history.push(redirectUrl);
       } catch (error) {
         console.log(error);
         setIsLoading(false);
