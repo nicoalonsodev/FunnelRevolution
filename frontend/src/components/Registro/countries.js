@@ -1,5 +1,5 @@
 const countries = [
-    { code: '+54', suf: [''], name: 'Argentina', flag: 'https://flagcdn.com/ar.svg', continent: 'South America' },
+    { code: '+549', suf: [''], name: 'Argentina', flag: 'https://flagcdn.com/ar.svg', continent: 'South America' },
     { code: '+591', suf: [''], name: 'Bolivia', flag: 'https://flagcdn.com/bo.svg', continent: 'South America' },
     { code: '+56', suf: [''], name: 'Chile', flag: 'https://flagcdn.com/cl.svg', continent: 'South America' },
     { code: '+57', suf: [''], name: 'Colombia', flag: 'https://flagcdn.com/co.svg', continent: 'South America' },

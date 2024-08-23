@@ -2,9 +2,10 @@ import React from 'react';
 import AnimatedButton from '../AnimatedButton/AnimatedButton';
 
 const CallToAction = ({calendlyPageUrl}) => {
+
   return (
     <div className="mt-10 text-center">
-      <AnimatedButton  calendlyPage={calendlyPageUrl} text="Escríbeme 'AMG' en Instagram" subtext="Ingresa HOY MISMO a AMG" />
+      <AnimatedButton  calendlyPage={calendlyPageUrl} cta={1} />
       <div className="mt-4">
         <img src="https://www.agenciadeinfoproductos.com/hosted/images/47/02032650044655b42e246e8101d137/Untitled-2.png" alt="Medios de pago" className="mx-auto w-20" />
       </div>

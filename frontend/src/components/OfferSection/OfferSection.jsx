@@ -24,6 +24,7 @@ const OfferSection = ({calendlyPageUrl}) => {
         calendlyPage={calendlyPageUrl}
           text='Escríbeme "AMG" en Instagram'
           subtext="Y comienza a construir tu propia agencia de Infoproductos"
+          cta={1}
         />
         <div className="mt-4">
           <img

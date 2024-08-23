@@ -30,7 +30,7 @@ const RegistroVerification = ({
 
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCode, setIsLoadingCode] = useState(false);
-  const [verificationCode, setVerificationCode] = useState(null); // Estado para el código de verificación
+  const [verificationCode, setVerificationCode] = useState(null); 
   const [errors, setErrors] = useState({
     FNAME: "completar con su nombre",
     EMAIL: "completar email",
@@ -41,48 +41,33 @@ const RegistroVerification = ({
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
-    // Generar un código de verificación aleatorio de 6 dígitos al montar el componente
     const randomCode = Math.floor(100000 + Math.random() * 900000).toString();
     setVerificationCode(randomCode);
-    console.log("Generated Verification Code: ", randomCode); // Solo para desarrollo, eliminar en producción
+    console.log("Generated Verification Code: ", randomCode);
   }, []);
 
   const validatePhoneNumber = () => {
     const { CountryCode, PHONE } = registro;
   
-    // Ejemplo de validación para Argentina (+54)
-    if (CountryCode === "+54") {
-      // Argentina: debe empezar con 9 y tener 10 dígitos en total.
-      const argentinaPhoneRegex = /^9\d{10}$/;
+    // Validación para Argentina (\\\+549)
+    if (CountryCode === "+549") {
+      // Argentina: debe tener entre 10 y 11 dígitos, sin incluir el "9" antes del código de área
+      const argentinaPhoneRegex = /^\d{10,11}$/;
       return argentinaPhoneRegex.test(PHONE);
     }
   
-    // Ejemplo de validación general para otros países (mínimo 7 dígitos)
+    // Validación general para otros países (mínimo 7 dígitos)
     const generalPhoneRegex = /^\d{7,}$/;
     return generalPhoneRegex.test(PHONE);
   };
   
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === "PHONE") {
-      let formattedPhone = value;
-
-      if (registro.CountryCode === "+54" && !value.startsWith("9")) {
-        formattedPhone = "9" + value;
-      }
-
-      setRegistro((prevRegistro) => ({
-        ...prevRegistro,
-        [name]: formattedPhone,
-      }));
-    } else {
-      setRegistro((prevRegistro) => ({
-        ...prevRegistro,
-        [name]: value,
-      }));
-    }
+    setRegistro((prevRegistro) => ({
+      ...prevRegistro,
+      [name]: value,
+    }));
 
     validate({ ...registro, [name]: value });
   };
@@ -104,6 +89,13 @@ const RegistroVerification = ({
     }
     if (!registro.PHONE) {
       errors.PHONE = "Debe ingresar su número de celular.";
+    }
+    if (registro.PHONE) {
+      const phoneRegex = /^\d{8,10}$/;
+
+      if (!phoneRegex.test(registro.PHONE)) {
+        errors.PHONE = "Debe ingresar un número válido";
+      }
     }
     if (!registro.CountryCode) {
       errors.PHONE = "Debe ingresar el código de su país.";
@@ -225,8 +217,8 @@ const RegistroVerification = ({
 
   const getPhoneExample = () => {
     if (selectedCountry) {
-      if (selectedCountry.code === "+54") {
-        return "Ejemplo: 91123456789 (sin el código de país)";
+      if (selectedCountry.code === "+549") {
+        return "Ejemplo: 3815588985 (con el código de área de tu provincia)";
       }
       return "Ejemplo: 1234567890 (sin el código de país)";
     }

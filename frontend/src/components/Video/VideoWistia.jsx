@@ -5,7 +5,7 @@ import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 import "./Video.css";
 
-const VideoWistia = ({calendlyPageUrl}) => {
+const VideoWistia = ({calendlyPageUrl, dataUser}) => {
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -31,7 +31,7 @@ const VideoWistia = ({calendlyPageUrl}) => {
       // Establecer showButton en true después de 30 segundos
       const timer = setTimeout(() => {
         setShowButton(true);
-      }, 30000); // 30000 ms = 30 segundos
+      }, 6000); // 30000 ms = 30 segundos
 
       // Limpieza del temporizador cuando el componente se desmonte o cambie el estado relevante
       return () => clearTimeout(timer);
@@ -100,7 +100,7 @@ const VideoWistia = ({calendlyPageUrl}) => {
         )}
       </div>
       <div className="w-full flex justify-center">
-        {showButton && <AnimatedButton calendlyPage={calendlyPageUrl} />}
+        {showButton && <AnimatedButton data={dataUser} calendlyPage={calendlyPageUrl} />}
       </div>
       {showForm && (
         <>

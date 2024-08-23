@@ -58,10 +58,19 @@ const actually = [
     "2018–2024",
   ]
 
-  const calendlyPage = "https://www.revolutionoficial.com/raul-crisorio/calendly";
+  const calendlyPage = "/raul-crisorio/calendly";
 const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "raul-crisorio"
+ const data = {
+  historyPart1,
+  historyPart2,
+  historyPart3,
+  actually,
+  historyData,
+  calendlyPage,
+  historyImages,
+};
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
       <div className="bg-gray-900 py-4">
@@ -72,9 +81,9 @@ const path = "raul-crisorio"
         {isRegistered ? (
           <>
             <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
-              <TitleAndVideo video={"True"} calendlyPage={calendlyPage} />
+              <TitleAndVideo video={"True"} calendlyPage={calendlyPage} data={data} />
             </div>
-            <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
+            {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
               <History
                 historyData={historyData}
                 historyImages={historyImages}
@@ -92,7 +101,7 @@ const path = "raul-crisorio"
               <PresentProgram />
               <Gifts calendlyPage={calendlyPage} />
               <OfferSection calendlyPageUrl={calendlyPage} />
-            </div>
+            </div> */}
           </>
         ) : (
           <div className="text-center text-white py-8">

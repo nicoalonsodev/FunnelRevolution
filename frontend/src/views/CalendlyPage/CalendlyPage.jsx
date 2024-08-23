@@ -1,12 +1,28 @@
 import React, { useEffect } from "react";
-import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Calendly from "../../components/Calendly/Calendly";
 import logo from "../../assets/logo/logo_blanco-re.png";
+import { useLocation } from "react-router-dom";
+import History from "../../components/History/History";
+import Actually from "../../components/Actually/Actually";
+import Pilares from "../../components/Pilares/Pilares";
+import MissionAndResult from "../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../components/Gifts/Gifts";
+import OfferSection from "../../components/OfferSection/OfferSection";
+import background2 from "../../assets/background2.png";
 const CalendlyPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const background2Style = {
+    backgroundImage: `url(${background2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+  const location = useLocation();
+  const { data } = location.state || {};
   return (
     <div
       className="bg-cover bg-gray-900  bg-no-repeat bg-top bg-fixed h-full py-2"

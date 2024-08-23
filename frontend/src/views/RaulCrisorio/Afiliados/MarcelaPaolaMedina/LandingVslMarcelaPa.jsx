@@ -59,10 +59,19 @@ const actually = [
     "2018–2024",
   ]
 
-  const calendlyPage = "https://www.revolutionoficial.com/marcela-paola-medina/calendly";
+  const calendlyPage = "/marcela-paola-medina/calendly";
 const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "marcela-paola-medina"
+ const data = {
+  historyPart1,
+  historyPart2,
+  historyPart3,
+  actually,
+  historyData,
+  calendlyPage,
+  historyImages,
+};
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
       <div className="bg-gray-900 py-4">
@@ -73,9 +82,9 @@ const path = "marcela-paola-medina"
         {isRegistered ? (
           <>
             <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
-              <TitleAndVideo video={"True"} calendlyPage={calendlyPage} />
+              <TitleAndVideo video={"True"} calendlyPage={calendlyPage} data={data} />
             </div>
-            <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
+            {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
               <History
                 historyData={historyData}
                 historyImages={historyImages}
@@ -93,7 +102,7 @@ const path = "marcela-paola-medina"
               <PresentProgram />
               <Gifts calendlyPage={calendlyPage} />
               <OfferSection calendlyPageUrl={calendlyPage} />
-            </div>
+            </div> */}
           </>
         ) : (
           <div className="text-center text-white py-8">
