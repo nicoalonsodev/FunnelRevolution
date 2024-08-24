@@ -49,7 +49,11 @@ const LandingVslAgustinFarias = () => {
     "Y ahora seguramente te estarás preguntando, ¿cómo es que este joven argentino creció tanto y tan rápido con Revolution?",
     ` Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`,
   ];
-  const historyData = ["matias", "Argentina", "2 años y medio"];
+  const historyData = [
+    "Matias Dechand",
+     "Buenos Aires, Argentina",
+     "3 años",
+   ]
 
   const calendlyPage = "/gonzalo-farias/calendly";
   const historyImages = [img1, img2, img3, img4];
