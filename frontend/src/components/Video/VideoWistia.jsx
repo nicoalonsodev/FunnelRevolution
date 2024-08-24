@@ -31,7 +31,7 @@ const VideoWistia = ({calendlyPageUrl, dataUser}) => {
       // Establecer showButton en true después de 30 segundos
       const timer = setTimeout(() => {
         setShowButton(true);
-      }, 1000); // 300000 ms = 5 minutos
+      }, 30000); // 300000 ms = 5 minutos
       // Limpieza del temporizador cuando el componente se desmonte o cambie el estado relevante
       return () => clearTimeout(timer);
     }
