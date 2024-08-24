@@ -28,40 +28,38 @@ const LandingVslAaronMeza = () => {
     backgroundRepeat: "no-repeat",
   };
   const historyPart1 = [
-    "Todo empezó cuando yo tenía 23 años, me la pasaba cortando el pelo cambiando <strong>tiempo</strong> por <strong>dinero</strong>.",
-    "Estaba <strong>perdido</strong>, juntaba plata durante la semana para salir los fines de semana, hasta que un día…",
-    "Me encontré con la <strong>oportunidad</strong> de <strong>Revolution</strong> en <strong>redes sociales</strong>, decidí ingresar a una presentación porque tenía mucha <strong>curiosidad</strong> y estaba harto de mi <strong>situación</strong>.",
-    "Luego de la presentación tomé <strong>acción</strong> y comencé en <strong>Revolution</strong> el 01/09/2023.",
+    "Todo empezó cuando yo tenía (19 años) y tenía una ambición muy grande por crecer pero las oportunidades que tenían eran muy pocas, más que un trabajo en comida rápida donde ganaba muy poco y trabajaba mucho.",
+    "Estaba bastante frustrado porque creía que esa iba a hacer mi realidad por siempre, hasta que un día un amigo me invitó a una oportunidad digital si bien no se expresó mucho pero me dijo “Amigo tengo algo muy bueno para contarte, nos tenemos que juntar”…",
+    "Me encontré con la oportunidad que estaba buscando, crecer sin límite y ganar por mi desempeño. Luego de desarrollarme como un experto en la industria del Network Marketing me encontré con Revolution en redes sociales, decidí ingresar a una presentación porque tenía mucha curiosidad y estaba con ganas de profundizar en el mundo del trading",
+    "Luego de la presentación tome acción y comencé en Revolution el 10/02/2023",
 ]
 
 const historyPart2 = [
-    "Mientras estuve allí, aprendí muchísimo, hice <strong>amigos</strong> que estaban en la misma que yo y conocí personas que tenían <strong>libertad financiera</strong>.",
-    "Ganaban <strong>dinero</strong> con <strong>trading</strong> y por <strong>venta de afiliados</strong> todos los días, vivían en las mejores zonas de Argentina y se compraban ropa en las tiendas más caras, como si nada…",
-    "Y todo esto mientras yo era el único que no tenía <strong>dinero</strong> en el bolsillo. Pero cambió mi <strong>perspectiva</strong> sobre cómo veía la <strong>vida</strong>.",
-    "En mi ciudad <strong>Villa Constitución</strong>, mis <strong>amigos</strong> salían de fiesta y tomaban todos los días…",
-    "Y yo trabajaba como <strong>peluquero</strong> y apenas ganaba 400 dólares al mes. Quería una <strong>vida diferente</strong>, quería ser más y sabía que podía.",
+    "Mientras estuve allí, aprendí muchísimo, hice amigos que estaban en la misma que yo y conocí personas que tenían libertad financiera",
+    "Ganaban dinero con trading y por venta de afiliados todos los días, vivían en las mejores zonas de Argentina y se compraban ropa en las tiendas más caras, como si nada…",
+    "Y todo esto mientras que yo era el que menos ganaba del círculo. Pero cambió mi perspectiva sobre cómo veía la vida.",
+    "En (buenos aires), mis amigos salían de fiesta y eskabiaban todos los días… Y yo trabajaba de (cajero) y apenas ganaba (200 dólares por mes) Quería una vida diferente, quería ser más y sabía que podía.",
+    "En Revolution generan ingresos en dólares todos los días con trading y afiliaciones y viven en las mejores zonas del país…",
 ]
 
 const historyPart3 = [
-    "En <strong>Revolution</strong> generan <strong>ingresos</strong> en <strong>dólares</strong> todos los días con <strong>trading</strong> y <strong>afiliaciones</strong> y viven en las mejores zonas del país…",
-    "Después de ingresar a <strong>Revolution</strong> algo cambió en mí. No era el mismo de antes...",
-    "Quería una <strong>vida diferente</strong>, quería ser más y sabía que podía.",
-    "Empecé a aprender y a trabajar y así pude generar mis primeros 1.600 <strong>dólares</strong>. Mi <strong>familia</strong> no me apoyaba porque me veían distinto, mis <strong>amigos</strong> me molestaban, pero yo no quería volver a mi <strong>vida</strong> de antes, sabía que no era mi <strong>camino</strong>. Todo esto fue en 2023…"
+    "Después de ingresar a Revolution algo cambió en mi. No era el mismo de antes...",
+    "Quería una vida diferente, quería ser más y sabía que podía.",
+    "Empecé a aprender y a trabajar y así pude generar mis primeros (500 dolares x mes)",
+    "Mi familia no me apoyaba porque me veían distinto, mis amigos me molestaban",
+    "Pero yo no quería volver a mi vida de antes, sabía que no era mi camino Todo esto fue en ( 2023 año en que empezó en Revolution) …"
 ]
-  const actually = [
-    "Facturé más de 20.000 dólares con Revolution, vivo en Tigre  y tengo amigos que comparten los mismos objetivos.",
-    "El dinero ya no es un problema.",
-    "Puedo cuidar de mí mismo, de mi familia, de mis amigos y, lo más importante…",
-    "Puedo aportarles a personas que son como yo.",
-    "Y ahora seguramente te estarás preguntando, ¿cómo es que este joven argentino creció tanto y tan rápido con Revolution?",
-   ` Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`,
-  ]
-    const historyData = [
-     "Roman Correa",
-      "Tigre Buenos Aires",
-      "2018-2024",
-    ]
-  
+const actually = [
+  "Facturé más de (4000 dólares por mes) con Revolution, vivo en (en Nordelta) y tengo amigos que comparten los mismos objetivos.",
+  "El dinero ya no es un problema.",
+  "Puedo cuidar de mí mismo, de mi familia, de mis amigos y, lo más importante…",
+  "Puedo aportarles a personas que son como yo.",
+  "Y ahora seguramente te estarás preguntando, ¿cómo es que este joven argentino creció tanto y tan rápido con Revolution?",
+  `Acá los llamamos "los tres pilares" de este nuevo modelo de negocio…`
+]
+
+
+  const historyData = ["Lautaro Fredes", "Argentina, Bs As", "8 años"];
   const calendlyPage = "/aaron-meza/calendly";
 const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
