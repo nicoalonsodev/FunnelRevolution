@@ -76,9 +76,6 @@ const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%2
         <div className="w-screen h-14 lg:h-20 flex justify-center items-center border-b-[1px] border-yellow-600">
           <img className="w-14 lg:w-20" src={logo} alt="logo" />
         </div>
-
-        {isRegistered ? (
-          <>
             <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
               <TitleAndVideo video={"test"} calendlyPage={calendlyPage} data={data} />
             </div>
@@ -101,15 +98,6 @@ const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%2
               <Gifts calendlyPage={calendlyPage} />
               <OfferSection calendlyPageUrl={calendlyPage} />
             </div> */}
-          </>
-        ) : (
-          <div className="text-center text-white py-8">
-            <h2 className="text-2xl font-bold">Para poder ver el video de la masterclass, debes registrarte.</h2>
-            <Link to={`/${path}`} className="text-yellow-400 underline text-lg mt-4 inline-block">
-              Ir al registro
-            </Link>
-          </div>
-        )}
       </div>
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
         <Footer />
