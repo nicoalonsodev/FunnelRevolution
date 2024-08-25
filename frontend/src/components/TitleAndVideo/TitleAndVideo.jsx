@@ -1,8 +1,9 @@
 import React from "react";
 import VideoPreview from "../Video/VideoPreview";
-import Video from "../Video/Video";
 import VideoWistia from "../Video/VideoWistia";
+import VideoWistiaWpp from "../Video/VideoWistiaWpp";
 const TitleAndVideo = ({ video, url, googleSheetsUrl, calendlyPage, data }) => {
+
   return (
     <div className="flex flex-wrap justify-center items-start text-center space-y-4">
       <p className="poppins-medium text-yellow-500 text-md lg:text-xl px-2">
@@ -20,7 +21,7 @@ const TitleAndVideo = ({ video, url, googleSheetsUrl, calendlyPage, data }) => {
 
       </p>
       <div className="flex justify-center w-full">
-        {video ? <VideoWistia dataUser={data} calendlyPageUrl={calendlyPage} /> : <VideoPreview urlPreview={url} googleSheets={googleSheetsUrl} />}
+        {video === "True" ? <VideoWistia dataUser={data} calendlyPageUrl={calendlyPage} /> : video === "test" ? <VideoWistiaWpp dataUser={data} calendlyPageUrl={calendlyPage} /> : <VideoPreview urlPreview={url} googleSheets={googleSheetsUrl} />}
       </div>
     </div>
   );
