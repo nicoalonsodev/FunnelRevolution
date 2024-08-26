@@ -59,8 +59,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "lucas-factor"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyazU6SNfh2tqmDkXnJPd3qdfmBm_iH1glsHV_3_LAMEIWKYg4FWav2le7Tw2uWkGXV/exec"
-const wppLink = "https://wa.me/+549?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+"
+const wppLink = "https://wa.me/+5491128679598?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491128679598"
  const data = {
   historyPart1,
   historyPart2,
