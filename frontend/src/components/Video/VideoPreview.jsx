@@ -37,7 +37,7 @@ const VideoPreview = ({urlPreview, googleSheets}) => {
           autoPlay
           muted
           loop // Agrega esta línea para mantener el video en loop
-          onClick={handleClick}
+          // onClick={handleClick}
         >
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
@@ -45,7 +45,7 @@ const VideoPreview = ({urlPreview, googleSheets}) => {
       </div>
       <div className="w-full">
         <a
-          onClick={handleClick}
+          // onClick={handleClick}
           rel="noopener noreferrer"
           className="w-full lg:w-2/4 animated-button cursor-pointer border-[2px] border-[#dc9c35]"
         >
