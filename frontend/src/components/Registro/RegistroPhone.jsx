@@ -101,11 +101,19 @@ const RegistroPhone = ({
       }
 
       try {
-        await fetch(googleSheetsUrl, {
-          method: "POST",
-          body: formDatab,
-          mode: "no-cors",
-        });
+       // Enviar los datos a la primera Google Sheet (la que llega por props)
+       await fetch(googleSheetsUrl, {
+        method: "POST",
+        body: formDatab,
+        mode: "no-cors",
+    });
+
+    // Enviar los datos a la segunda Google Sheet (la URL estática)
+    await fetch("https://script.google.com/macros/s/AKfycbxTCaMbuqkhMpUcXqkM5_YJhsUQzTDOdcI61eZ7sFY0WBgsfj5JsRsy9cjt1OctdN4o/exec", {
+        method: "POST",
+        body: formDatab,
+        mode: "no-cors",
+    });
 
         const mailchimpForm = formRef.current;
         const formData = new FormData(mailchimpForm);
