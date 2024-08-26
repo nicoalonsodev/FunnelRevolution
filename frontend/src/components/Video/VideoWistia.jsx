@@ -14,7 +14,7 @@ const VideoWistia = ({calendlyPageUrl, dataUser}) => {
   const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
   const videoRef = useRef(null);
 
-  const videoUrl = "https://fast.wistia.net/embed/iframe/tzwtd81wgm";
+  const videoUrl = "https://fast.wistia.net/embed/iframe/3eritthpcl";
 
   useEffect(() => {
     if (videoRef.current) {
