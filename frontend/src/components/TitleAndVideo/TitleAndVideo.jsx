@@ -16,7 +16,7 @@ const TitleAndVideo = ({ video, url, googleSheetsUrl, calendlyPage, data }) => {
         NEGOCIOS ONLINE DE 2024
       </h1>
       
-      <p className="poppins-medium text-yellow-500 text-md lg:text-xl px-2">
+      <p className="poppins-medium text-yellow-500 text-sm lg:text-xl px-2">
         Combinando 3 modelos altamente rentables: Trading, Marketing de Afiliados y Growth Partner.
 
       </p>
