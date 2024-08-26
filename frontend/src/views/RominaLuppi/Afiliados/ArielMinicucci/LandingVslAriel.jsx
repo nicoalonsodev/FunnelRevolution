@@ -62,8 +62,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "ariel-minicucci"
 const googleSheets = "https://script.google.com/macros/s/AKfycbx6h0Bth64dxBSZy5_Sr4frGrhV9QuJj98d2fTAyN_qwiqKzbeEPzM5uBwb9ao_CCGE/exec"
-const wppLink = "https://wa.me/+5491138304612?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491138304612"
+const wppLink = "https://wa.me/+5491168323658?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491168323658"
  const data = {
   historyPart1,
   historyPart2,
