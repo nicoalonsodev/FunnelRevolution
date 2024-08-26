@@ -12,7 +12,7 @@ const AnimatedButtonCalendly = ({ handleShowForm }) => {
       onClick={handleButtonClick}
       className="w-full lg:w-2/4 animated-button-cal text-xl border-[2px] border-blue-500"
     >
-      <span className="text-lg lg:text-2xl flex justify-center items-center gap-x-2"><SiCalendly />RECLAMA TU LUGAR</span>
+      <span className="text-lg lg:text-2xl flex justify-center items-center gap-x-2"><SiCalendly />AGENDA TU LLAMADA</span>
      
     </button>
   );

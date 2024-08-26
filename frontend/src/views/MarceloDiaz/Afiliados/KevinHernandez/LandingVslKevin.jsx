@@ -58,6 +58,9 @@ const actually = [
 const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "kevin-hernandez"
+const googleSheets = "https://script.google.com/macros/s/AKfycbwRrP6XT8imnxGcHC2EY5eW7kVTEXlu5CZFRxE7fuypqaEF_WtFF91HP_dwzzDfiwQ51Q/exec"
+const wppLink = "https://wa.me/+573013441228?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+573013441228"
  const data = {
   historyPart1,
   historyPart2,
@@ -66,54 +69,45 @@ const path = "kevin-hernandez"
   historyData,
   calendlyPage,
   historyImages,
+  googleSheets,
+  wppLink,
+  wppNumber
 };
-  return (
-    <div className="flex flex-wrap justify-center overflow-hidden">
-      <div className="bg-gray-900 py-4">
-        <div className="w-screen h-14 lg:h-20 flex justify-center items-center border-b-[1px] border-yellow-600">
-          <img className="w-14 lg:w-20" src={logo} alt="logo" />
-        </div>
-
-        {isRegistered ? (
-          <>
-            <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
-              <TitleAndVideo video={"True"} calendlyPage={calendlyPage} data={data} />
-            </div>
-            {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
-              <History
-                historyData={historyData}
-                historyImages={historyImages}
-                historyPart1={historyPart1}
-                historyPart2={historyPart2}
-                historyPart3={historyPart3}
-              />
-            </div>
-            <div style={background2Style} className="py-2">
-              <div className="px-2 lg:px-14 xl:px-[9rem] py-4">
-                <Actually historyPart3={historyPart3} actually={actually} img4={img4} />
-                <Pilares />
-                <MissionAndResult />
-              </div>
-              <PresentProgram />
-              <Gifts calendlyPage={calendlyPage} />
-              <OfferSection calendlyPageUrl={calendlyPage} />
-            </div> */}
-          </>
-        ) : (
-          <div className="text-center text-white py-8">
-            <h2 className="text-2xl font-bold">Para poder ver el video de la masterclass, debes registrarte.</h2>
-            <Link to={`/${path}`} className="text-yellow-400 underline text-lg mt-4 inline-block">
-              Ir al registro
-            </Link>
+return (
+  <div className="flex flex-wrap justify-center overflow-hidden">
+    <div className="bg-gray-900 py-4">
+      <div className="w-screen h-14 lg:h-20 flex justify-center items-center border-b-[1px] border-yellow-600">
+        <img className="w-14 lg:w-20" src={logo} alt="logo" />
+      </div>
+          <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
+            <TitleAndVideo video={"wpp"} calendlyPage={calendlyPage} data={data} />
           </div>
-        )}
-      </div>
-      <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
-        <Footer />
-      </div>
-      <ModalButton calendlyPage={calendlyPage} />
+          {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
+            <History
+              historyData={historyData}
+              historyImages={historyImages}
+              historyPart1={historyPart1}
+              historyPart2={historyPart2}
+              historyPart3={historyPart3}
+            />
+          </div>
+          <div style={background2Style} className="py-2">
+            <div className="px-2 lg:px-14 xl:px-[9rem] py-4">
+              <Actually historyPart3={historyPart3} actually={actually} img4={img4} />
+              <Pilares />
+              <MissionAndResult />
+            </div>
+            <PresentProgram />
+            <Gifts calendlyPage={calendlyPage} />
+            <OfferSection calendlyPageUrl={calendlyPage} />
+          </div> */}
     </div>
-  );
+    <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
+      <Footer />
+    </div>
+    <ModalButton calendlyPage={calendlyPage} />
+  </div>
+);
 };
 
 export default LandingVslKevin;

@@ -7,6 +7,8 @@ import person from "../../assets/person.svg";
 import phone from "../../assets/phone.svg";
 import countries from "./countries";
 import { useHistory } from "react-router-dom";
+import { SiCalendly } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa6";
 import "./Registro.css";
 const RegistroPhone = ({
   actualizarEstado,
@@ -88,6 +90,11 @@ const RegistroPhone = ({
     if (Object.keys(errors).length === 0) {
       setIsLoading(true);
 
+      localStorage.setItem("calendlyUser", JSON.stringify({
+        FNAME: registro.FNAME,
+        PHONE: registro.PHONE,
+    }));
+    
       const formDatab = new FormData();
       for (const key in registro) {
         formDatab.append(key, registro[key]);
@@ -109,10 +116,20 @@ const RegistroPhone = ({
           mode: "no-cors",
         });
 
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "MetaCompleteRegristrationEvent",
+          eventCategory: "CompleteRegistration",
+          eventAction: "Submit",
+          eventLabel: registro.FNAME,
+          phone: registro.PHONE, 
+          firstName: registro.FNAME.toLowerCase().trim(),
+        });
+
         // Guardar en localStorage que el usuario se ha registrado
         localStorage.setItem("isRegistered", "true");
         if (formUrl === 2) {
-          history.push({pathname: redirectUrl, state: {data: data}});
+          history.push({ pathname: redirectUrl, state: { data: data } });
         } else {
           window.location.href = redirectUrl;
         }
@@ -163,9 +180,9 @@ const RegistroPhone = ({
         >
           X
         </button>
-        <h1 className="text-lg md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2 text-balance">
-          Ingresa tus datos para ver la Masterclass de este nuevo Modelo de
-          Negocio Online
+        <h1 className="text-xl md:text-2xl lato-black font-semibold text-center text-gray-900 mt-4 mb-2 text-balance">
+          Ingresa tus datos para reservar tu cupo gratuito en el Grupo VIP y
+          recibir señales y clases en vivo.
         </h1>
         <form
           className="max-w-[400px] sm:max-w-[700px] mx-auto"
@@ -304,9 +321,16 @@ const RegistroPhone = ({
             ) : (
               <button
                 type="submit"
-                className="lol w-4/5 bg-gradient-to-r from-[#F59800] to-[#b56f00] text-white py-2 rounded-lg mx-auto block text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F59800] hover:scale-110 duration-300 mb-2"
+                className={`${formUrl === 2 ? "w-full lg:w-2/4 animated-button-cal text-xl border-[2px] border-blue-500" : "w-full lg:w-2/4 animated-button-wpp text-xl border-[2px] border-green-500"}`}
               >
-                VER EL MÉTODO AHORA
+                {formUrl === 2 ? (
+                  <span className="text-lg lg:text-2xl flex justify-center items-center gap-x-2">
+                    <SiCalendly />
+                    AGENDA TU LLAMADA
+                  </span>
+                ) : (
+                  <span className="text-lg lg:text-2xl flex justify-center items-center gap-x-2"><FaWhatsapp />RESERVA TU CUPO</span>
+                )}
               </button>
             )}
           </div>

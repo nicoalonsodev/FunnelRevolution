@@ -12,6 +12,19 @@ const Calendly = ({calendlyLink}) => {
     // Listener para el evento de Calendly
     const handleEventScheduled = (e) => {
       if (e.data.event === "calendly.event_scheduled") {
+        // Recuperar los datos del usuario de localStorage
+        const user = JSON.parse(localStorage.getItem("calendlyUser"));
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "MetaLeadEvent",
+          eventCategory: "Lead",
+          eventAction: "Submit",
+          eventLabel: "MetaLeadEvent",
+          phone: user.PHONE, // Enviando el teléfono
+          firstName: user.FNAME.toLowerCase().trim(), // Enviando el nombre
+        });
+
         window.location.href = "https://revolutionoficial.com/gracias?registro=true";
       }
     };

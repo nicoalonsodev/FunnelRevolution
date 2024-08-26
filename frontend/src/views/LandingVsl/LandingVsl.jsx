@@ -59,6 +59,7 @@ const historyImages = [ img1, img2, img3, img4]
 const path = "cristian-castellon"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxTCaMbuqkhMpUcXqkM5_YJhsUQzTDOdcI61eZ7sFY0WBgsfj5JsRsy9cjt1OctdN4o/exec"
 const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491126997232"
  const data = {
   historyPart1,
   historyPart2,
@@ -68,7 +69,8 @@ const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%2
   calendlyPage,
   historyImages,
   googleSheets,
-  wppLink
+  wppLink,
+  wppNumber
 };
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">
@@ -77,7 +79,7 @@ const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%2
           <img className="w-14 lg:w-20" src={logo} alt="logo" />
         </div>
             <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
-              <TitleAndVideo video={"test"} calendlyPage={calendlyPage} data={data} />
+              <TitleAndVideo video={"wpp"} calendlyPage={calendlyPage} data={data} />
             </div>
             {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
               <History
