@@ -60,8 +60,8 @@ const historyImages = [ img1, img2, img3, img4]
 const path = "damian-cruciani"
 
 const googleSheets = "https://script.google.com/macros/s/AKfycbzo_u7-jdTmcrj617M2UnfRCSlnEM7KL89XhkcccH_4dM0lsw4wOn9hSGu2Jkj952HbEQ/exec"
-const wppLink = "https://wa.me/+54912994273418?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+54912994273418"
+const wppLink = "https://wa.me/+5492994273418?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5492994273418"
  const data = {
   historyPart1,
   historyPart2,
