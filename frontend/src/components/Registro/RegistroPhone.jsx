@@ -27,7 +27,7 @@ const RegistroPhone = ({
     Country: "",
     DATE: new Date().toLocaleString(),
   });
-  console.log(formUrl);
+
 
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCode, setIsLoadingCode] = useState(false);

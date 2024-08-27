@@ -16,7 +16,8 @@ const VideoWistiaWpp = ({ dataUser}) => {
   const [wppCode, setWppCode] = useState("");
   
   const location = useLocation();
-  const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
+  const isRegistered = "";
+  // const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
   const videoRef = useRef(null);
 
   const videoUrl = "https://fast.wistia.net/embed/iframe/3eritthpcl";
@@ -117,7 +118,7 @@ const VideoWistiaWpp = ({ dataUser}) => {
             onClick={handleOverlayClick}
           >
             <div className="bg-yellow-500 border-2 border-gray-100 bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center text-white text-center cursor-pointer">
-              <img src={gif} alt="Click to unmute" className="w-16 h-16 mb-4" />
+              <img src={gif} alt="Click to unmute" className="w-10 lg:w-16 h-10 lg:h-16 mb-4" />
               <p className="text-xl font-bold">Tu video ya ha comenzado</p>
               <p className="text-lg">Haga clic para escuchar</p>
             </div>
