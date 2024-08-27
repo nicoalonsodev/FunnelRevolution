@@ -273,6 +273,21 @@ import CalendlyPageMarilinaLopez from "./views/CristianCastellon/Afiliados/Maril
 import LandingVslLeonelMazzuca from "./views/MarceloDiaz/Afiliados/LeonelMazzuca/LandingVslLeonelMazzuca.jsx";
 import LandingPageLeonelMazzuca from "./views/MarceloDiaz/Afiliados/LeonelMazzuca/LandingPageLeonelMazzuca.jsx";
 import CalendlyPageLeonelMazzuca from "./views/MarceloDiaz/Afiliados/LeonelMazzuca/CalendlyPageLeonelMazzuca.jsx";
+import LandingVslFrediCardenas from "./views/CristianCastellon/Afiliados/FrediCardenas/LandingVslFrediCardenas.jsx";
+import CalendlyPageFrediCardenas from "./views/CristianCastellon/Afiliados/FrediCardenas/CalendlyPageFrediCardenas.jsx";
+import LandingPageFrediCardenas from "./views/CristianCastellon/Afiliados/FrediCardenas/LandingPageFrediCardenas.jsx";
+import CalendlyPageDamianCruciani from "./views/CristianCastellon/Afiliados/DamianCruciani/CalendlyPageDamianCruciani.jsx";
+import LandingPageDamianCruciani from "./views/CristianCastellon/Afiliados/DamianCruciani/LandingPageDamianCruciani.jsx";
+import LandingVslDamianCruciani from "./views/CristianCastellon/Afiliados/DamianCruciani/LandingVslDamianCruciani.jsx";
+import CalendlyPageEstebanBaez from "./views/LautaroFredes/Afiliados/EstebanBaez/CalendlyPageEstebanBaez.jsx";
+import LandingPageEstebanBaez from "./views/LautaroFredes/Afiliados/EstebanBaez/LandingPageEstebanBaez.jsx";
+import LandingVslEstebanBaez from "./views/LautaroFredes/Afiliados/EstebanBaez/LandingVslEstebanBaez.jsx";
+import LandingPageCarlaHornos from "./views/MarceloDiaz/Afiliados/CarlaHornos/LandingPageCarlaHornos.jsx";
+import LandingVslCarlaHornos from "./views/MarceloDiaz/Afiliados/CarlaHornos/LandingVslCarlaHornos.jsx";
+import CalendlyPageCarlaHornos from "./views/MarceloDiaz/Afiliados/CarlaHornos/CalendlyPageCarlaHornos.jsx";
+import CalendlyPageNahuelQuispe from "./views/NahuelQuispe/CalendlyPageNahuelQuispe.jsx";
+import LandingPageNahuelQuispe from "./views/NahuelQuispe/LandingPageNahuelQuispe.jsx";
+import LandingVslNahuelQuispe from "./views/NahuelQuispe/LandingVslNahuelQuispe.jsx";
 
 function App() {
   return (
@@ -1090,6 +1105,51 @@ function App() {
         exact
         path="/leonel-mazzuca/calendly"
         component={CalendlyPageLeonelMazzuca}
+      />
+
+      {/* Landing fredi-cardenas */}
+      <Route exact path="/fredi-cardenas/vsl" component={LandingVslFrediCardenas} />
+      <Route exact path="/fredi-cardenas" component={LandingPageFrediCardenas} />
+      <Route
+        exact
+        path="/fredi-cardenas/calendly"
+        component={CalendlyPageFrediCardenas}
+      />
+
+      {/* Landing damian-cruciani */}
+      <Route exact path="/damian-cruciani/vsl" component={LandingVslDamianCruciani} />
+      <Route exact path="/damian-cruciani" component={LandingPageDamianCruciani} />
+      <Route
+        exact
+        path="/damian-cruciani/calendly"
+        component={CalendlyPageDamianCruciani}
+      />
+
+      {/* Landing esteban-baez */}
+      <Route exact path="/esteban-baez/vsl" component={LandingVslEstebanBaez} />
+      <Route exact path="/esteban-baez" component={LandingPageEstebanBaez} />
+      <Route
+        exact
+        path="/esteban-baez/calendly"
+        component={CalendlyPageEstebanBaez}
+      />
+
+      {/* Landing carla-hornos */}
+      <Route exact path="/carla-hornos/vsl" component={LandingVslCarlaHornos} />
+      <Route exact path="/carla-hornos" component={LandingPageCarlaHornos} />
+      <Route
+        exact
+        path="/carla-hornos/calendly"
+        component={CalendlyPageCarlaHornos}
+      />
+
+      {/* Landing nahuel-quispe */}
+      <Route exact path="/nahuel-quispe/vsl" component={LandingVslNahuelQuispe} />
+      <Route exact path="/nahuel-quispe" component={LandingPageNahuelQuispe} />
+      <Route
+        exact
+        path="/nahuel-quispe/calendly"
+        component={CalendlyPageNahuelQuispe}
       />
 
     </div>
