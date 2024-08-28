@@ -9,6 +9,7 @@ import countries from "./countries";
 import { useHistory } from "react-router-dom";
 import { SiCalendly } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa6";
+import { v4 as uuidv4 } from 'uuid';
 import "./Registro.css";
 const RegistroPhone = ({
   actualizarEstado,
@@ -89,7 +90,8 @@ const RegistroPhone = ({
 
     if (Object.keys(errors).length === 0) {
       setIsLoading(true);
-
+      const userID = uuidv4();
+      localStorage.setItem('externalID', userID);
       localStorage.setItem("calendlyUser", JSON.stringify({
         FNAME: registro.FNAME,
         PHONE: registro.PHONE,
@@ -132,6 +134,7 @@ const RegistroPhone = ({
           eventLabel: registro.FNAME,
           phone: registro.PHONE, 
           firstName: registro.FNAME.toLowerCase().trim(),
+          externalID: localStorage.getItem('externalID'),
         });
 
         // Guardar en localStorage que el usuario se ha registrado

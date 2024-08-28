@@ -12,7 +12,7 @@ import Gifts from "../../../../components/Gifts/Gifts";
 import OfferSection from "../../../../components/OfferSection/OfferSection";
 import background2 from "../../../../assets/background2.png";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-const CalendlyPageAgustinFarias = () => {
+const CalendlyPageGenaroDadamo = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,7 +25,7 @@ const CalendlyPageAgustinFarias = () => {
   const location = useLocation();
   const { data } = location.state || {};
 
-  const calendlyLink = "https://calendly.com/gonza-agustin/llamadadeiniciacionenrevolution";
+  const calendlyLink = "https://calendly.com/genadadamo10/llamada-de-iniciacion-revolution";
    const {
     actually,
     historyData,
@@ -85,5 +85,5 @@ const CalendlyPageAgustinFarias = () => {
   );
 };
 
-export default CalendlyPageAgustinFarias
+export default CalendlyPageGenaroDadamo
 ;
