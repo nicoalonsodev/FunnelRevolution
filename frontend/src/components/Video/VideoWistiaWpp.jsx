@@ -16,8 +16,8 @@ const VideoWistiaWpp = ({ dataUser}) => {
   const [wppCode, setWppCode] = useState("");
   
   const location = useLocation();
-  const isRegistered = "";
-  // const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
+  const isRegistered = "true";
+  //  const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
   const videoRef = useRef(null);
 
   const videoUrl = "https://fast.wistia.net/embed/iframe/3eritthpcl";
