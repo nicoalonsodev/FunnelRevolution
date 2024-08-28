@@ -59,8 +59,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "gabriel-mazzoca"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxcC1yJ8SXK8LepGhdyR8-iwbZENik8bgWm_CTTcS68leoqRGbLhhpHZRftX6ZTR_Sb/exec"
-const wppLink = "https://wa.me/+5491170650032?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491170650032"
+const wppLink = "https://wa.me/+5491170653293?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491170653293"
  const data = {
   historyPart1,
   historyPart2,
