@@ -18,7 +18,7 @@ import img2 from "../../../../assets/nahuel_quispe/2.webp";
 import img3 from "../../../../assets/nahuel_quispe/3.webp";
 import img4 from "../../../../assets/nahuel_quispe/4.webp";
 
-const LandingVslGregorettiIvo = () => {
+const LandingVslAgustinaGomez = () => {
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
@@ -67,13 +67,13 @@ const LandingVslGregorettiIvo = () => {
       "2 años",
     ]
 
-  const calendlyPage = "/gregoretti-ivo/calendly";
+  const calendlyPage = "/agustina-gomez/calendly";
   const historyImages = [img1, img2, img3, img4];
   const isRegistered = localStorage.getItem("isRegistered") === "true";
-  const path = "gregoretti-ivo";
-  const googleSheets = "https://script.google.com/macros/s/AKfycby0LyYussts9Bs8i1BDOCtBJMJZysgLRL0W2RAEPMGyBylXGZj9-X55Wc0q3Rf9WT4/exec"
-const wppLink = "https://wa.me/+5491121912911?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491121912911"
+  const path = "agustina-gomez";
+  const googleSheets = "https://script.google.com/macros/s/AKfycbzmL9R3rkuVULI2PIGrfbQncNuOsPq3JAOBwfpM4D6MNxb-JODBAuAMKshGDtv_MgM/exec"
+const wppLink = "https://wa.me/+5491139084084?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491139084084"
  const data = {
   historyPart1,
   historyPart2,
@@ -123,4 +123,4 @@ return (
 );
 };
 
-export default LandingVslGregorettiIvo;
+export default LandingVslAgustinaGomez;

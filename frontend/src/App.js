@@ -315,6 +315,12 @@ import CalendlyPageJohanaCaballero from "./views/FernandoDamian/Afiliados/Johana
 import LandingVslArianaRomeggio from "./views/FernandoDamian/Afiliados/ArianaRomeggio/LandingVslArianaRomeggio.jsx";
 import LandingPageArianaRomeggio from "./views/FernandoDamian/Afiliados/ArianaRomeggio/LandingPageArianaRomeggio.jsx";
 import CalendlyPageArianaRomeggio from "./views/FernandoDamian/Afiliados/ArianaRomeggio/CalendlyPageArianaRomeggio.jsx";
+import LandingVslPabloCastillo from "./views/NahuelQuispe/Afiliados/PabloCastillo/LandingVslPabloCastillo.jsx";
+import LandingPagePabloCastillo from "./views/NahuelQuispe/Afiliados/PabloCastillo/LandingPagePabloCastillo.jsx";
+import CalendlyPagePabloCastillo from "./views/NahuelQuispe/Afiliados/PabloCastillo/CalendlyPagePabloCastillo.jsx";
+import LandingVslAgustinaGomez from "./views/NahuelQuispe/Afiliados/AgustinaGomez/LandingVslAgustinaGomez.jsx";
+import CalendlyPageAgustinaGomez from "./views/NahuelQuispe/Afiliados/AgustinaGomez/CalendlyPageAgustinaGomez.jsx";
+import LandingPageAgustinaGomez from "./views/NahuelQuispe/Afiliados/AgustinaGomez/LandingPageAgustinaGomez.jsx";
 
 function App() {
   return (
@@ -1258,6 +1264,24 @@ function App() {
         exact
         path="/ariana-romeggio/calendly"
         component={CalendlyPageArianaRomeggio}
+      />
+
+      {/* Landing pablo-castillo */}
+      <Route exact path="/pablo-castillo/vsl" component={LandingVslPabloCastillo} />
+      <Route exact path="/pablo-castillo" component={LandingPagePabloCastillo} />
+      <Route
+        exact
+        path="/pablo-castillo/calendly"
+        component={CalendlyPagePabloCastillo}
+      />
+
+      {/* Landing agustina-gomez */}
+      <Route exact path="/agustina-gomez/vsl" component={LandingVslAgustinaGomez} />
+      <Route exact path="/agustina-gomez" component={LandingPageAgustinaGomez} />
+      <Route
+        exact
+        path="/agustina-gomez/calendly"
+        component={CalendlyPageAgustinaGomez}
       />
 
     </div>

@@ -12,7 +12,7 @@ import Gifts from "../../../../components/Gifts/Gifts";
 import OfferSection from "../../../../components/OfferSection/OfferSection";
 import background2 from "../../../../assets/background2.png";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-const CalendlyPageGregorettiIvo = () => {
+const CalendlyPagePabloCastillo = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,7 +25,7 @@ const CalendlyPageGregorettiIvo = () => {
   const location = useLocation();
   const { data } = location.state || {};
 
-  const calendlyLink = "https://calendly.com/ivofgregoretti/inicio-en-revolution?month=2024-08&date=2024-08-17";
+  const calendlyLink = "https://calendly.com/pablocastillo821/llamada-de-ingreso-a-revolution";
    const {
     actually,
     historyData,
@@ -85,5 +85,5 @@ const CalendlyPageGregorettiIvo = () => {
   );
 };
 
-export default CalendlyPageGregorettiIvo
+export default CalendlyPagePabloCastillo
 ;

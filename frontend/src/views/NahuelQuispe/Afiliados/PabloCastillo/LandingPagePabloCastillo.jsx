@@ -2,10 +2,10 @@ import React from "react";
 import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
 import Footer from "../../../../components/Footer/Footer";
-const LandingPageGregorettiIvo = () => {
+const LandingPagePabloCastillo = () => {
  
-const url = "/gregoretti-ivo/vsl?registered=true";
-const googleSheetsUrl = "https://script.google.com/macros/s/AKfycby0LyYussts9Bs8i1BDOCtBJMJZysgLRL0W2RAEPMGyBylXGZj9-X55Wc0q3Rf9WT4/exec"
+const url = "/pablo-castillo/vsl?registered=true";
+const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbwh30mAMpESA9kYuEYtWstl9QHhTfAdqnBUHIDO1I9ej16WL0jaF8CFtYwJwON17Zod/exec"
   return (
     <div >
       <div
@@ -25,4 +25,4 @@ const googleSheetsUrl = "https://script.google.com/macros/s/AKfycby0LyYussts9Bs8
   );
 };
 
-export default LandingPageGregorettiIvo;
+export default LandingPagePabloCastillo;
