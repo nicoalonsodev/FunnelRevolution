@@ -42,7 +42,7 @@ const VideoWistiaWpp = ({ dataUser}) => {
 
       const timer1 = setTimeout(() => {
         setShowButton(true);
-      }, 5000);
+      }, 500);
 
       const timer2 = setTimeout(() => {
         setShowButton2(true);
