@@ -327,6 +327,9 @@ import CalendlyPageOscarZapata from "./views/NahuelQuispe/Afiliados/OscarZapata/
 import LandingVslIgnacioCostantini from "./views/MatiasDechand/Afiliados/IgnacioCostantini/LandingVslIgnacioCostantini.jsx";
 import LandingPageIgnacioCostantini from "./views/MatiasDechand/Afiliados/IgnacioCostantini/LandingPageIgnacioCostantini.jsx";
 import CalendlyPageIgnacioCostantini from "./views/MatiasDechand/Afiliados/IgnacioCostantini/CalendlyPageIgnacioCostantini.jsx";
+import LandingVslJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/LandingVslJosimarFlorindez.jsx";
+import LandingPageJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/LandingPageJosimarFlorindez.jsx";
+import CalendlyPageJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/CalendlyPageJosimarFlorindez.jsx";
 
 function App() {
   return (
@@ -1306,6 +1309,15 @@ function App() {
         exact
         path="/ignacio-costantini/calendly"
         component={CalendlyPageIgnacioCostantini}
+      />
+
+      {/* Landing josimar-florindez-florindez */}
+      <Route exact path="/josimar-florindez/vsl" component={LandingVslJosimarFlorindez} />
+      <Route exact path="/josimar-florindez" component={LandingPageJosimarFlorindez} />
+      <Route
+        exact
+        path="/josimar-florindez/calendly"
+        component={CalendlyPageJosimarFlorindez}
       />
 
     </div>
