@@ -65,8 +65,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "roman-correa"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxCX906hSSZVdE0njyZa3aj93oCgXPEUYFiQYACQcrjUr8F6-dXG80aTqOliB1ffFdxYA/exec"
-const wppLink = "https://wa.me/+5491126364303?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491126364303"
+const wppLink = "https://wa.me/+5491130217166?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491130217166"
  const data = {
   historyPart1,
   historyPart2,
