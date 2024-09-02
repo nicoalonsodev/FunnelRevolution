@@ -73,8 +73,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "nahuel-quispe"
 const googleSheets = "https://script.google.com/macros/s/AKfycbySvYldbFeVPb3NFObSDAzoUH7pi5ccudbumyerNkzVs3pCKk6BBIUd4mPhjJo-oEtu/exec"
-const wppLink = "https://wa.me/+5493465597937?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5493465597937"
+const wppLink = "https://wa.me/+5491157354586?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491157354586"
  const data = {
   historyPart1,
   historyPart2,
