@@ -64,8 +64,8 @@ const historyImages = [ img1, img2, img3, img4]
     const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "melany-venditti"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxBrY-dJiIGKfYrGSGociyFId8T8PS6li7XdJzKKrtOzff8T4sgb-191bSGpe5nZjXXDA/exec"
-const wppLink = "https://wa.me/+5491125717265?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491125717265"
+const wppLink = "https://wa.me/+5491125005266?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491125005266"
  const data = {
   historyPart1,
   historyPart2,
