@@ -330,6 +330,15 @@ import CalendlyPageIgnacioCostantini from "./views/MatiasDechand/Afiliados/Ignac
 import LandingVslJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/LandingVslJosimarFlorindez.jsx";
 import LandingPageJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/LandingPageJosimarFlorindez.jsx";
 import CalendlyPageJosimarFlorindez from "./views/MarceloDiaz/Afiliados/JosimarFlorindez/CalendlyPageJosimarFlorindez.jsx";
+import LandingVslAgustinBenitez from "./views/CristianCastellon/Afiliados/AgustinBenitez/LandingVslAgustinBenitez.jsx";
+import LandingPageAgustinBenitez from "./views/CristianCastellon/Afiliados/AgustinBenitez/LandingPageAgustinBenitez.jsx";
+import CalendlyPageAgustinBenitez from "./views/CristianCastellon/Afiliados/AgustinBenitez/CalendlyPageAgustinBenitez.jsx";
+import LandingVslJexerRomero from "./views/CristianCastellon/Afiliados/JexerRomero/LandingVslJexerRomero.jsx";
+import LandingPageJexerRomero from "./views/CristianCastellon/Afiliados/JexerRomero/LandingPageJexerRomero.jsx";
+import CalendlyPageJexerRomero from "./views/CristianCastellon/Afiliados/JexerRomero/CalendlyPageJexerRomero.jsx";
+import LandingVslLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/LandingVslLucasRuiz.jsx";
+import LandingPageLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/LandingPageLucasRuiz.jsx";
+import CalendlyPageLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/CalendlyPageLucasRuiz.jsx";
 
 function App() {
   return (
@@ -1318,6 +1327,33 @@ function App() {
         exact
         path="/josimar-florindez/calendly"
         component={CalendlyPageJosimarFlorindez}
+      />
+
+      {/* Landing agustin-benitez */}
+      <Route exact path="/agustin-benitez/vsl" component={LandingVslAgustinBenitez} />
+      <Route exact path="/agustin-benitez" component={LandingPageAgustinBenitez} />
+      <Route
+        exact
+        path="/agustin-benitez/calendly"
+        component={CalendlyPageAgustinBenitez}
+      />
+
+      {/* Landing jexer-romero */}
+      <Route exact path="/jexer-romero/vsl" component={LandingVslJexerRomero} />
+      <Route exact path="/jexer-romero" component={LandingPageJexerRomero} />
+      <Route
+        exact
+        path="/jexer-romero/calendly"
+        component={CalendlyPageJexerRomero}
+      />
+
+      {/* Landing lucas-ruiz */}
+      <Route exact path="/lucas-ruiz/vsl" component={LandingVslLucasRuiz} />
+      <Route exact path="/lucas-ruiz" component={LandingPageLucasRuiz} />
+      <Route
+        exact
+        path="/lucas-ruiz/calendly"
+        component={CalendlyPageLucasRuiz}
       />
 
     </div>
