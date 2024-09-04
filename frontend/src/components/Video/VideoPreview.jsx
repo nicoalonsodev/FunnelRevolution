@@ -49,7 +49,7 @@ const VideoPreview = ({urlPreview, googleSheets}) => {
           rel="noopener noreferrer"
           className="w-full lg:w-2/4 animated-button cursor-pointer border-[2px] border-[#dc9c35]"
         >
-          <span className="anton text-gray-100 tracking-wider">VER MÉTODO</span>
+          <span className="lato-regular text-gray-100 tracking-wider">VER MÉTODO</span>
         </a>
       </div>
 
