@@ -339,6 +339,9 @@ import CalendlyPageJexerRomero from "./views/CristianCastellon/Afiliados/JexerRo
 import LandingVslLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/LandingVslLucasRuiz.jsx";
 import LandingPageLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/LandingPageLucasRuiz.jsx";
 import CalendlyPageLucasRuiz from "./views/MarceloDiaz/Afiliados/LucasRuiz/CalendlyPageLucasRuiz.jsx";
+import LandingVslJonathanBarrios from "./views/LautaroFredes/Afiliados/JonathanBarrios/LandingVslJonathanBarrios.jsx";
+import LandingPageJonathanBarrios from "./views/LautaroFredes/Afiliados/JonathanBarrios/LandingPageJonathanBarrios.jsx";
+import CalendlyPageJonathanBarrios from "./views/LautaroFredes/Afiliados/JonathanBarrios/CalendlyPageJonathanBarrios.jsx";
 
 function App() {
   return (
@@ -1354,6 +1357,15 @@ function App() {
         exact
         path="/lucas-ruiz/calendly"
         component={CalendlyPageLucasRuiz}
+      />
+
+      {/* Landing jonathan-barrios */}
+      <Route exact path="/jonathan-barrios/vsl" component={LandingVslJonathanBarrios} />
+      <Route exact path="/jonathan-barrios" component={LandingPageJonathanBarrios} />
+      <Route
+        exact
+        path="/jonathan-barrios/calendly"
+        component={CalendlyPageJonathanBarrios}
       />
 
     </div>
