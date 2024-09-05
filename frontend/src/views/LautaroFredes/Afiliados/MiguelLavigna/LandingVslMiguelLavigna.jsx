@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/lautar_fredes/1.jpg";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/lautar_fredes/3.jpg";
 import img4 from "../../../../assets/lautar_fredes/4.jpg";
 
 const LandingVslMiguelLavigna = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Todo empezó cuando yo tenía (19 años) y tenía una ambición muy grande por crecer pero las oportunidades que tenían eran muy pocas, más que un trabajo en comida rápida donde ganaba muy poco y trabajaba mucho.",
     "Estaba bastante frustrado porque creía que esa iba a hacer mi realidad por siempre, hasta que un día un amigo me invitó a una oportunidad digital si bien no se expresó mucho pero me dijo “Amigo tengo algo muy bueno para contarte, nos tenemos que juntar”…",
@@ -62,7 +49,7 @@ const actually = [
   
   const calendlyPage = "/miguel-lavigna/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "miguel-lavigna"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyZLJWfSHMs28Y2Rwyo9HUq4fBy7yvtUf5NvyT2AnWuq08x9Uhr7o4aaCjpPnPn2LO-cg/exec"
 const wppLink = "https://wa.me/+5493416844540?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

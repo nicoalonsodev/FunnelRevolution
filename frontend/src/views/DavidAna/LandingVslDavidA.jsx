@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../assets/david_ana/1.webp";
@@ -20,12 +20,7 @@ import img3 from "../../assets/david_ana/3.webp";
 import img4 from "../../assets/david_ana/4.webp";
 
 const LandingVslDavidA = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
  const historyPart1 = [
   "Comencé en el mundo de las inversiones digitales de la peor manera. Fui víctima de estafas, perdí dinero en opciones binarias, y tuve malas experiencias con bots de trading. ",
   "Lejos de rendirme, decidí aprender de manera real a ganar dinero por internet. Invertí en cursos, pagué miles de dólares en academias de trading, y me rodeé de los entornos correctos.",
@@ -57,7 +52,7 @@ const actually = [
 
   const calendlyPage = "/david-ana/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "david-ana"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzb5nyw9g5hmj-aJ4oVWGa1CdCi5Pa7LG58r32I24cqdUPJkuPLWWL93OxImp-eMc6UwQ/exec"
 const wppLink = "https://wa.me/+5491126997232?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

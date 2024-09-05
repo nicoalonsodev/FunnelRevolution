@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../assets/nahuel_quispe/1.webp";
@@ -20,12 +20,7 @@ import img3 from "../../assets/nahuel_quispe/3.webp";
 import img4 from "../../assets/nahuel_quispe/4.webp";
 
 const LandingVslNahuelQuispe = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
  const historyPart1 = [
   "Soy un tipo sencillo que nació y se crió en una Villa de Salta Capital en el Norte de Argentina. Tuve la dicha de tener una familia muy trabajadora pero nunca estuvo lleno de lujos.",
   "Más allá de eso, desde muy chico fui muy ambisioso y siempre quise ser una persona muy importante.",
@@ -70,7 +65,7 @@ const actually = [
 
   const calendlyPage = "/nahuel-quispe/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "nahuel-quispe"
 const googleSheets = "https://script.google.com/macros/s/AKfycbySvYldbFeVPb3NFObSDAzoUH7pi5ccudbumyerNkzVs3pCKk6BBIUd4mPhjJo-oEtu/exec"
 const wppLink = "https://wa.me/+5491157354586?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

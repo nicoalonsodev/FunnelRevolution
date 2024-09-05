@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../../../assets/fernando_damian/1.webp";
 import img2 from "../../../../assets/fernando_damian/2.webp";
@@ -19,12 +11,7 @@ import img3 from "../../../../assets/fernando_damian/3.webp";
 import img4 from "../../../../assets/fernando_damian/4.webp";
 
 const LandingVslArianaRomeggio = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Soy Fernando Damián Migliano, tengo 41 años y soy instructor de musculación y culturismo. Desde los 18 años, siempre he sido un emprendedor independiente.",
     "Comencé vendiendo productos y luego expandí mis negocios a un kiosco y un local de ropa en Buenos Aires. Con el tiempo, me convertí en agente inmobiliario y adquirí propiedades en Miami.",
@@ -56,7 +43,7 @@ const LandingVslArianaRomeggio = () => {
 
   const calendlyPage = "/ariana-romeggio/calendly";
   const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
+  //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "ariana-romeggio";
   const googleSheets = "https://script.google.com/macros/s/AKfycbzPXYJUVhkmAbg-cNQxfeA4fjz0SXB97KmhIs-ef1oGs7DWqhYqMWGt8p3hov9hyYNx/exec"
 const wppLink = "https://wa.me/+5491133456592?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

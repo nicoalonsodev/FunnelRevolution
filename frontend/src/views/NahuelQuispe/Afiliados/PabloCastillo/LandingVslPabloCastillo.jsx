@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../../../assets/nahuel_quispe/1.webp";
 import img2 from "../../../../assets/nahuel_quispe/2.webp";
@@ -19,12 +11,7 @@ import img3 from "../../../../assets/nahuel_quispe/3.webp";
 import img4 from "../../../../assets/nahuel_quispe/4.webp";
 
 const LandingVslPabloCastillo = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Soy un tipo sencillo que nació y se crió en una Villa de Salta Capital en el Norte de Argentina. Tuve la dicha de tener una familia muy trabajadora pero nunca estuvo lleno de lujos.",
     "Más allá de eso, desde muy chico fui muy ambisioso y siempre quise ser una persona muy importante.",
@@ -69,7 +56,7 @@ const LandingVslPabloCastillo = () => {
 
   const calendlyPage = "/pablo-castillo/calendly";
   const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
+  //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "pablo-castillo";
   const googleSheets = "https://script.google.com/macros/s/AKfycbwh30mAMpESA9kYuEYtWstl9QHhTfAdqnBUHIDO1I9ej16WL0jaF8CFtYwJwON17Zod/exec"
 const wppLink = "https://wa.me/+5493872203169?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

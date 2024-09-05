@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/cristian_castellon/1.webp";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/cristian_castellon/3.webp";
 import img4 from "../../../../assets/cristian_castellon/4.webp";
 
 const LandingVslPedroDantas = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 const historyPart1 = [
   "Siempre me llamó la atención el mundo del <strong>emprendimiento</strong>, los <strong>negocios</strong> y la formación de <strong>empresas</strong>. Me recibí de <strong>Técnico en administración de empresas</strong>, estudié 1 año en la <strong>UBA</strong> y 2 años en la <strong>UADE</strong>. Trabajé un año en <strong>IBM</strong>, y eso fue más que suficiente para darme cuenta que el <strong>sistema tradicional</strong> no me iba a dar la <strong>vida</strong> que quería.",
   "Ahí inició mi carrera como <strong>emprendedor</strong>, a los 21 años compré un <strong>auto</strong> a crédito para ponerlo a hacer <strong>UBER</strong>, avancé con un <strong>local de comida</strong>, después llegó a mi vida el mundo de los <strong>negocios digitales</strong>. Me presentaron la empresa <strong>AMWAY</strong>, que es una empresa <strong>Norteamericana</strong> que lleva más de 60 años en funcionamiento, donde vos podrías distribuir sus <strong>productos</strong>, comisionar por tus <strong>ventas</strong> y armar <strong>equipos de trabajo</strong>. Gracias a esa actividad conocí más de <strong>20 países</strong> y gané mucho <strong>dinero</strong> durante 5 años. Después armé una empresa de <strong>ventas de planes de autos</strong> con 2 amigos, puse una <strong>oficina</strong> con personas haciendo <strong>arbitraje</strong>, armé una <strong>comunidad de cripto players</strong> en <strong>AXIE INFINITY</strong>, pero no me fue tan bien como planeaba...",
@@ -56,7 +43,7 @@ const actually = [
 
   const calendlyPage = "/pedro-dantas/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "pedro-dantas"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzyQMA8Rx2oNmT0w1vW2cWNkuj0RywxRfoo9ZxWqd5HrzF4CcE-FCoaQpR-IQLnvN0olA/exec"
 const wppLink = "https://wa.me/+5491170647862?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

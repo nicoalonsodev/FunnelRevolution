@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../assets/raul_crisorio/raul1.jpeg";
 import img2 from "../../assets/raul_crisorio/raul2.jpeg";
@@ -19,12 +19,7 @@ import img3 from "../../assets/raul_crisorio/raul3.jpeg";
 import img4 from "../../assets/raul_crisorio/raul4.jpeg";
 
 const LandingVslRaul = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 const historyPart1 = [
   "Todo empezó a los 25 años, recién egresado y con un trabajo estable, me sentía perdido. Mi sueldo se iba en <strong>gastos innecesarios</strong>, <strong>fiestas</strong> y <strong>alcohol</strong>, afectando mi <strong>salud</strong>",
   "Mis dos pasiones siempre han sido <strong>dormir</strong> y <strong>comer bien</strong>. En agosto de 2018, una colega posteó 'Gané $4 mientras <strong>dormía</strong>', y me intrigó. La contacté esperando que trabajara en una empresa de <strong>colchones</strong>, pero era mucho mejor.",
@@ -60,7 +55,7 @@ const actually = [
 
   const calendlyPage = "/raul-crisorio/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "raul-crisorio"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzZ-KSRlra8wiX8tOE8nQRhoppyTwua9PqXrrc_xgeR04DvD41-hS5_9i7CwiweXiaW/exec"
 const wppLink = "https://wa.me/+5493518170429?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

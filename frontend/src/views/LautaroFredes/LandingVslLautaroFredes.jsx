@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../assets/lautar_fredes/1.jpg";
@@ -22,12 +22,7 @@ import img4 from "../../assets/lautar_fredes/4.jpg";
 const LandingVslLautaroFredes = () => {
 
 
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 
   const historyPart1 = [
     "Todo empezó cuando yo tenía (19 años) y tenía una ambición muy grande por crecer pero las oportunidades que tenían eran muy pocas, más que un trabajo en comida rápida donde ganaba muy poco y trabajaba mucho.",
@@ -64,7 +59,7 @@ const actually = [
   const historyData = ["Lautaro Fredes", "Argentina, Bs As", "8 años"];
   const calendlyPage = "/lautaro-fredes/calendly";
   const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
+  //const isRegistered = localStorage.getItem("isRegistered") === "true";
 
 const path = "lautaro-fredes"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwW-UTYwp4sbV0CoKWnMeu8hKRh1pcQefxNmI9-dGoPG7cHvz_6REEHHUuGSec1mytT/exec"

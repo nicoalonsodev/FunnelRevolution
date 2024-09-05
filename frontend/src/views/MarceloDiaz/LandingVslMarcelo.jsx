@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../assets/marcelo_diaz/1.webp";
 import img2 from "../../assets/marcelo_diaz/2.webp";
@@ -19,12 +19,7 @@ import img3 from "../../assets/marcelo_diaz/3.webp";
 import img4 from "../../assets/marcelo_diaz/4.webp";
 
 const LandingVslMarcelo = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
  const historyPart1 = [
   "Todo comenzó cuando, influenciado por mi <strong>hermano</strong>, <strong>Cristian Díaz</strong>, decidí asistir a una <strong>videoconferencia</strong>. Yo venía de una <strong>familia humilde</strong>, sin grandes <strong>oportunidades</strong> a la vista, pero con el <strong>deseo</strong> de crecer y cambiar mi <strong>realidad</strong>. En ese momento, me mostraron los <strong>beneficios</strong> de estudiar los <strong>mercados financieros</strong> y la posibilidad de alcanzar un <strong>desarrollo personal</strong> profundo.",
   "<strong>Cristian</strong> ya había obtenido <strong>pequeños resultados</strong>, y eso fue lo que me inspiró a dar el <strong>primer paso</strong>. Empezamos como un <strong>grupo pequeño</strong>, éramos solo <strong>10 personas</strong> que confiaban en la habilidad de mi hermano. Comenzamos con <strong>sesiones en vivo</strong>, donde él nos explicaba lo que estaba funcionando en ese momento.",
@@ -55,7 +50,7 @@ const actually = [
 
   const calendlyPage = "/marcelo-diaz/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "marcelo-diaz"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxNzmiQhbrG8LHeiOlEAkQHMLZ2a6_zN235T2-vZYaQIGVM8HwNIerr0rtnLV1RlaQ0Iw/exec"
 const wppLink = "https://wa.me/+549?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

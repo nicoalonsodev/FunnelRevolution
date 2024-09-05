@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../../../assets/david_ana/1.webp";
 import img2 from "../../../../assets/david_ana/2.webp";
@@ -19,12 +11,7 @@ import img3 from "../../../../assets/david_ana/3.webp";
 import img4 from "../../../../assets/david_ana/4.webp";
 
 const LandingVslMatiasVera = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Comencé en el mundo de las inversiones digitales de la peor manera. Fui víctima de estafas, perdí dinero en opciones binarias, y tuve malas experiencias con bots de trading. ",
     "Lejos de rendirme, decidí aprender de manera real a ganar dinero por internet. Invertí en cursos, pagué miles de dólares en academias de trading, y me rodeé de los entornos correctos.",
@@ -56,7 +43,7 @@ const LandingVslMatiasVera = () => {
 
   const calendlyPage = "/matias-vera/calendly";
   const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
+  //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "matias-vera";
   const googleSheets = "https://script.google.com/macros/s/AKfycbxK2OXgIzshCAI0LH9BXDjf4lppxyqttT8TGv16jO9YGx1aW-SAVGbG2v_dCB6O0VwD/exec"
 const wppLink = "https://wa.me/+5492932459413?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

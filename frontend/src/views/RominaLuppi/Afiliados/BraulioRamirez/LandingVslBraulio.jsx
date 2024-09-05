@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/romina_luppi/1.webp";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/romina_luppi/3.webp";
 import img4 from "../../../../assets/romina_luppi/4.webp";
 
 const LandingVslBraulio = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 
   const historyData = [
     " Romina Luppi",
@@ -59,7 +46,7 @@ const actually = [
 
   const calendlyPage = "/braulio-ramirez/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "braulio-ramirez"
 const googleSheets = "https://script.google.com/macros/s/AKfycbw5oPtrcpOdHqNgYpxAjyR-0mkc6W_sxnLBsH4sxEc5b8OEjsjkYKLxqZ95hZJxsrU8/exec"
 const wppLink = "https://wa.me/+5491123822532?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

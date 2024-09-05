@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../../../assets/david_ana/1.webp";
 import img2 from "../../../../assets/david_ana/2.webp";
@@ -19,12 +11,7 @@ import img3 from "../../../../assets/david_ana/3.webp";
 import img4 from "../../../../assets/david_ana/4.webp";
 
 const LandingVslDiegoMassaccesi = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Comencé en el mundo de las inversiones digitales de la peor manera. Fui víctima de estafas, perdí dinero en opciones binarias, y tuve malas experiencias con bots de trading. ",
     "Lejos de rendirme, decidí aprender de manera real a ganar dinero por internet. Invertí en cursos, pagué miles de dólares en academias de trading, y me rodeé de los entornos correctos.",
@@ -56,7 +43,7 @@ const LandingVslDiegoMassaccesi = () => {
 
   const calendlyPage = "/diego-massaccesi/calendly";
   const historyImages = [img1, img2, img3, img4];
-  const isRegistered = localStorage.getItem("isRegistered") === "true";
+  //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "diego-massaccesi";
   const googleSheets = "https://script.google.com/macros/s/AKfycbwBU_RF6xEJWnLGOEoQifWzQxxJnCCrug8F28ALB6bHobcRLPY7XO-zpP4dlExF56-uAA/exec"
 const wppLink = "https://wa.me/+5492236692597?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

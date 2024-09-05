@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/raul_crisorio/raul1.jpeg";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/raul_crisorio/raul3.jpeg";
 import img4 from "../../../../assets/raul_crisorio/raul4.jpeg";
 
 const LandingVslRocioC = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 const historyPart1 = [
   "Todo empezó a los 25 años, recién egresado y con un trabajo estable, me sentía perdido. Mi sueldo se iba en <strong>gastos innecesarios</strong>, <strong>fiestas</strong> y <strong>alcohol</strong>, afectando mi <strong>salud</strong>",
   "Mis dos pasiones siempre han sido <strong>dormir</strong> y <strong>comer bien</strong>. En agosto de 2018, una colega posteó 'Gané $4 mientras <strong>dormía</strong>', y me intrigó. La contacté esperando que trabajara en una empresa de <strong>colchones</strong>, pero era mucho mejor.",
@@ -61,7 +48,7 @@ const actually = [
 
   const calendlyPage = "/carla-salomon/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "carla-salomon"
 const googleSheets = "https://script.google.com/macros/s/AKfycbw_dAeUSi5FPDUH-r39B1ran7zYmPlA_KBtwiAveNqqIFbw8uYXzvTmCCROZlvFklo/exec"
 const wppLink = "https://wa.me/+5493454283900?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

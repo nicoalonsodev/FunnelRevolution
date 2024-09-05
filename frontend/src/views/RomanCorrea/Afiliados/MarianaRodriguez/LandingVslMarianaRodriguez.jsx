@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/roman_correa/1.webp";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/roman_correa/3.webp";
 import img4 from "../../../../assets/roman_correa/4.webp";
 
 const LandingVslMarianaRodriguez = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
   const historyPart1 = [
     "Todo empezó cuando yo tenía 23 años, me la pasaba cortando el pelo cambiando <strong>tiempo</strong> por <strong>dinero</strong>.",
     "Estaba <strong>perdido</strong>, juntaba plata durante la semana para salir los fines de semana, hasta que un día…",
@@ -63,7 +50,7 @@ const historyPart3 = [
   
   const calendlyPage = "/mariana-rodriguez/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "mariana-rodriguez"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwa3lLl9yoOo_YKTzHQGfqGZJRVEEJh5M65gxTBzRPAA5WpesX0Jzlwv1bBDVf4vWIOTg/exec"
 const wppLink = "https://wa.me/+5493765216687?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

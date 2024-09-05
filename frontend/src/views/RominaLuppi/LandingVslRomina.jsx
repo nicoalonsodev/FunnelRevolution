@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../assets/romina_luppi/1.webp";
 import img2 from "../../assets/romina_luppi/2.webp";
@@ -19,12 +19,7 @@ import img3 from "../../assets/romina_luppi/3.webp";
 import img4 from "../../assets/romina_luppi/4.webp";
 
 const LandingVslRomina = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 
   const historyData = [
     " Romina Luppi",
@@ -59,7 +54,7 @@ const actually = [
 
   const calendlyPage = "/romina-luppi/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "romina-luppi"
 const googleSheets = "https://script.google.com/macros/s/AKfycby_uqylm8NA9Voyks0pLkoEncVQrQn3iohMr84FNAgWm0MiOdHe_JyfugsiJHjsSrAlcg/exec"
 const wppLink = "https://wa.me/+5491131155266?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

@@ -1,17 +1,9 @@
 import React from "react";
-import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
-import background2 from "../../../../assets/background2.png";
+ import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
-import History from "../../../../components/History/History";
-import Actually from "../../../../components/Actually/Actually";
-import Pilares from "../../../../components/Pilares/Pilares";
-import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
-import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
-import Gifts from "../../../../components/Gifts/Gifts";
-import OfferSection from "../../../../components/OfferSection/OfferSection";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 
 import img1 from "../../../../assets/rodrigo_perez/1.webp";
@@ -20,12 +12,7 @@ import img3 from "../../../../assets/rodrigo_perez/3.webp";
 import img4 from "../../../../assets/rodrigo_perez/4.webp";
 
 const LandingVslFlorenciaO = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 const historyPart1 = [
   "En <strong>2022</strong>, mi vida giraba en torno a la <strong>construcción</strong>. Trabajaba largas horas, ganaba <strong>300 usd por mes</strong> y en lo único que pensaba era en un <strong>futuro mejor</strong>.",
   "Aunque disfrutaba de mi <strong>trabajo</strong>, siempre supe que tenía el <strong>potencial</strong> para algo más grande. Sentía que estaba destinado a alcanzar <strong>metas más ambiciosas</strong>, pero no sabía por dónde empezar.",
@@ -58,7 +45,7 @@ const actually = [
 
   const calendlyPage = "/florencia-oliva/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "florencia-oliva"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzGhopxaj-Kf4jzUCkKnoN3fRVU1-JDOOfzoXkPZoGc0Mdb4JXSHmC2mPiiEnkZ6_h8Nw/exec"
 const wppLink = "https://wa.me/+5491168874066?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"

@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButton";
-import { Link } from "react-router-dom";
+ 
 
 import img1 from "../../assets/matias_dechand/1.webp";
 import img2 from "../../assets/matias_dechand/2.webp";
@@ -19,12 +19,7 @@ import img3 from "../../assets/matias_dechand/3.webp";
 import img4 from "../../assets/matias_dechand/4.webp";
 
 const LandingVslMatiasDechand = () => {
-  const background2Style = {
-    backgroundImage: `url(${background2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 const historyPart1 = [
   "Desde muy joven, trabajé en el campo, en fábricas y en el automovilismo durante<strong>más de 10 años</strong>.",
   "Sin embargo, me di cuenta de que ese camino no me llevaría a donde quería estar.",
@@ -56,7 +51,7 @@ const actually = [
 
   const calendlyPage = "/matias-dechand/calendly";
 const historyImages = [ img1, img2, img3, img4]
-    const isRegistered = localStorage.getItem("isRegistered") === "true";
+    //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "matias-dechand"
 const googleSheets = "https://script.google.com/macros/s/AKfycby6s7v8yfRJNQwFdCU6zRSih3Kh-hBH4th7zoyrLE8TtxUUsolPd0zv92we1FgN-ZB0ow/exec"
 const wppLink = "https://wa.me/+549?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
