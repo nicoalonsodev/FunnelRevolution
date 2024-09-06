@@ -17,6 +17,12 @@ const CalendlyPageCristian = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const background2Style = {
+    backgroundImage: `url(${background2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
   
   const location = useLocation();
   const { data } = location.state || {};
