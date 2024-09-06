@@ -16,6 +16,7 @@ const CalendlyPageRomina = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   const background2Style = {
     backgroundImage: `url(${background2})`,
     backgroundSize: "cover",
