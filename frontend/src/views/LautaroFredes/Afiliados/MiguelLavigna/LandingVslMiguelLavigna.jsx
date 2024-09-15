@@ -52,8 +52,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "miguel-lavigna"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyZLJWfSHMs28Y2Rwyo9HUq4fBy7yvtUf5NvyT2AnWuq08x9Uhr7o4aaCjpPnPn2LO-cg/exec"
-const wppLink = "https://wa.me/+5493416844540?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5493416844540"
+const wppLink = "https://wa.me/+5493413072451?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493413072451"
  const data = {
   historyPart1,
   historyPart2,
