@@ -47,8 +47,8 @@ const LandingVslGuillermoCorvalan = () => {
   //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "guillermo-corvalan";
   const googleSheets = "https://script.google.com/macros/s/AKfycbxPaWWJFSYQeefcdAmGew8oj1IEOHV3LLZDXCHyJzm2ISobmvSyepbP4GoDV5rSnTsDKg/exec"
-const wppLink = "https://wa.me/+9543856185180?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+9543856185180"
+const wppLink = "https://wa.me/+5493856185180?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493856185180"
  const data = {
   historyPart1,
   historyPart2,
