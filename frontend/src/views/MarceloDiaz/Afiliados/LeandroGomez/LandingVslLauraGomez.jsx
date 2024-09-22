@@ -3,6 +3,14 @@ import React from "react";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
+import History from "../../../../components/History/History";
+import Actually from "../../../../components/Actually/Actually";
+import Pilares from "../../../../components/Pilares/Pilares";
+import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../../../components/Gifts/Gifts";
+import OfferSection from "../../../../components/OfferSection/OfferSection"
+import background2 from "../../../../assets/background2.png";
  
 
 

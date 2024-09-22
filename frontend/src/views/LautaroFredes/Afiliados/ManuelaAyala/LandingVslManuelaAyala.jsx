@@ -3,6 +3,14 @@ import React from "react";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
+import History from "../../../../components/History/History";
+import Actually from "../../../../components/Actually/Actually";
+import Pilares from "../../../../components/Pilares/Pilares";
+import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../../../components/Gifts/Gifts";
+import OfferSection from "../../../../components/OfferSection/OfferSection"
+import background2 from "../../../../assets/background2.png";
  
 
 
@@ -54,7 +62,7 @@ const path = "manuela-ayala"
 const googleSheets = "https://script.google.com/macros/s/AKfycbx-xOaB5aCfGfv35uWxSxWb7AqZ50QlmJYha9pAfi4fZ3HLXnRwK4P_C5h_0hqL7HU/exec"
 const wppLink = "https://wa.me/+5493329605978?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
 const wppNumber = "+5493329605978"
- const data = {
+  const data = {
   historyPart1,
   historyPart2,
   historyPart3,
@@ -65,6 +73,12 @@ const wppNumber = "+5493329605978"
   googleSheets,
   wppLink,
   wppNumber
+};
+const background2Style = {
+  backgroundImage: `url(${background2})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
 };
 return (
   <div className="flex flex-wrap justify-center overflow-hidden">

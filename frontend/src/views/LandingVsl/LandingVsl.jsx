@@ -55,7 +55,7 @@ const path = "cristian-castellon"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxTCaMbuqkhMpUcXqkM5_YJhsUQzTDOdcI61eZ7sFY0WBgsfj5JsRsy9cjt1OctdN4o/exec"
 const wppLink = "https://wa.me/5493815857574?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
 const wppNumber = "+5491126997232"
- const data = {
+  const data = {
   historyPart1,
   historyPart2,
   historyPart3,
@@ -66,6 +66,12 @@ const wppNumber = "+5491126997232"
   googleSheets,
   wppLink,
   wppNumber
+};
+const background2Style = {
+  backgroundImage: `url(${background2})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
 };
   return (
     <div className="flex flex-wrap justify-center overflow-hidden">

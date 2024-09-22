@@ -3,6 +3,14 @@ import React from "react";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
 import Footer from "../../../../components/Footer/Footer";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
+import History from "../../../../components/History/History";
+import Actually from "../../../../components/Actually/Actually";
+import Pilares from "../../../../components/Pilares/Pilares";
+import MissionAndResult from "../../../../components/MissionAndResult/MissionAndResult";
+import PresentProgram from "../../../../components/PresentProgram/PresentProgrtam";
+import Gifts from "../../../../components/Gifts/Gifts";
+import OfferSection from "../../../../components/OfferSection/OfferSection"
+import background2 from "../../../../assets/background2.png";
  
 
 
@@ -50,7 +58,7 @@ const path = "lionel-brollo"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzo6HxZ9CxPeBDy_Qk8gQ9bbkhn28MaJSc0ltbxIjNMFM0-EFPFCn446kLMD9g1O20KmQ/exec"
 const wppLink = "https://wa.me/+5491145657260?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
 const wppNumber = "+5491145657260"
- const data = {
+  const data = {
   historyPart1,
   historyPart2,
   historyPart3,
@@ -62,6 +70,12 @@ const wppNumber = "+5491145657260"
   wppLink,
   wppNumber
 };
+const background2Style = {
+  backgroundImage: `url(${background2})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+};
 return (
   <div className="flex flex-wrap justify-center overflow-hidden">
     <div className="bg-gray-900 py-4">
@@ -71,7 +85,7 @@ return (
           <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
             <TitleAndVideo video={"wpp"} calendlyPage={calendlyPage} data={data} />
           </div>
-          {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
+           <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
             <History
               historyData={historyData}
               historyImages={historyImages}
@@ -89,7 +103,7 @@ return (
             <PresentProgram />
             <Gifts calendlyPage={calendlyPage} />
             <OfferSection calendlyPageUrl={calendlyPage} />
-          </div> */}
+          </div> 
     </div>
     <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
       <Footer />

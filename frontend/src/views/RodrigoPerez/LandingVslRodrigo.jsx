@@ -57,7 +57,7 @@ const path = "rodrigo-perez"
 const googleSheets = "https://script.google.com/macros/s/AKfycbzKTSX6QppweVdA50eZunN0ZSjmlS6CY4H0H1lJwXPresHiVnC0PBvK5on94ZRb7ROD/exec"
 const wppLink = "https://wa.me/+5491173688151?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
 const wppNumber = "+5491173688151"
- const data = {
+  const data = {
   historyPart1,
   historyPart2,
   historyPart3,
@@ -69,6 +69,12 @@ const wppNumber = "+5491173688151"
   wppLink,
   wppNumber
 };
+const background2Style = {
+  backgroundImage: `url(${background2})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+};
 return (
   <div className="flex flex-wrap justify-center overflow-hidden">
     <div className="bg-gray-900 py-4">
@@ -78,7 +84,7 @@ return (
           <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
             <TitleAndVideo video={"wpp"} calendlyPage={calendlyPage} data={data} />
           </div>
-          {/* <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
+           <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">
             <History
               historyData={historyData}
               historyImages={historyImages}
@@ -96,7 +102,7 @@ return (
             <PresentProgram />
             <Gifts calendlyPage={calendlyPage} />
             <OfferSection calendlyPageUrl={calendlyPage} />
-          </div> */}
+          </div> 
     </div>
     <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
       <Footer />
