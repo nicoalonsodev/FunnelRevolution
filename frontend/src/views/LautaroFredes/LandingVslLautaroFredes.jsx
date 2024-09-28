@@ -2,8 +2,13 @@ import React, { Suspense, lazy, useRef } from "react";
 import TitleAndVideo from "../../components/TitleAndVideo/TitleAndVideo";
 import background2 from "../../assets/background2.png";
 import logo from "../../assets/logo/logo_blanco-re.png";
-import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
+
+import img1 from "../../assets/lautar_fredes/1.jpg";
+import img2 from "../../assets/lautar_fredes/2.jpg";
+import img3 from "../../assets/lautar_fredes/3.jpg";
+import img4 from "../../assets/lautar_fredes/4.jpg";
 // Lazy loading de los componentes
 const History = lazy(() => import("../../components/History/History"));
 const Actually = lazy(() => import("../../components/Actually/Actually"));
@@ -15,10 +20,7 @@ const OfferSection = lazy(() => import("../../components/OfferSection/OfferSecti
 const Footer = lazy(() => import("../../components/Footer/Footer"));
 const ModalButton = lazy(() => import("../../components/ModalButton/ModalButton"));
 
-import img1 from "../../assets/lautar_fredes/1.jpg";
-import img2 from "../../assets/lautar_fredes/2.jpg";
-import img3 from "../../assets/lautar_fredes/3.jpg";
-import img4 from "../../assets/lautar_fredes/4.jpg";
+
 
 const LandingVslLautaroFredes = () => {
   const historyPart1 = [

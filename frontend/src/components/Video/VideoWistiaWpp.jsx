@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import RegistroPhone from "../Registro/RegistroPhone";
-import AnimatedButtonCalendly from "../AnimatedButton/AnimatedButtonCalendly";
+// import AnimatedButtonCalendly from "../AnimatedButton/AnimatedButtonCalendly";
 import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 import AnimatedButtonWpp from "../AnimatedButton/AnimatedButtonWpp";
@@ -131,9 +131,9 @@ const VideoWistiaWpp = ({ dataUser}) => {
      {showButton2 ? <h1 className="text-white mt-2">
         O
       </h1> : ""}
-      <div className="w-full flex justify-center mt-2">
+      {/* <div className="w-full flex justify-center mt-2">
         {showButton2 && <AnimatedButtonCalendly handleShowForm={handleShowForm} />}
-      </div>
+      </div> */}
       {showForm && (
         <>
           <div
