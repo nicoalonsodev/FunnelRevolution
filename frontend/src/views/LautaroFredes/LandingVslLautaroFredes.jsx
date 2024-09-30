@@ -5,10 +5,10 @@ import logo from "../../assets/logo/logo_blanco-re.png";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 
-import img1 from "../../assets/lautar_fredes/1.jpg";
+import img1 from "../../assets/lautar_fredes/1.webp";
 import img2 from "../../assets/lautar_fredes/2.jpg";
-import img3 from "../../assets/lautar_fredes/3.jpg";
-import img4 from "../../assets/lautar_fredes/4.jpg";
+import img3 from "../../assets/lautar_fredes/3.webp";
+import img4 from "../../assets/lautar_fredes/4.webp";
 // Lazy loading de los componentes
 const History = lazy(() => import("../../components/History/History"));
 const Actually = lazy(() => import("../../components/Actually/Actually"));

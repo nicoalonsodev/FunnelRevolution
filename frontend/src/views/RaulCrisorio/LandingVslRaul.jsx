@@ -16,7 +16,7 @@ import ModalButton from "../../components/ModalButton/ModalButton";
 import img1 from "../../assets/raul_crisorio/raul1.jpeg";
 import img2 from "../../assets/raul_crisorio/raul2.jpeg";
 import img3 from "../../assets/raul_crisorio/raul3.jpeg";
-import img4 from "../../assets/raul_crisorio/raul4.jpeg";
+import img4 from "../../assets/raul_crisorio/raul4.webp";
 
 const LandingVslRaul = () => {
   

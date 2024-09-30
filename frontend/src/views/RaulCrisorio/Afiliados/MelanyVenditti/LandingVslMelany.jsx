@@ -17,7 +17,7 @@ import background2 from "../../../../assets/background2.png";
 import img1 from "../../../../assets/raul_crisorio/raul1.jpeg";
 import img2 from "../../../../assets/raul_crisorio/raul2.jpeg";
 import img3 from "../../../../assets/raul_crisorio/raul3.jpeg";
-import img4 from "../../../../assets/raul_crisorio/raul4.jpeg";
+import img4 from "../../../../assets/raul_crisorio/raul4.webp";
 
 const LandingVslMelany = () => {
   
