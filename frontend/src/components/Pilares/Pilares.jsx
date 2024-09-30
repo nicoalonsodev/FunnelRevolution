@@ -1,7 +1,7 @@
 import React from "react";
-import lambo from "../../assets/imagenes/lambo.png";
-import marketing from "../../assets/imagenes/Marketing-icon.png";
-import version1 from "../../assets/imagenes/Version-1.png";
+import lambo from "../../assets/imagenes/lambo.webp";
+import marketing from "../../assets/imagenes/Marketing-icon.webp";
+import version1 from "../../assets/imagenes/Version-1.webp";
 const Pilares = () => {
   return (
     <div className="flex flex-wrap justify-center">

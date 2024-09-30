@@ -1,6 +1,6 @@
 import React from "react";
-import result from "../../assets/imagenes/result.jpeg";
-import result2 from "../../assets/imagenes/result2.jpeg";
+import result from "../../assets/imagenes/result.webp";
+import result2 from "../../assets/imagenes/result2.webp";
 
 const MissionAndResult = () => {
   return (

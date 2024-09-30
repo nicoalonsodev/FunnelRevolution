@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../../assets/logo/logo_blanco-re.png";
-import money from "../../assets/imagenes/Version-2.png";
-import negocio from "../../assets/imagenes/Negocio-online.png";
-import cohete from "../../assets/imagenes/Cohete-icon.png";
+import money from "../../assets/imagenes/Version-2.webp";
+import negocio from "../../assets/imagenes/Negocio-online.webp";
+import cohete from "../../assets/imagenes/Cohete-icon.webp";
 
 const PresentProgram = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import CallToAction from "../CallToAction/CallToAction";
-import rev from "../../assets/imagenes/rev2.jpeg";
-import dubai from "../../assets/imagenes/Dunai-imagen.png";
-import mapa from "../../assets/imagenes/Mapa-icon.png";
-import rev3 from "../../assets/imagenes/rev3.jpeg";
+import rev from "../../assets/imagenes/rev2.webp";
+import dubai from "../../assets/imagenes/Dunai-imagen.webp";
+import mapa from "../../assets/imagenes/Mapa-icon.webp";
+import rev3 from "../../assets/imagenes/rev3.webp";
 const Gifts = ({ calendlyPage }) => {
   return (
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
