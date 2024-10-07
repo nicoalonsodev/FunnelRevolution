@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "matias-dechand"
 const googleSheets = "https://script.google.com/macros/s/AKfycby6s7v8yfRJNQwFdCU6zRSih3Kh-hBH4th7zoyrLE8TtxUUsolPd0zv92we1FgN-ZB0ow/exec"
-const wppLink = "https://wa.me/+549?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+549"
+const wppLink = "https://wa.me/+5491158082032?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491158082032"
   const data = {
   historyPart1,
   historyPart2,
