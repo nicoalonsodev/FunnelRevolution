@@ -354,6 +354,12 @@ import CalendlyPageAgustinSaura from "./views/LautaroFredes/Afiliados/AgustinSau
 import LandingVslJoaquinRolon from "./views/CristianCastellon/Afiliados/JoaquinRolon/LandingVslJoaquinRolon.jsx";
 import LandingPageJoaquinRolon from "./views/CristianCastellon/Afiliados/JoaquinRolon/LandingPageJoaquinRolon.jsx";
 import CalendlyPageJoaquinRolon from "./views/CristianCastellon/Afiliados/JoaquinRolon/CalendlyPageJoaquinRolon.jsx";
+import LandingVslFrancoBueno from "./views/CristianCastellon/Afiliados/FrancoBueno/LandingVslFrancoBueno.jsx";
+import LandingPageFrancoBueno from "./views/CristianCastellon/Afiliados/FrancoBueno/LandingPageFrancoBueno.jsx";
+import CalendlyPageFrancoBueno from "./views/CristianCastellon/Afiliados/FrancoBueno/CalendlyPageFrancoBueno.jsx";
+import LandingVslSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/LandingVslSebastianRamirez.jsx";
+import LandingPageSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/LandingPageSebastianRamirez.jsx";
+import CalendlyPageSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/CalendlyPageSebastianRamirez.jsx";
 
 function App() {
   return (
@@ -1414,6 +1420,24 @@ function App() {
         exact
         path="/joaquin-rolon/calendly"
         component={CalendlyPageJoaquinRolon}
+      />
+
+      {/* Landing franco-bueno */}
+      <Route exact path="/franco-bueno/vsl" component={LandingVslFrancoBueno} />
+      <Route exact path="/franco-bueno" component={LandingPageFrancoBueno} />
+      <Route
+        exact
+        path="/franco-bueno/calendly"
+        component={CalendlyPageFrancoBueno}
+      />
+
+      {/* Landing sebastian-ramirez */}
+      <Route exact path="/sebastian-ramirez/vsl" component={LandingVslSebastianRamirez} />
+      <Route exact path="/sebastian-ramirez" component={LandingPageSebastianRamirez} />
+      <Route
+        exact
+        path="/sebastian-ramirez/calendly"
+        component={CalendlyPageSebastianRamirez}
       />
 
     </div>
