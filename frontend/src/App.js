@@ -360,6 +360,9 @@ import CalendlyPageFrancoBueno from "./views/CristianCastellon/Afiliados/FrancoB
 import LandingVslSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/LandingVslSebastianRamirez.jsx";
 import LandingPageSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/LandingPageSebastianRamirez.jsx";
 import CalendlyPageSebastianRamirez from "./views/CristianCastellon/Afiliados/SebastianRamirez/CalendlyPageSebastianRamirez.jsx";
+import LandingVslMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/LandingVslMariaQuintana.jsx";
+import LandingPageMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/LandingPageMariaQuintana.jsx";
+import CalendlyPageMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/CalendlyPageMariaQuintana.jsx";
 
 function App() {
   return (
@@ -1438,6 +1441,15 @@ function App() {
         exact
         path="/sebastian-ramirez/calendly"
         component={CalendlyPageSebastianRamirez}
+      />
+
+      {/* Landing maria-quintana */}
+      <Route exact path="/maria-quintana/vsl" component={LandingVslMariaQuintana} />
+      <Route exact path="/maria-quintana" component={LandingPageMariaQuintana} />
+      <Route
+        exact
+        path="/maria-quintana/calendly"
+        component={CalendlyPageMariaQuintana}
       />
 
     </div>
