@@ -18,7 +18,7 @@ import img2 from "../../../../assets/fernando_damian/2.webp";
 import img3 from "../../../../assets/fernando_damian/3.webp";
 import img4 from "../../../../assets/fernando_damian/4.webp";
 
-const LandingVslJohanaCaballero = () => {
+const LandingVslArianaRomeggio = () => {
   
   const historyPart1 = [
     "Soy Fernando Damián Migliano, tengo 41 años y soy instructor de musculación y culturismo. Desde los 18 años, siempre he sido un emprendedor independiente.",
@@ -49,13 +49,13 @@ const LandingVslJohanaCaballero = () => {
       "2 años",
     ]
 
-  const calendlyPage = "/johana-caballero/calendly";
+  const calendlyPage = "/ariana-romeggio/calendly";
   const historyImages = [img1, img2, img3, img4];
   //const isRegistered = localStorage.getItem("isRegistered") === "true";
-  const path = "johana-caballero";
-  const googleSheets = "https://script.google.com/macros/s/AKfycbwS3sf8rFbKIPu_5ELTEC6_JhYnFfaatm6vsq2JC5UsaQFKagWdImJBqnFPkW2Te-Wktg/exec"
-const wppLink = "https://wa.me/+5491125906516?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491125906516"
+  const path = "ariana-romeggio";
+  const googleSheets = "https://script.google.com/macros/s/AKfycbzPXYJUVhkmAbg-cNQxfeA4fjz0SXB97KmhIs-ef1oGs7DWqhYqMWGt8p3hov9hyYNx/exec"
+const wppLink = "https://wa.me/+5491133456592?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491133456592"
   const data = {
   historyPart1,
   historyPart2,
@@ -111,4 +111,4 @@ return (
 );
 };
 
-export default LandingVslJohanaCaballero;
+export default LandingVslArianaRomeggio;
