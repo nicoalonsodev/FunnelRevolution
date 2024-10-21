@@ -19,7 +19,7 @@ import img2 from "../../../../assets/cristian_castellon/2.webp";
 import img3 from "../../../../assets/cristian_castellon/3.webp";
 import img4 from "../../../../assets/cristian_castellon/4.webp";
 
-const LandingVslAdrianMachuca = () => {
+const LandingVslRobertoRojas = () => {
   
 const historyPart1 = [
   "Siempre me llamó la atención el mundo del <strong>emprendimiento</strong>, los <strong>negocios</strong> y la formación de <strong>empresas</strong>. Me recibí de <strong>Técnico en administración de empresas</strong>, estudié 1 año en la <strong>UBA</strong> y 2 años en la <strong>UADE</strong>. Trabajé un año en <strong>IBM</strong>, y eso fue más que suficiente para darme cuenta que el <strong>sistema tradicional</strong> no me iba a dar la <strong>vida</strong> que quería.",
@@ -49,14 +49,14 @@ const actually = [
     "5 años",
   ]
 
-  const calendlyPage = "/adrian-machuca/calendly";
+  const calendlyPage = "/roberto-rojas/calendly";
 const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
-const path = "adrian-machuca"
+const path = "roberto-rojas"
 
-const googleSheets = "https://script.google.com/macros/s/AKfycbzRVLw6wGoHEBrYCZOYRHKkCj4Msyx6P6OXcpzsci-if8rzxXfJoznJhEeS27J6jCnjmw/exec"
-const wppLink = "https://wa.me/+5491150201005?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491150201005"
+const googleSheets = ""
+const wppLink = "https://wa.me/+5493877536300?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493877536300"
   const data = {
   historyPart1,
   historyPart2,
@@ -112,4 +112,4 @@ return (
 );
 };
 
-export default LandingVslAdrianMachuca;
+export default LandingVslRobertoRojas;

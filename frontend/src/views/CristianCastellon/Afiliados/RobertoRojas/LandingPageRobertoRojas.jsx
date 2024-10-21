@@ -2,10 +2,10 @@ import React from "react";
 import TitleAndVideo from "../../../../components/TitleAndVideo/TitleAndVideo";
 import logo from "../../../../assets/logo/logo_blanco-re.png";
 import Footer from "../../../../components/Footer/Footer";
-const LandingPageArianaRomeggio = () => {
+const LandingPageRobertoRojas = () => {
  
-const url = "/ariana-romeggio/vsl?registered=true";
-const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbzPXYJUVhkmAbg-cNQxfeA4fjz0SXB97KmhIs-ef1oGs7DWqhYqMWGt8p3hov9hyYNx/exec"
+const url = "/roberto-rojas/vsl?registered=true";
+const googleSheetsUrl = ""
   return (
     <div >
       <div
@@ -25,4 +25,4 @@ const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbzPXYJUVhkmAbg-
   );
 };
 
-export default LandingPageArianaRomeggio;
+export default LandingPageRobertoRojas;

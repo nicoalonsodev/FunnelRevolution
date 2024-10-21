@@ -12,7 +12,7 @@ import Gifts from "../../../../components/Gifts/Gifts";
 import OfferSection from "../../../../components/OfferSection/OfferSection";
 import background2 from "../../../../assets/background2.png";
 import ModalButton from "../../../../components/ModalButton/ModalButton";
-const CalendlyPageAdrianMachuca = () => {
+const CalendlyPageRobertoRojas = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,7 +26,7 @@ const CalendlyPageAdrianMachuca = () => {
   const location = useLocation();
   const { data } = location.state || {};
 
-  const calendlyLink = "https://calendly.com/manfree-sr1414/tradervision-revolution-1";
+  const calendlyLink = "";
    const {
     actually,
     historyData,
@@ -86,4 +86,4 @@ const CalendlyPageAdrianMachuca = () => {
   );
 };
 
-export default CalendlyPageAdrianMachuca;
+export default CalendlyPageRobertoRojas;
