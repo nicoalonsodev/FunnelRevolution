@@ -384,6 +384,9 @@ import CalendlyPageMauricioValenzuela from "./views/CristianCastellon/Afiliados/
 import LandingVslMarianaAndreaRodriguez from "./views/RomanCorrea/Afiliados/MarianaAndreaRodriguez/LandingVslMarianaAndreaRodriguez.jsx";
 import LandingPageMarianaAndreaRodriguez from "./views/RomanCorrea/Afiliados/MarianaAndreaRodriguez/LandingPageMarianaAndreaRodriguez.jsx";
 import CalendlyPageMarianaAndreaRodriguez from "./views/RomanCorrea/Afiliados/MarianaAndreaRodriguez/CalendlyPageMarianaAndreaRodriguez.jsx";
+import LandingVslCandelaFobello from "./views/FernandoDamian/Afiliados/CandelaFobello/LandingVslCandelaFobello.jsx";
+import LandingPageCandelaFobello from "./views/FernandoDamian/Afiliados/CandelaFobello/LandingPageCandelaFobello.jsx";
+import CalendlyPageCandelaFobello from "./views/FernandoDamian/Afiliados/CandelaFobello/CalendlyPageCandelaFobello.jsx";
 
 function App() {
   return (
@@ -1534,6 +1537,15 @@ function App() {
         exact
         path="/mariana-andrea-rodriguez/calendly"
         component={CalendlyPageMarianaAndreaRodriguez}
+      />
+
+      {/* Landing candela-fobello */}
+      <Route exact path="/candela-fobello/vsl" component={LandingVslCandelaFobello} />
+      <Route exact path="/candela-fobello" component={LandingPageCandelaFobello} />
+      <Route
+        exact
+        path="/candela-fobello/calendly"
+        component={CalendlyPageCandelaFobello}
       />
 
     </div>
