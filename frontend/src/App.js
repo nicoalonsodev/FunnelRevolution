@@ -363,6 +363,12 @@ import CalendlyPageSebastianRamirez from "./views/CristianCastellon/Afiliados/Se
 import LandingVslMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/LandingVslMariaQuintana.jsx";
 import LandingPageMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/LandingPageMariaQuintana.jsx";
 import CalendlyPageMariaQuintana from "./views/CristianCastellon/Afiliados/MariaQuintana/CalendlyPageMariaQuintana.jsx";
+import LandingVslMauricioFrancioni from "./views/CristianCastellon/Afiliados/MauricioFrancioni/LandingVslMauricioFrancioni.jsx";
+import LandingPageMauricioFrancioni from "./views/CristianCastellon/Afiliados/MauricioFrancioni/LandingPageMauricioFrancioni.jsx";
+import CalendlyPageMauricioFrancioni from "./views/CristianCastellon/Afiliados/MauricioFrancioni/CalendlyPageMauricioFrancioni.jsx";
+import LandingVslDavidZapata from "./views/CristianCastellon/Afiliados/DavidZapata/LandingVslDavidZapata.jsx";
+import LandingPageDavidZapata from "./views/CristianCastellon/Afiliados/DavidZapata/LandingPageDavidZapata.jsx";
+import CalendlyPageDavidZapata from "./views/CristianCastellon/Afiliados/DavidZapata/CalendlyPageDavidZapata.jsx";
 
 function App() {
   return (
@@ -1450,6 +1456,24 @@ function App() {
         exact
         path="/maria-quintana/calendly"
         component={CalendlyPageMariaQuintana}
+      />
+
+      {/* Landing mauricio-francioni */}
+      <Route exact path="/mauricio-francioni/vsl" component={LandingVslMauricioFrancioni} />
+      <Route exact path="/mauricio-francioni" component={LandingPageMauricioFrancioni} />
+      <Route
+        exact
+        path="/mauricio-francioni/calendly"
+        component={CalendlyPageMauricioFrancioni}
+      />
+
+      {/* Landing david-zapata */}
+      <Route exact path="/david-zapata/vsl" component={LandingVslDavidZapata} />
+      <Route exact path="/david-zapata" component={LandingPageDavidZapata} />
+      <Route
+        exact
+        path="/david-zapata/calendly"
+        component={CalendlyPageDavidZapata}
       />
 
     </div>
