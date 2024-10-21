@@ -390,6 +390,9 @@ import CalendlyPageCandelaFobello from "./views/FernandoDamian/Afiliados/Candela
 import LandingVslRobertoRojas from "./views/CristianCastellon/Afiliados/RobertoRojas/LandingVslRobertoRojas.jsx";
 import LandingPageRobertoRojas from "./views/CristianCastellon/Afiliados/RobertoRojas/LandingPageRobertoRojas.jsx";
 import CalendlyPageRobertoRojas from "./views/CristianCastellon/Afiliados/RobertoRojas/CalendlyPageRobertoRojas.jsx";
+import LandingVslNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/LandingVslNahuelIglesias.jsx";
+import LandingPageNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/LandingPageNahuelIglesias.jsx";
+import CalendlyPageNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/CalendlyPageNahuelIglesias.jsx";
 
 function App() {
   return (
@@ -1558,6 +1561,15 @@ function App() {
         exact
         path="/roberto-rojas/calendly"
         component={CalendlyPageRobertoRojas}
+      />
+
+      {/* Landing nahuel-iglesias */}
+      <Route exact path="/nahuel-iglesias/vsl" component={LandingVslNahuelIglesias} />
+      <Route exact path="/nahuel-iglesias" component={LandingPageNahuelIglesias} />
+      <Route
+        exact
+        path="/nahuel-iglesias/calendly"
+        component={CalendlyPageNahuelIglesias}
       />
 
     </div>
