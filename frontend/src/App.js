@@ -393,6 +393,9 @@ import CalendlyPageRobertoRojas from "./views/CristianCastellon/Afiliados/Robert
 import LandingVslNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/LandingVslNahuelIglesias.jsx";
 import LandingPageNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/LandingPageNahuelIglesias.jsx";
 import CalendlyPageNahuelIglesias from "./views/CristianCastellon/Afiliados/NahuelIglesias/CalendlyPageNahuelIglesias.jsx";
+import LandingVslFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/LandingVslFacundoSchiavoni.jsx";
+import LandingPageFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/LandingPageFacundoSchiavoni.jsx";
+import CalendlyPageFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/CalendlyPageFacundoSchiavoni.jsx";
 
 function App() {
   return (
@@ -1570,6 +1573,15 @@ function App() {
         exact
         path="/nahuel-iglesias/calendly"
         component={CalendlyPageNahuelIglesias}
+      />
+
+      {/* Landing facundo-schiavoni */}
+      <Route exact path="/facundo-schiavoni/vsl" component={LandingVslFacundoSchiavoni} />
+      <Route exact path="/facundo-schiavoni" component={LandingPageFacundoSchiavoni} />
+      <Route
+        exact
+        path="/facundo-schiavoni/calendly"
+        component={CalendlyPageFacundoSchiavoni}
       />
 
     </div>
