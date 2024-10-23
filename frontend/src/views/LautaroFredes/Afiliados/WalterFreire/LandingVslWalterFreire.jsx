@@ -56,8 +56,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "walter-freire"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwYB7MMxzEv6hRUV1-Puvni1qeqWrTnJH06MrvxY-5zp6UWDpx70OTN-6Inh-2EZgycKw/exec"
-const wppLink = "https://wa.me/+5491171811850?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491171811850"
+const wppLink = "https://wa.me/+5491134699030?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491134699030"
   const data = {
   historyPart1,
   historyPart2,
