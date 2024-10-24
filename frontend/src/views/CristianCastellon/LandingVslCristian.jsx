@@ -53,8 +53,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "cristian-castellon"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwCn5NYeX9AFVMScUD5pVr7bF37mmVkH_0P-e8oQ4GKmeUatsL7q17ilk1Uu33toglH/exec"
-const wppLink = "https://wa.me/+541132407426?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+541132407426"
+const wppLink = "https://wa.me/+5491135245809?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491135245809"
   const data = {
   historyPart1,
   historyPart2,
