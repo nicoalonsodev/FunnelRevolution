@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "franco-natali"
 const googleSheets = "https://script.google.com/macros/s/AKfycbx26ww343_4istIRD40QBNhteVlLi9cLHWTNxZ02JQ3_QeMIyCKLD2sSW6_XIU-iPND/exec"
-const wppLink = "https://wa.me/+54929940813297?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+54929940813297"
+const wppLink = "https://wa.me/+5492993270367?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5492993270367"
   const data = {
   historyPart1,
   historyPart2,
