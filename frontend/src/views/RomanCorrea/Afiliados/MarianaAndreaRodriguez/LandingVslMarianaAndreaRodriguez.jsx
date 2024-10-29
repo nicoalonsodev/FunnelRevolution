@@ -61,8 +61,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "mariana-andrea-rodriguez"
 const googleSheets = ""
-const wppLink = "https://wa.me/+5493765496763?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5493765496763"
+const wppLink = "https://wa.me/+5493765505198?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493765505198"
   const data = {
   historyPart1,
   historyPart2,
