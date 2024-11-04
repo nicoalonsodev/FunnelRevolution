@@ -55,8 +55,8 @@ const historyImages = [ img1, img2, img3, img4]
 const path = "maria-quintana"
 
 const googleSheets = "https://script.google.com/macros/s/AKfycbyDxAti0Wzb_rllH36u6kbDJlnkwYwR6a3TjDF_lXfid-T4iifjGzSySvXFLx3X7kac/exec"
-const wppLink = "https://wa.me/+5491117710575?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491117710575"
+const wppLink = "https://wa.me/+5491135184978?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491135184978"
   const data = {
   historyPart1,
   historyPart2,
