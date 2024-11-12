@@ -396,6 +396,9 @@ import CalendlyPageNahuelIglesias from "./views/CristianCastellon/Afiliados/Nahu
 import LandingVslFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/LandingVslFacundoSchiavoni.jsx";
 import LandingPageFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/LandingPageFacundoSchiavoni.jsx";
 import CalendlyPageFacundoSchiavoni from "./views/CristianCastellon/Afiliados/FacundoSchiavoni/CalendlyPageFacundoSchiavoni.jsx";
+import LandingVslChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/LandingVslChicheZapata.jsx";
+import LandingPageChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/LandingPageChicheZapata.jsx";
+import CalendlyPageChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/CalendlyPageChicheZapata.jsx";
 
 function App() {
   return (
@@ -1582,6 +1585,15 @@ function App() {
         exact
         path="/facundo-schiavoni/calendly"
         component={CalendlyPageFacundoSchiavoni}
+      />
+
+      {/* Landing chiche-zapata */}
+      <Route exact path="/chiche-zapata/vsl" component={LandingVslChicheZapata} />
+      <Route exact path="/chiche-zapata" component={LandingPageChicheZapata} />
+      <Route
+        exact
+        path="/chiche-zapata/calendly"
+        component={CalendlyPageChicheZapata}
       />
 
     </div>
