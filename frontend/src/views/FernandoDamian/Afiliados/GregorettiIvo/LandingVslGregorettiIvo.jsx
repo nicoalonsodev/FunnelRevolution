@@ -54,8 +54,8 @@ const LandingVslGregorettiIvo = () => {
   //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "gregoretti-ivo";
   const googleSheets = "https://script.google.com/macros/s/AKfycby0LyYussts9Bs8i1BDOCtBJMJZysgLRL0W2RAEPMGyBylXGZj9-X55Wc0q3Rf9WT4/exec"
-const wppLink = "https://wa.me/+5491121912911?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491121912911"
+const wppLink = "https://wa.me/+5491164387141?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491164387141"
   const data = {
   historyPart1,
   historyPart2,
