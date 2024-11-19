@@ -52,7 +52,7 @@ const historyPart3 = [
   ]
     const historyData = [
      "Roman Correa",
-      "Tigre Buenos Aires",
+      "Tigre Buenos Aires", 
       "2018-2024",
     ]
   
@@ -61,8 +61,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "mariana-rodriguez"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwa3lLl9yoOo_YKTzHQGfqGZJRVEEJh5M65gxTBzRPAA5WpesX0Jzlwv1bBDVf4vWIOTg/exec"
-const wppLink = "https://wa.me/+5493765216687?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5493765216687"
+const wppLink = "https://wa.me/+5493765505201?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493765505201"
   const data = {
   historyPart1,
   historyPart2,
