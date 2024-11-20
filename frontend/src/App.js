@@ -399,6 +399,9 @@ import CalendlyPageFacundoSchiavoni from "./views/CristianCastellon/Afiliados/Fa
 import LandingVslChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/LandingVslChicheZapata.jsx";
 import LandingPageChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/LandingPageChicheZapata.jsx";
 import CalendlyPageChicheZapata from "./views/NahuelQuispe/Afiliados/ChicheZapata/CalendlyPageChicheZapata.jsx";
+import LandingVslLeo from "./views/CristianCastellon/Afiliados/LeoDirecto/LandingVslLeo.jsx";
+import LandingPageLeo from "./views/CristianCastellon/Afiliados/LeoDirecto/LandingPageLeo.jsx";
+import CalendlyPageLeo from "./views/CristianCastellon/Afiliados/LeoDirecto/CalendlyPageLeo.jsx";
 
 function App() {
   return (
@@ -1594,6 +1597,15 @@ function App() {
         exact
         path="/chiche-zapata/calendly"
         component={CalendlyPageChicheZapata}
+      />
+
+      {/* Landing leo-directo-castellon */}
+      <Route exact path="/leo-directo-castellon/vsl" component={LandingVslLeo} />
+      <Route exact path="/leo-directo-castellon" component={LandingPageLeo} />
+      <Route
+        exact
+        path="/leo-directo-castellon/calendly"
+        component={CalendlyPageLeo}
       />
 
     </div>
