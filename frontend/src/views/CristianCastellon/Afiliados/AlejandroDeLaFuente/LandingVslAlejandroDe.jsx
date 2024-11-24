@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "alejandro-de-la-fuente"
 const googleSheets = "https://script.google.com/macros/s/AKfycbxw14I1hHzXEevhW4iXMqpBOA-h-KUCeDo_dGvC3LFt2Skoxt1Jdb_HBnST7beawnXT/exec"
-const wppLink = "https://wa.me/+5491121838231?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491121838231"
+const wppLink = "https://wa.me/+5491126529710?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491126529710"
   const data = {
   historyPart1,
   historyPart2,
