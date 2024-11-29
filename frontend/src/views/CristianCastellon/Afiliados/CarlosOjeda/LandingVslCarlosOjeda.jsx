@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "carlos-ojeda"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyKR53l6lUrb029iTEj8DikrJGENRQmqPCPFISYyhw15fmOHY7RZlMocC7iXz0HY_A/exec"
-const wppLink = "https://wa.me/+5492281509900?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5492281509900"
+const wppLink = "https://wa.me/+5492281560247?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5492281560247"
   const data = {
   historyPart1,
   historyPart2,
