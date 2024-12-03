@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "agustina-ruiz"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyne9uf41yxKquF2RaFlu9DC_6F0WP_DK8u4qkkcipoxdv94EbZnnoHdGdJOCGo-dXF9Q/exec"
-const wppLink = "https://wa.me/+5491164277933?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491164277933"
+const wppLink = "https://wa.me/+5491171342690?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491171342690"
   const data = {
   historyPart1,
   historyPart2,
