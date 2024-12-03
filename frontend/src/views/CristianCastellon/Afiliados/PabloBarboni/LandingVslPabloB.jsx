@@ -54,8 +54,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "pablo-barboni"
 const googleSheets = "https://script.google.com/macros/s/AKfycbyJGPaAfJDzveevwpER35X8bkkAVujWnyJDfMfMYUDyB6iTRNBxI6Ogsq8rKDuzkSUY/exec"
-const wppLink = "https://wa.me/+5492304506050?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5492304506050"
+const wppLink = "https://wa.me/+5491157824342?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491157824342"
   const data = {
   historyPart1,
   historyPart2,
