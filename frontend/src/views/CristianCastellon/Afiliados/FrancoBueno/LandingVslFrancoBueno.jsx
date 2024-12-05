@@ -55,8 +55,8 @@ const historyImages = [ img1, img2, img3, img4]
 const path = "franco-bueno"
 
 const googleSheets = "https://script.google.com/macros/s/AKfycbypv4ezQGph8yVaVSpxV8skwS-IP7K20pZLbigl9cGSnjLL1QWTxATTsLR-pYmU3brBfQ/exec"
-const wppLink = "https://wa.me/+5492317501791?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5492317501791"
+const wppLink = "https://wa.me/+5491134681791?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491134681791"
   const data = {
   historyPart1,
   historyPart2,
