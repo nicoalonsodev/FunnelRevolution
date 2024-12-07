@@ -11,7 +11,7 @@ const History = ({ historyData, historyImages, historyPart1, historyPart2, histo
           <div className="w-full flex justify-center">
             <div className="w-3/5">
               <hr className="border-[1.5px] border-[#F59800]" />
-            </div>
+            </div>  
           </div>
         </div>
         <div className="flex flex-wrap justify-center items-start space-x-0 lg:space-x-8">

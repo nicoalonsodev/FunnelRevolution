@@ -2,7 +2,7 @@ import React from "react";
 import lambo from "../../assets/imagenes/lambo.webp";
 import marketing from "../../assets/imagenes/Marketing-icon.webp";
 import version1 from "../../assets/imagenes/Version-1.webp";
-const Pilares = () => {
+const Pilares = () => { 
   return (
     <div className="flex flex-wrap justify-center">
       <div className="flex flex-wrap justify-center items-center space-y-8 py-10">
@@ -12,9 +12,9 @@ const Pilares = () => {
             <br />
             ¿Cómo llegamos a $500.000 dólares al mes siendo de Argentina?
           </h1>
-          <p className="text-gray-300 text-xl text-center poppins-regular">
+          {/* <p className="text-gray-300 text-xl text-center poppins-regular">
             Estos son nuestros 3 pilares fundamentales
-          </p>
+          </p> */}
           <div className="w-full flex justify-center ">
             <div className="w-3/5">
               <hr className=" border-[1.5px] border-[#F59800]" />
@@ -23,7 +23,7 @@ const Pilares = () => {
         </div>
 
         {/* Primer Pilar */}
-        <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+        {/* <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
             <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
               <img
@@ -69,10 +69,10 @@ const Pilares = () => {
               alt=""
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Segundo Pilar */}
-        <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+        {/* <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[40%] flex justify-center lg:justify-start items-center overflow-hidden rounded-lg mb-2 lg:mb-0">
             <img
               className="w-full object-cover object-center"
@@ -122,10 +122,10 @@ const Pilares = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Tercer Pilar */}
-        <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+        {/* <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
           <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
             <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
               <img
@@ -182,7 +182,7 @@ const Pilares = () => {
               alt=""
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

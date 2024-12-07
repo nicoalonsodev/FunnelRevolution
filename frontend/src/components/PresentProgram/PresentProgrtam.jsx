@@ -49,20 +49,20 @@ const PresentProgram = () => {
               module: "Carrera de Trading:",
               image: money,
             },
-            {
-              title:
-                "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
-              module: "Carrera de Afiliado:",
-              price: "$600 USD anual.",
-              image: negocio,
-            },
-            {
-              title:
-                "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
-              module: "Servicio de marketing profesional:",
-              price: "$12.000 USD anual.",
-              image: cohete,
-            },
+            // {
+            //   title:
+            //     "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
+            //   module: "Carrera de Afiliado:",
+            //   price: "$600 USD anual.",
+            //   image: negocio,
+            // },
+            // {
+            //   title:
+            //     "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
+            //   module: "Servicio de marketing profesional:",
+            //   price: "$12.000 USD anual.",
+            //   image: cohete,
+            // },
            
           ].map((item, index) => (
             <div

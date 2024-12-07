@@ -6,14 +6,14 @@ import { useLocation } from "react-router-dom";
 import AnimatedButtonWpp from "../AnimatedButton/AnimatedButtonWpp";
 import "./Video.css";
 
-const VideoWistiaWpp = ({ dataUser}) => {
+const VideoWistiaWpp = ({ dataUser, david_ana}) => {
   const [showForm, setShowForm] = useState(false);
   const [formUrl, setFormUrl] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [showButton2, setShowButton2] = useState(false);
   const [showOverlay, setShowOverlay] = useState(true);
-  const [wppCode, setWppCode] = useState("");
+  const [wppCode, setWppCode] = useState(""); 
   
   const location = useLocation();
   const isRegistered = "true";
@@ -42,7 +42,7 @@ const VideoWistiaWpp = ({ dataUser}) => {
 
       const timer1 = setTimeout(() => {
         setShowButton(true);
-      }, 500);
+      }, typeof david_ana !== "undefined" && david_ana ? 30000 : 500);
 
       const timer2 = setTimeout(() => {
         setShowButton2(true);
@@ -129,7 +129,7 @@ const VideoWistiaWpp = ({ dataUser}) => {
         {showButton && <AnimatedButtonWpp wppUrl={wppUrl} />}
       </div>
      {showButton2 ? <h1 className="text-white mt-2">
-        O
+
       </h1> : ""}
       {/* <div className="w-full flex justify-center mt-2">
         {showButton2 && <AnimatedButtonCalendly handleShowForm={handleShowForm} />}

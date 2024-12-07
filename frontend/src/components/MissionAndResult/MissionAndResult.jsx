@@ -2,13 +2,13 @@ import React from "react";
 import result from "../../assets/imagenes/result.webp";
 import result2 from "../../assets/imagenes/result2.webp";
 
-const MissionAndResult = () => {
+const MissionAndResult = ({ testimonios }) => {
   return (
     <div className="text-gray-100 py-10 px-0 lg:px-64 poppins-regular">
-      <div>
+      {/* <div>
         <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
           Nuestra Misión
-        </h1>
+        </h1> 
         <p className="mb-6">
           Ahora, nuestra Misión en Revolution es crear la comunidad más grande
           de millonarios en todo latinoamérica brindando las herramientas, el
@@ -38,43 +38,130 @@ const MissionAndResult = () => {
         <p className="text-[#F59800] font-bold">
           Si quieres eso, ¡esto es PARA TI!
         </p>
-      </div>
-      <div className="mt-10">
-        <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
-          Testimonios:
-        </h1>
-        <p className="mb-6">
-        Para que veas que no somos solo palabras, queremos mostrarte algunos de los resultados que nuestros alumnos han tenido gracias a Revolution en donde te mostramos cómo montar tu propio negocio online con este nuevo método.
-        </p>
+      </div> */}
+      {testimonios ? (
+        <div className="">
+          <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
+            Testimonios:
+          </h1>
+          <p className="mb-6 text-center">
+            Para que veas que no somos solo palabras, queremos mostrarte algunos
+            de los resultados que nuestros alumnos han tenido gracias a
+            Revolution en donde te mostramos cómo montar tu propio negocio
+            online con este nuevo método.
+          </p>
 
-        <div className="flex justify-center mb-6">
-          <img
-            src={result}
-            alt="Resultados"
-            className="w-2/3 lg:w-full max-w-md"
-          />
-        </div>
+          <div className="flex justify-center mb-6">
+            <img
+              src={testimonios[0]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
 
-        <div className="flex justify-center mb-6">
-          <img
-            src={result2}
-            alt="Resultados"
-            className="w-2/3 lg:w-full max-w-md"
-          />
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[1]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[2]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[3]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[4]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[5]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[6]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <div className="flex justify-center mb-6">
+            <img
+                src={testimonios[7]}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <p className="mb-6">
+            Estos son sólo algunos ejemplos del tipo de éxito que es posible
+            alcanzar con el Método Revolution.
+          </p>
+          <p className="mb-6">
+            Y lo mejor es que estas historias no son raras. De hecho, hay nuevas
+            historias de éxito todos los días.
+          </p>
+          <p className="mb-6">
+            Y hoy, estoy acá para darte las herramientas que necesitas para
+            crear tu propia historia de éxito.
+          </p>
         </div>
-        <p className="mb-6">
-          Estos son sólo algunos ejemplos del tipo de éxito que es posible
-          alcanzar con el Método Revolution.
-        </p>
-        <p className="mb-6">
-          Y lo mejor es que estas historias no son raras. De hecho, hay nuevas
-          historias de éxito todos los días.
-        </p>
-        <p className="mb-6">
-          Y hoy, estoy acá para darte las herramientas que necesitas para crear
-          tu propia historia de éxito.
-        </p>
-      </div>
+      ) : (
+        <div className="">
+          <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
+            Testimonios:
+          </h1>
+          <p className="mb-6 text-center">
+            Para que veas que no somos solo palabras, queremos mostrarte algunos
+            de los resultados que nuestros alumnos han tenido gracias a
+            Revolution en donde te mostramos cómo montar tu propio negocio
+            online con este nuevo método.
+          </p>
+
+          <div className="flex justify-center mb-6">
+            <img
+              src={result}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+
+          <div className="flex justify-center mb-6">
+            <img
+              src={result2}
+              alt="Resultados"
+              className="w-2/3 lg:w-full max-w-md"
+            />
+          </div>
+          <p className="mb-6">
+            Estos son sólo algunos ejemplos del tipo de éxito que es posible
+            alcanzar con el Método Revolution.
+          </p>
+          <p className="mb-6">
+            Y lo mejor es que estas historias no son raras. De hecho, hay nuevas
+            historias de éxito todos los días.
+          </p>
+          <p className="mb-6">
+            Y hoy, estoy acá para darte las herramientas que necesitas para
+            crear tu propia historia de éxito.
+          </p>
+        </div>
+      )}
     </div>
   );
 };

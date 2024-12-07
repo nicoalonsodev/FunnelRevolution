@@ -10,7 +10,7 @@ const Actually = ({ historyPart3, actually, img4 }) => {
               className="poppins-regular text-lg lg:text-xl text-gray-100"
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
-          </div>
+          </div> 
         ))}
       </div>
 
