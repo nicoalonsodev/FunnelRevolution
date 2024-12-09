@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./AnimatedButton.css";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const AnimatedButtonDavid = ({ calendlyPage, data, cta }) => {
   const history = useHistory();
@@ -24,9 +25,9 @@ const AnimatedButtonDavid = ({ calendlyPage, data, cta }) => {
       onClick={cta ? scrollToTop : handleButtonClick}
       className="w-full lg:w-2/4 animated-button-wpp text-xl border-[2px] border-green-500"
     >
-      <span className="text-lg lg:text-2xl">AGENDA TU LLAMADA</span>
-      <span className="subtext text-sm lg:text-lg text-balance">
-        Y comienza a implementar este nuevo modelo de negocio ahora
+       <span className="text-lg lg:text-2xl flex justify-center items-center gap-x-2">
+        <FaWhatsapp />
+        RESERVA TU CUPO
       </span>
     </button>
   );

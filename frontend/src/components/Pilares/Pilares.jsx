@@ -27,54 +27,110 @@ const Pilares = ({ david }) => {
         </div>
 
         {/* Primer Pilar */}
-        <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
-          <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
-            <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+        {david ? (
+          <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+            <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
+              <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+                <img
+                  className="w-full object-cover object-center"
+                  src={version1}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-[#F59800]">
+                  N° 1 | La Habilidad Adecuada
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-semibold text-4xl text-gray-100">
+                  Trading
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular font-bold text-lg text-gray-200">
+                  Concentra tus esfuerzos en una habilidad rentable y
+                  transformadora.
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                  Así comenzamos en 2018, aprendiendo trading desde cero. Tras
+                  enfrentar altibajos, logramos ser rentables y vivir de esta
+                  habilidad.
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                Hoy, <span className="font-bold">6 años después</span>, somos la <span className="font-bold">academia de trading líder en Latinoamérica</span>, con más de <span className="font-bold">22,240 alumnos</span> y cientos de <span className="font-bold">casos de éxito</span> que respaldan nuestro valor y compromiso.
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                Quiero que seas parte de este cambio!
+                </p>
+              </div>
+            </div>
+            <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
               <img
                 className="w-full object-cover object-center"
                 src={version1}
                 alt=""
               />
             </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-[#F59800]">
-                N° 1 | La Habilidad Adecuada
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-semibold text-4xl text-gray-100">Trading</p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-gray-200">
-                Necesitas concentrar todos tus esfuerzos en una habilidad que
-                puedas aprovechar y que genere buenos resultados
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-gray-200">
-                Así es como empezamos, aprendiendo la habilidad del trading en
-                2018 y luego de muchos altibajos comenzamos a ser rentables y
-                vivir de ello.
-              </p>
-            </div>
-            <div className="w-full mt-4">
-              <p className="poppins-regular text-lg text-gray-200">
-                Es por esto que hoy, después de 6 años somos la mejor academia
-                de trading de todo latinoamérica con más de 22.240 alumnos y
-                cientos de casos de éxito, lo que da muchísimo valor a la
-                organización
-              </p>
-            </div>
           </div>
-          <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
-            <img
-              className="w-full object-cover object-center"
-              src={version1}
-              alt=""
-            />
-          </div>
-        </div>
+        ) : (
+          <div className="flex flex-wrap justify-center items-center space-x-0 lg:space-x-8">
+            <div className="w-full lg:w-[55%] flex flex-wrap justify-start items-center space-y-3">
+              <div className="w-full flex lg:hidden items-center overflow-hidden rounded-lg  mb-2">
+                <img
+                  className="w-full object-cover object-center"
+                  src={version1}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-[#F59800]">
+                  N° 1 | La Habilidad Adecuada
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-semibold text-4xl text-gray-100">
+                  Trading
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                  Necesitas concentrar todos tus esfuerzos en una habilidad que
+                  puedas aprovechar y que genere buenos resultados
+                </p>
+              </div>
 
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                  Así es como empezamos, aprendiendo la habilidad del trading en
+                  2018 y luego de muchos altibajos comenzamos a ser rentables y
+                  vivir de ello.
+                </p>
+              </div>
+              <div className="w-full mt-4">
+                <p className="poppins-regular text-lg text-gray-200">
+                  Es por esto que hoy, después de 6 años somos la mejor academia
+                  de trading de todo latinoamérica con más de 22.240 alumnos y
+                  cientos de casos de éxito, lo que da muchísimo valor a la
+                  organización
+                </p>
+              </div>
+            </div>
+            <div className="w-full  lg:w-[40%] hidden lg:flex items-center overflow-hidden rounded-lg">
+              <img
+                className="w-full object-cover object-center"
+                src={version1}
+                alt=""
+              />
+            </div>
+          </div>
+        )}
         {/* Segundo Pilar */}
         {david ? (
           ""
