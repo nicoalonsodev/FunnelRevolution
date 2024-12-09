@@ -55,8 +55,8 @@ const historyImages = [ img1, img2, img3, img4]
 const path = "joaquin-rolon"
 
 const googleSheets = "https://script.google.com/macros/s/AKfycbyXa5eWN8ISxft_oEL2M5DQblmLGblVfVe4hs_e7eZ7_6GaM424ySHuIXRkzIqBunxo/exec"
-const wppLink = "https://wa.me/+5493704712980?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5493704712980"
+const wppLink = "https://wa.me/+5493704710679?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493704710679"
   const data = {
   historyPart1,
   historyPart2,
