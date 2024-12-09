@@ -5,7 +5,7 @@ import rev from "../../assets/imagenes/rev2.webp";
 import dubai from "../../assets/imagenes/Dunai-imagen.webp";
 import mapa from "../../assets/imagenes/Mapa-icon.webp";
 import rev3 from "../../assets/imagenes/rev3.webp";
-const Gifts = ({ calendlyPage }) => {
+const Gifts = ({ calendlyPage, david }) => {
   return (
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
       <h1 className="text-2xl lg:text-4xl text-center font-bold mb-6 poppins-bold text-balance">
@@ -165,7 +165,7 @@ const Gifts = ({ calendlyPage }) => {
           </div>
         </div>
       </div>
-      <CallToAction calendlyPageUrl={calendlyPage} />
+      <CallToAction david={david} calendlyPageUrl={calendlyPage} />
     </div>
   );
 };

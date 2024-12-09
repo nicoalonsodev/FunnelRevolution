@@ -121,8 +121,8 @@ const testimonios = [
             <MissionAndResult david={true} testimonios={testimonios} />
           </div>
           <PresentProgram  david={true}/>
-          <Gifts calendlyPage={calendlyPage} />
-          <OfferSection calendlyPageUrl={calendlyPage} />
+          <Gifts david={true} calendlyPage={calendlyPage} />
+          <OfferSection david={true} calendlyPageUrl={calendlyPage} />
         </div>
       </div>
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">

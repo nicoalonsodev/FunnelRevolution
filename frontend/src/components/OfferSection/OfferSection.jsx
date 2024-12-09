@@ -1,8 +1,8 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
-
-const OfferSection = ({calendlyPageUrl}) => {
+import AnimatedButtonDavid from "../AnimatedButton/AnimatedButtonDavid";
+const OfferSection = ({calendlyPageUrl, david}) => {
   return (
     <div className="text-gray-100 mt-10 text-center">
     
@@ -20,12 +20,20 @@ const OfferSection = ({calendlyPageUrl}) => {
         </p>
       </div>
       <div className="mt-10 mx-2">
-        <AnimatedButton
+       { david ? 
+       <AnimatedButtonDavid 
+        calendlyPage={calendlyPageUrl}
+          text='Escríbeme "AMG" en Instagram'
+          subtext="Y comienza a construir tu propia agencia de Infoproductos"
+          cta={1}
+        /> :
+       <AnimatedButton 
         calendlyPage={calendlyPageUrl}
           text='Escríbeme "AMG" en Instagram'
           subtext="Y comienza a construir tu propia agencia de Infoproductos"
           cta={1}
         />
+      }
         <div className="mt-4">
           <img
             src="https://www.agenciadeinfoproductos.com/hosted/images/47/02032650044655b42e246e8101d137/Untitled-2.png"
