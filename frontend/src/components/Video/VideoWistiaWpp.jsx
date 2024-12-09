@@ -83,7 +83,9 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
     actualizarEstadoPadre(true);
   };
 
-  const wppMessage = `Hola! Vi la Masterclass.. Quiero reclamar mi cupo gratuito para el Grupo VIP con el código: “${wppCode}”`;
+  const wppMessage = david_ana 
+  ? "Hola! Vengo de la Masterclass… Quiero saber los requisitos para ingresar a la academia de manera gratuita!" 
+  : `Hola! Vi la Masterclass.. Quiero reclamar mi cupo gratuito para el Grupo VIP con el código: “${wppCode}”`;
   const wppUrl = `https://wa.me/${dataUser.wppNumber}?text=${encodeURIComponent(wppMessage)}`;
 
 
