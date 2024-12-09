@@ -11,7 +11,7 @@ const Actually = ({ historyPart3, actually, img4 }) => {
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
           </div> 
-        ))}
+        ))}   
       </div>
 
       <div className="w-full flex items-start justify-center mt-10">

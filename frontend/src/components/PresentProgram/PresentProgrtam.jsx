@@ -4,7 +4,34 @@ import money from "../../assets/imagenes/Version-2.webp";
 import negocio from "../../assets/imagenes/Negocio-online.webp";
 import cohete from "../../assets/imagenes/Cohete-icon.webp";
 
-const PresentProgram = () => {
+const PresentProgram = ({ david }) => {
+  // Lista completa de elementos
+  const items = [
+    {
+      title: "Curso grabado completo y sesiones en vivo todos los días.",
+      price: "$1.200 USD anual.",
+      module: "Carrera de Trading:",
+      image: money,
+    },
+    {
+      title:
+        "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
+      module: "Carrera de Afiliado:",
+      price: "$600 USD anual.",
+      image: negocio,
+    },
+    {
+      title:
+        "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
+      module: "Servicio de marketing profesional:",
+      price: "$12.000 USD anual.",
+      image: cohete,
+    },
+  ];
+
+  // Si la prop 'david' está presente, selecciona solo el primer elemento
+  const filteredItems = david ? [items[0]] : items;
+
   return (
     <div className="text-gray-100 bg-black py-10 px-3 md:px-64 poppins-regular">
       <div className="relative">
@@ -41,30 +68,7 @@ const PresentProgram = () => {
       </div>
       <div className="mt-10">
         <div className="space-y-10">
-          {[
-            {
-              title:
-                "Curso grabado completo y sesiones en vivo todos los días.",
-              price: "$1.200 USD anual.",
-              module: "Carrera de Trading:",
-              image: money,
-            },
-            // {
-            //   title:
-            //     "Cómo crear tu propio negocio online vendiendo el infoproducto de Revolution",
-            //   module: "Carrera de Afiliado:",
-            //   price: "$600 USD anual.",
-            //   image: negocio,
-            // },
-            // {
-            //   title:
-            //     "Cómo escalar tu negocio online recibiendo servicio gratuito de marketers profesionales y a la vez aprender de ellos.",
-            //   module: "Servicio de marketing profesional:",
-            //   price: "$12.000 USD anual.",
-            //   image: cohete,
-            // },
-           
-          ].map((item, index) => (
+          {filteredItems.map((item, index) => (
             <div
               key={index}
               className="flex flex-col h-auto lg:h-[14rem] md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-black rounded-lg py-4 lg:py-0 p-0 lg:p-4 shadow-lg"
@@ -84,14 +88,13 @@ const PresentProgram = () => {
                 <img
                   src={item.image}
                   alt={item.module}
-                  className="object-cover w-full lg:w-2/3 h-full rounded-lg shadow-md "
+                  className="object-cover w-full lg:w-2/3 h-full rounded-lg shadow-md"
                 />
               </div>
             </div>
           ))}
         </div>
       </div>
-      
     </div>
   );
 };

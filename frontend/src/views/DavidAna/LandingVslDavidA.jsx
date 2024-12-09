@@ -117,10 +117,10 @@ const testimonios = [
               actually={actually}
               img4={img4}
             />
-            <Pilares />
-            <MissionAndResult testimonios={testimonios} />
+            <Pilares david={true}/>
+            <MissionAndResult david={true} testimonios={testimonios} />
           </div>
-          <PresentProgram />
+          <PresentProgram  david={true}/>
           <Gifts calendlyPage={calendlyPage} />
           <OfferSection calendlyPageUrl={calendlyPage} />
         </div>

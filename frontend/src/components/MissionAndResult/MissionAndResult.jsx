@@ -2,10 +2,10 @@ import React from "react";
 import result from "../../assets/imagenes/result.webp";
 import result2 from "../../assets/imagenes/result2.webp";
 
-const MissionAndResult = ({ testimonios }) => {
+const MissionAndResult = ({ testimonios, david }) => {
   return (
     <div className="text-gray-100 py-10 px-0 lg:px-64 poppins-regular">
-      {/* <div>
+     {david ? "" : <div>
         <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
           Nuestra Misión
         </h1> 
@@ -38,7 +38,7 @@ const MissionAndResult = ({ testimonios }) => {
         <p className="text-[#F59800] font-bold">
           Si quieres eso, ¡esto es PARA TI!
         </p>
-      </div> */}
+      </div>}
       {testimonios ? (
         <div className="">
           <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
