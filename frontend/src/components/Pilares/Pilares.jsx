@@ -49,8 +49,8 @@ const Pilares = ({ david }) => {
               </div>
               <div className="w-full mt-4">
                 <p className="poppins-regular font-bold text-lg text-gray-200">
-                  Concentra tus esfuerzos en una habilidad rentable y
-                  transformadora.
+                <span className="font-bold"> Concentra tus esfuerzos en una habilidad rentable y
+                  transformadora. </span>
                 </p>
               </div>
               <div className="w-full mt-4">
