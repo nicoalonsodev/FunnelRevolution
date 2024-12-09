@@ -59,8 +59,8 @@ const historyImages = [ img1, img2, img3, img4]
     //const isRegistered = localStorage.getItem("isRegistered") === "true";
 const path = "joaquin-dominguez"
 const googleSheets = "https://script.google.com/macros/s/AKfycbwaL62WCv7cHVyTE-mnr3MaOwkOfzeDFY-XuZ74sC77SaOrV0r5K3CJsoNJ3_WrfhWG/exec"
-const wppLink = "https://wa.me/+5491173645792?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491173645792"
+const wppLink = "https://wa.me/+5493704710679?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5493704710679"
   const data = {
   historyPart1,
   historyPart2,
