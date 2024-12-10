@@ -95,7 +95,7 @@ const testimonios = [
         </div>
         <div className="px-3 lg:px-14 xl:px-[9rem] pt-2 lg:pt-6">
           <TitleAndVideo
-            video={"wpp"}
+            video={"wpp"} 
             calendlyPage={calendlyPage}
             data={data}
             david={true}
