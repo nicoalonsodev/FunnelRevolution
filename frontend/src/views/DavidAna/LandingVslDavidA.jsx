@@ -48,11 +48,10 @@ const testimonios = [
   ];
 
   const actually = [
-    "He generado más de <strong style='font-weight:bold;'>$350,000 USD</strong> gracias al trading y al marketing digital.",
-    "Actualmente, genero más de <strong style='font-weight:bold;'>$7,000 USD mensuales</strong>.",
-    "Puedo aportarles a <strong style='font-weight:bold;'>personas</strong> que son como yo.",
-    "Y ahora seguramente te estarás preguntando, ¿cómo es que logré <strong style='font-weight:bold;'>crecer tanto y tan rápido</strong> con Revolution?",
-    'Aquí te presento <strong style="font-weight:bold;">"los tres pilares"</strong> de este modelo de negocio que transformará tu vida...',
+    "He generado más de $350,000 USD gracias al trading y al marketing digital.",
+    "Actualmente, genero más de $10,000 USD mensuales.",
+    "Y he ayudado a más de 2.400 personas a superar sus primeros 100 dólares mensuales con el trading.",
+    "Accediendo hoy, tendrás bonificado lo siguiente:",
   ];
 
   const historyData = [
@@ -99,6 +98,7 @@ const testimonios = [
             video={"wpp"}
             calendlyPage={calendlyPage}
             data={data}
+            david={true}
           />
         </div>
         <div className="px-3 lg:px-14 xl:px-[9rem] py-4 bg-gray-50 border-t-[#F59800] border-[2px]">

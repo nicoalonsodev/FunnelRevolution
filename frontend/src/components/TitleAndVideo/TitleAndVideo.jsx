@@ -17,9 +17,8 @@ const TitleAndVideo = ({
         minutos...
       </p>
 
-      <h1 className="lato-black text-gray-200 text-xl lg:text-5xl text-balance">
-        EL NUEVO MÉTODO SIMPLE Y RÁPIDO QUE COMBINA LOS 3 MEJORES MODELOS DE
-        NEGOCIOS ONLINE DE 2024
+      <h1 className="lato-black text-gray-200 text-xl lg:text-5xl text-balance uppercase">
+       {david ? "En este vídeo veras lo que las academias de trading no quieren que sepas." : "EL NUEVO MÉTODO SIMPLE Y RÁPIDO QUE COMBINA LOS 3 MEJORES MODELOS DE NEGOCIOS ONLINE DE 2024"}
       </h1>
 
       <p className="poppins-medium text-yellow-500 text-sm lg:text-xl px-2">
