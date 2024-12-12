@@ -30,7 +30,7 @@ const PresentProgram = ({ david }) => {
   ];
 
   // Si la prop 'david' está presente, selecciona solo el primer elemento
-  const filteredItems = david ? [items[0]] : items;
+  const filteredItems = david ? "" : items;
 
   return (
     <div className="text-gray-100 bg-black py-10 px-3 md:px-64 poppins-regular">

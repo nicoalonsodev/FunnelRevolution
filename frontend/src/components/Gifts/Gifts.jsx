@@ -10,7 +10,7 @@ const Gifts = ({ calendlyPage, david }) => {
     <div className="mt-10 text-gray-100 px-3 lg:px-0">
       <h1 className="text-2xl lg:text-4xl text-center font-bold mb-6 poppins-bold text-balance">
         {david
-          ? "En este vídeo veras lo que las academias de trading no quieren que sepas."
+          ? "Si cumplís con los 2 requisitos que se nombran en el video aplicarás a: "
           : "Además de los siguientes regalos para formar parte de la comunidad y cambiar tu entorno."}
       </h1>
       <p className="text-center mb-6">

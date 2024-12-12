@@ -27,7 +27,7 @@ const TitleAndVideo = ({
       </h1>
 
       {david ? (
-        ""
+        "Al final del video te explico cómo aplicar a tu cupo."
       ) : (
         <p className="poppins-medium text-yellow-500 text-sm lg:text-xl px-2">
           Combinando 3 modelos altamente rentables: Trading, Marketing de

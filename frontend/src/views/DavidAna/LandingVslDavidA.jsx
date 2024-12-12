@@ -120,7 +120,7 @@ const testimonios = [
             <Pilares david={true}/>
             <MissionAndResult david={true} testimonios={testimonios} />
           </div>
-          <PresentProgram  david={true}/>
+          {/* <PresentProgram  david={true}/> */}
           <Gifts david={true} calendlyPage={calendlyPage} />
           <OfferSection david={true} calendlyPageUrl={calendlyPage} />
         </div>
