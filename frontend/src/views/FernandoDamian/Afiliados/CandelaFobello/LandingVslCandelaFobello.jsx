@@ -54,8 +54,8 @@ const LandingVslCandelaFobello = () => {
   //const isRegistered = localStorage.getItem("isRegistered") === "true";
   const path = "candela-fobello";
   const googleSheets = ""
-const wppLink = "https://wa.me/+5491171972745?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
-const wppNumber = "+5491171972745"
+const wppLink = "https://wa.me/+5491127720490?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios"
+const wppNumber = "+5491127720490"
   const data = {
   historyPart1,
   historyPart2,

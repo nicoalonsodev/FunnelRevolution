@@ -11,7 +11,7 @@ import Gifts from "../../components/Gifts/Gifts";
 import OfferSection from "../../components/OfferSection/OfferSection";
 import Footer from "../../components/Footer/Footer";
 import ModalButton from "../../components/ModalButton/ModalButtonGreen";
-
+import Disclaimer from "../../components/Disclaimer/Disclaimer";
 import img1 from "../../assets/david_ana/1.webp";
 import img2 from "../../assets/david_ana/2.webp";
 import img3 from "../../assets/david_ana/3.webp";
@@ -126,6 +126,7 @@ const testimonios = [
         </div>
       </div>
       <div className="bg-gray-900 py-4 border-t-[1px] border-yellow-600">
+      <Disclaimer />
         <Footer />
       </div>
       <ModalButton calendlyPage={calendlyPage} />

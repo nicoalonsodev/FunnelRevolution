@@ -411,10 +411,11 @@ import CalendlyPageJonathanVelazquez from "./views/CristianCastellon/Afiliados/J
 import LandingVslAlfredoNeremberg from "./views/CristianCastellon/Afiliados/AlfredoNeremberg/LandingVslAlfredoNeremberg.jsx";
 import LandingPageAlfredoNeremberg from "./views/CristianCastellon/Afiliados/AlfredoNeremberg/LandingPageAlfredoNeremberg.jsx";
 import CalendlyPageAlfredoNeremberg from "./views/CristianCastellon/Afiliados/AlfredoNeremberg/CalendlyPageAlfredoNeremberg.jsx";
-
+import PrivacyPolicy from "./views/PrivacyPolicy/PrivacyPolicy.jsx";
 function App() {
   return (
     <div className="App">
+      <Route exact path="/politicas-de-privacidad" component={PrivacyPolicy} />
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/vsl" component={LandingVsl} />
       <Route exact path="/calendly" component={CalendlyPage} />
