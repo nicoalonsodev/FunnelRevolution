@@ -51,7 +51,7 @@ const VideoWistiaWpp = ({ dataUser, david_ana, david_B }) => {
         typeof david_ana !== "undefined" && david_ana
           ? 100
           : david_B
-          ? 15000
+          ? 500
           : 500
       );
 
