@@ -4,7 +4,18 @@ import result2 from "../../assets/imagenes/result2.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const MissionAndResult = ({ testimonios, david }) => {
+import testimonio from "../../assets/testimonios-david/testimonio.jpg"
+import testimonio2 from "../../assets/testimonios-david/testimonio2.jpg"
+import testimonio3 from "../../assets/testimonios-david/testimonio3.jpg"
+import testimonio4 from "../../assets/testimonios-david/testimonio4.jpg"
+import testimonio5 from "../../assets/testimonios-david/testimoinio5.jpg"
+import testimonio6 from "../../assets/testimonios-david/testimoinio6.jpg"
+import testimonio7 from "../../assets/testimonios-david/testimoinio7.jpg"
+import testimonio8 from "../../assets/testimonios-david/testimonio8.jpg"
+const MissionAndResult = ({ david }) => {
+  const testimonios = [
+    testimonio8, testimonio7, testimonio6, testimonio5, testimonio4, testimonio3, testimonio2, testimonio
+  ]
   const settings = {
     dots: true,
     infinite: true,
@@ -69,47 +80,7 @@ const MissionAndResult = ({ testimonios, david }) => {
       {david ? (
         ""
       ) : (
-        <div>
-          <h1 className="text-4xl text-center font-bold mb-6 poppins-bold">
-            Nuestra Misión
-          </h1>
-          <p className="mb-6">
-            Ahora, nuestra Misión en Revolution es crear la comunidad más grande
-            de millonarios en todo latinoamérica brindando las herramientas, el
-            acompañamiento y el espacio para que cuenten con el entorno
-            correcto.
-          </p>
-          <p className="mb-6">
-            Comenzamos en 2022 y en todo este camino ya pudimos lograr casos de
-            éxito de $1000 usd al mes - $5000 e incluso $10000 - $50.000 y hasta
-            $100.000 mensuales con algunos líderes.
-          </p>
-          <p className="mb-6">
-            También abrimos oficinas en Buenos Aires y realizamos eventos
-            presenciales en distintos lugares del mundo impulsar el Entorno y el
-            Mindset de la Comunidad
-          </p>
-          <p className="mb-6">
-            Nuestro objetivo es que no sólo aprendas de nosotros y de nuestro
-            equipo, sino que también implementes lo que estamos haciendo, para
-            que puedas hacerlo por ti mismo y ganar tu primer millón.
-          </p>
-          <p className="mb-6">
-            Queremos que vivas este mismo tipo de vida, que tengas objetivos
-            similares y que te rodees de las personas correctas que te ayudarán
-            a crecer.
-          </p>
-          <p className="mb-6">
-            <span className="text-[#F59800] font-bold">Resumiendo:</span>{" "}
-            Queremos que puedas permitirte la mejor comida, que tengas
-            relaciones increíbles con personas de valor, que viajes a lugares
-            épicos, que tengas un propósito, que ganes millones de dólares
-            online y que retribuyas a tu comunidad y a tu familia.
-          </p>
-          <p className="text-[#F59800] font-bold">
-            Si quieres eso, ¡esto es PARA TI!
-          </p>
-        </div>
+       ""
       )}
       {testimonios ? (
         <div className="">

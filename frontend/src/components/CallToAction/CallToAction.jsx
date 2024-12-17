@@ -8,7 +8,7 @@ const CallToAction = ({ calendlyPageUrl, david }) => {
       {david ? (
         <AnimatedButtonDavid calendlyPage={calendlyPageUrl} cta={1} />
       ) : (
-        <AnimatedButton calendlyPage={calendlyPageUrl} cta={1} />
+        <AnimatedButtonDavid calendlyPage={calendlyPageUrl} cta={1} />
       )}
       <div className="mt-4">
         <img

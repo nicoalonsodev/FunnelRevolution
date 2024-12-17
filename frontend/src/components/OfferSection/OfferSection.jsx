@@ -27,7 +27,7 @@ const OfferSection = ({calendlyPageUrl, david}) => {
           subtext="Y comienza a construir tu propia agencia de Infoproductos"
           cta={1}
         /> :
-       <AnimatedButton 
+        <AnimatedButtonDavid 
         calendlyPage={calendlyPageUrl}
           text='Escríbeme "AMG" en Instagram'
           subtext="Y comienza a construir tu propia agencia de Infoproductos"
