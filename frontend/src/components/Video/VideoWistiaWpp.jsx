@@ -6,21 +6,25 @@ import { useLocation } from "react-router-dom";
 import AnimatedButtonWpp from "../AnimatedButton/AnimatedButtonWpp";
 import "./Video.css";
 
-const VideoWistiaWpp = ({ dataUser, david_ana}) => {
+const VideoWistiaWpp = ({ dataUser, david_ana, david_B }) => {
   const [showForm, setShowForm] = useState(false);
   const [formUrl, setFormUrl] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [showButton2, setShowButton2] = useState(false);
   const [showOverlay, setShowOverlay] = useState(true);
-  const [wppCode, setWppCode] = useState(""); 
-  
+  const [wppCode, setWppCode] = useState("");
+
   const location = useLocation();
   const isRegistered = "true";
   //  const isRegistered = new URLSearchParams(location.search).get("registered") === "true";
   const videoRef = useRef(null);
 
-  const videoUrl = david_ana ? "https://fast.wistia.net/embed/iframe/tsfo8lisip" : "https://fast.wistia.net/embed/iframe/kgsggghw2x";
+  const videoUrl = david_ana
+    ? "https://fast.wistia.net/embed/iframe/tsfo8lisip"
+    : david_B
+    ? "https://fast.wistia.net/embed/iframe/esyk0h4kv3"
+    : "https://fast.wistia.net/embed/iframe/kgsggghw2x";
   useEffect(() => {
     // Generar un código aleatorio de 6 dígitos cuando se monta el componente
     const generateCode = () => {
@@ -30,19 +34,26 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
     setWppCode(generateCode());
 
     if (videoRef.current) {
-      const command = isRegistered ? 'unMute' : 'mute';
+      const command = isRegistered ? "unMute" : "mute";
       videoRef.current.contentWindow.postMessage(
-        JSON.stringify({ event: 'command', func: command, args: [] }),
-        '*'
+        JSON.stringify({ event: "command", func: command, args: [] }),
+        "*"
       );
       videoRef.current.contentWindow.postMessage(
-        JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-        '*'
+        JSON.stringify({ event: "command", func: "playVideo", args: [] }),
+        "*"
       );
 
-      const timer1 = setTimeout(() => {
-        setShowButton(true);
-      }, typeof david_ana !== "undefined" && david_ana ? 30000 : 500);
+      const timer1 = setTimeout(
+        () => {
+          setShowButton(true);
+        },
+        typeof david_ana !== "undefined" && david_ana
+          ? 100
+          : david_B
+          ? 15000
+          : 500
+      );
 
       const timer2 = setTimeout(() => {
         setShowButton2(true);
@@ -61,12 +72,12 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
       setFormSubmitted(true);
       if (videoRef.current) {
         videoRef.current.contentWindow.postMessage(
-          JSON.stringify({ event: 'command', func: 'unMute', args: [] }),
-          '*'
+          JSON.stringify({ event: "command", func: "unMute", args: [] }),
+          "*"
         );
         videoRef.current.contentWindow.postMessage(
-          JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-          '*'
+          JSON.stringify({ event: "command", func: "playVideo", args: [] }),
+          "*"
         );
         setShowOverlay(false);
       }
@@ -83,11 +94,12 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
     actualizarEstadoPadre(true);
   };
 
-  const wppMessage = david_ana 
-  ? "Hola! Vengo de la Masterclass… Quiero saber los requisitos para ingresar a la academia!" 
-  : `Hola! Vengo de la Masterclass… Quiero saber los requisitos para ingresar a la academia!`;
-  const wppUrl = `https://wa.me/${dataUser.wppNumber}?text=${encodeURIComponent(wppMessage)}`;
-
+  const wppMessage = david_ana
+    ? "Hola! Vengo de la Masterclass… Quiero saber los requisitos para ingresar a la academia!"
+    : `Hola! Vengo de la Masterclass… Quiero saber los requisitos para ingresar a la academia!`;
+  const wppUrl = `https://wa.me/${dataUser.wppNumber}?text=${encodeURIComponent(
+    wppMessage
+  )}`;
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center pb-4">
@@ -102,14 +114,18 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
             title="Wistia Video"
             allowFullScreen
             onLoad={() => {
-              const command = isRegistered ? 'unMute' : 'mute';
+              const command = isRegistered ? "unMute" : "mute";
               videoRef.current.contentWindow.postMessage(
-                JSON.stringify({ event: 'command', func: command, args: [] }),
-                '*'
+                JSON.stringify({ event: "command", func: command, args: [] }),
+                "*"
               );
               videoRef.current.contentWindow.postMessage(
-                JSON.stringify({ event: 'command', func: 'playVideo', args: [] }),
-                '*'
+                JSON.stringify({
+                  event: "command",
+                  func: "playVideo",
+                  args: [],
+                }),
+                "*"
               );
             }}
           ></iframe>
@@ -120,7 +136,11 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
             onClick={handleOverlayClick}
           >
             <div className="bg-yellow-500 border-2 border-gray-100 bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center text-white text-center cursor-pointer">
-              <img src={gif} alt="Click to unmute" className="w-10 lg:w-16 h-10 lg:h-16 mb-4" />
+              <img
+                src={gif}
+                alt="Click to unmute"
+                className="w-10 lg:w-16 h-10 lg:h-16 mb-4"
+              />
               <p className="text-xl font-bold">Tu video ya ha comenzado</p>
               <p className="text-lg">Haga clic para escuchar</p>
             </div>
@@ -130,9 +150,7 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
       <div className="w-full flex justify-center">
         {showButton && <AnimatedButtonWpp wppUrl={wppUrl} />}
       </div>
-     {showButton2 ? <h1 className="text-white mt-2">
-
-      </h1> : ""}
+      {showButton2 ? <h1 className="text-white mt-2"></h1> : ""}
       {/* <div className="w-full flex justify-center mt-2">
         {showButton2 && <AnimatedButtonCalendly handleShowForm={handleShowForm} />}
       </div> */}
@@ -144,13 +162,13 @@ const VideoWistiaWpp = ({ dataUser, david_ana}) => {
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <RegistroPhone 
+              <RegistroPhone
                 redirectUrl={formUrl === 2 ? dataUser.calendlyPage : wppUrl}
                 googleSheetsUrl={dataUser.googleSheets}
                 actualizarEstado={actualizarEstadoPadre}
                 data={dataUser}
                 formUrl={formUrl}
-              /> 
+              />
             </div>
           </div>
         </>

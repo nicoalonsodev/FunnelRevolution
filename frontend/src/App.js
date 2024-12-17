@@ -412,6 +412,7 @@ import LandingVslAlfredoNeremberg from "./views/CristianCastellon/Afiliados/Alfr
 import LandingPageAlfredoNeremberg from "./views/CristianCastellon/Afiliados/AlfredoNeremberg/LandingPageAlfredoNeremberg.jsx";
 import CalendlyPageAlfredoNeremberg from "./views/CristianCastellon/Afiliados/AlfredoNeremberg/CalendlyPageAlfredoNeremberg.jsx";
 import PrivacyPolicy from "./views/PrivacyPolicy/PrivacyPolicy.jsx";
+import LandingVslDavidA2 from "./views/DavidAna/LandingVslDavidA2.jsx";
 function App() {
   return (
     <div className="App">
@@ -621,6 +622,7 @@ function App() {
 
       {/* Landing david-ana*/}
       <Route exact path="/david-ana/vsl" component={LandingVslDavidA} />
+      <Route exact path="/david-ana-b/vsl" component={LandingVslDavidA2} />
       <Route exact path="/david-ana" component={LandingPageDavidA} />
       <Route
         exact
