@@ -67,8 +67,8 @@ const testimonios = [
   const googleSheets =
     "https://script.google.com/macros/s/AKfycbzb5nyw9g5hmj-aJ4oVWGa1CdCi5Pa7LG58r32I24cqdUPJkuPLWWL93OxImp-eMc6UwQ/exec";
   const wppLink =
-    "https://wa.me/+5491126997232?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios";
-  const wppNumber = "+5491126997232";
+    "https://wa.me/+5491171035104?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios";
+  const wppNumber = "+5491171035104";
   const data = {
     historyPart1,
     historyPart2,
